@@ -1,41 +1,16 @@
 (function($) {
     'use strict';
 
-    /* =======================================
-        For niceSelect
-    =======================================*/
-    $('select').niceSelect();
+    /*----------------------------------------
+        Sticky Menu Activation
+    ------------------------------------------*/
 
-    /* =======================================
-        For Search
-    =======================================*/
-    var $searchWrap = $('.search_wrp');
-    var $navSearch = $('.search-trigger');
-    var $searchClose = $('#search_close');
-
-    $('.search-trigger').on('click', function(e) {
-        e.preventDefault();
-        $searchWrap.animate({ opacity: 'toggle' }, 500);
-        $navSearch.add($searchClose).addClass("open");
-    });
-
-    $('.search_close').on('click', function(e) {
-        e.preventDefault();
-        $searchWrap.animate({ opacity: 'toggle' }, 500);
-        $navSearch.add($searchClose).removeClass("open");
-    });
-
-    function closeSearch() {
-        $searchWrap.fadeOut(200);
-        $navSearch.add($searchClose).removeClass("open");
-    }
-
-    $(document.body).on('click', function(e) {
-        closeSearch();
-    });
-
-    $(".search-trigger, .header-search-input").on('click', function(e) {
-        e.stopPropagation();
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 85) {
+            $('.navigation').addClass('header-sticky');
+        } else {
+            $('.navigation').removeClass('header-sticky');
+        }
     });
 
 
@@ -53,17 +28,6 @@
     $(".body-overlay").on("click", function() {
         $(".menu_sidebar_info").removeClass("info-opened");
         $(".body-overlay").removeClass("opened");
-    });
-
-
-    /*=======================================
-         PRELOADER                     
-    ======================================= */
-    $(window).on('load', function() {
-        $('#preloader').fadeOut('slow', function() {
-            $(this).remove();
-        });
-        $(".slides__preload_wrapper").fadeOut(1500);
     });
 
 
@@ -161,12 +125,52 @@
         }
     });
 
+    /* =======================================
+         Product Promotion Section 
+     =======================================*/
+    $("#product_pro").owlCarousel({
+        autoPlay: 3000, //Set AutoPlay to 5 seconds
+        autoplay: false,
+        smartSpeed: 1000, // Default is 250
+        items: 3, //Set Testimonial items
+        loop: true,
+        margin: 30,
+        center: true,
+        singleItem: true,
+        touchDrag: true,
+        mouseDrag: true,
+        pagination: true,
+        nav: false,
+        dots: true,
+        navText: ["<i class='icofont-thin-left'></i>", "<i class='icofont-thin-right'></i>"],
+        responsive: {
+            1200: {
+                items: 3
+            },
+            992: {
+                items: 3
+            },
+            768: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            320: {
+                items: 1
+            },
+            280: {
+                items: 1
+            }
+        }
+    });
+
     /*=======================================
-        Client Section  
+        Event  Section  
     =======================================*/
     $("#event_carousel").owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 5 seconds
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 2000, // Default is 250
         items: 3,
         center: true,
@@ -174,7 +178,7 @@
         touchDrag: true,
         mouseDrag: true,
         pagination: false,
-        dots: false,
+        dots: true,
         nav: false,
         navText: ["<i class='logo-nav-icon'></i>", "<i class='logo-nav-icon'></i>"],
         responsive: {
@@ -203,7 +207,7 @@
     /*=======================================
         Client Section  
     =======================================*/
-    $("#client").owlCarousel({
+    $("#client_carousel").owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 5 seconds
         autoplay: true,
         smartSpeed: 2000, // Default is 250
@@ -237,61 +241,7 @@
         }
     });
 
-
-    /*=======================================
-        Product  slider  
-    =======================================*/
-
-    $('.project_list_one').each(function() {
-        $('.project_slider_one').slick({
-            centerMode: true,
-            centerPadding: '300px',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-            autoplay: false,
-            autoplaySpeed: 6000,
-            prevArrow: '<i class="icon-glyph-204"></i>',
-            nextArrow: '<i class="icon-glyph-204"></i>',
-            responsive: [
-
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        centerPadding: '80px',
-                        centerMode: true,
-                        arrows: false,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        centerPadding: '0px',
-                        centerMode: true,
-                        arrows: false,
-                        dots: true
-                    }
-                }
-            ]
-        });
-
-        $('.btn-left').on('click', function() {
-            $(this).parents('.project_list_one').find('.project_slider_one').slick('slickPrev');
-        });
-
-        $('.btn-right').on('click', function() {
-            $(this).parents('.project_list_one').find('.project_slider_one').slick('slickNext');
-        });
-
-    });
-
-
+  
 
     /* =======================================
         For Menu
@@ -301,14 +251,7 @@
         format: "multitoggle"
     });
 
-    /* =======================================
-    		WOW ANIMATION
-    ======================================= */
-    var wow = new WOW({
-        mobile: false
-    });
-    wow.init();
-
+ 
 
     /*=======================================
         Scroll Top

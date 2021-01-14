@@ -9,12 +9,12 @@
 
 <head>
     <!-- TITLE OF SITE -->
-    <title>Kleanbera - Cleaning Service HTML Template</title>
+    <title> Tastery - Food  HTML Template</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Kleanbera -  Cleaning Service HTML Template" />
-    <meta name="keywords" content="cleaning, floor, wash, one page, multipage, responsive, landing, html template" />
+    <meta name="description" content="Tastery -  Food  HTML Template" />
+    <meta name="keywords" content="food, one page, multipage, responsive, landing, html template" />
     <meta name="author" content="Kleanbera">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -34,15 +34,8 @@
     <!--Owl Carousel -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.transitions.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/comparison-slider.css">
-
+ 
+    <link rel="stylesheet" href="css/fontawesome.min.css"> 
 
     <!--BootStrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -65,9 +58,19 @@
 
 <body>
 
-    <!-- ::::::::::::::::::::::::::: Start: Preloader section ::::::::::::::::::::::::::: -->
-    <div id="preloader"></div>
-    <!-- ::::::::::::::::::::::::::: End: Preloader section ::::::::::::::::::::::::::: -->
+    <!--::::::::::::::::::::::::::: Start: Preloader section :::::::::::::::::::::::::::-->
+
+    <div class="preloader">
+        <div class="loader loader1"></div>
+        <div class="loader loader2"></div>
+        <div class="loader loader3"></div>
+        <div class="loader loader4"></div>
+        <div class="loader loader5"></div>
+        <div class="loader loader6"></div>
+        <div class="loader loader7"></div>
+        <div class="loader loader8"></div>
+    </div>
+    <!-- ::::::::::::::::::::::::::: End: Preloader section :::::::::::::::::::::::::::-->
 
 
     <!-- Start: Header Section 
@@ -77,28 +80,9 @@
         <div class="container">
             <div class="row">
                 <div class="header_top_right list-unstyled">
-                    <!-- Header Social Icom -->
-                    <ul class="header_socil">
-                        <li>
-                            <a href="#" class="fab fa-facebook"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fab fa-twitter"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fab fa-youtube"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fab fa-instagram"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fa fa-map-marker-alt"></a>
-                        </li>
-                    </ul>
-                    <!-- End: Header Social Icom -->
-
                     <!-- Header Contact  -->
                     <ul class="header_contact">
+                        <li><i class="fas fa-envelope"></i>nfo@tastery.co.uk</li>
                         <li><i class="fas fa-phone"></i>+234 567 234 875</li>
                     </ul>
                     <!-- End: Header Contact -->
@@ -263,7 +247,7 @@
                                         <a href="contact.html" class="slider_btn_one more-link ">Order Now</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
@@ -291,6 +275,27 @@
             </div>
             <!-- End: Slider 2 -->
         </div>
+        <!--  Social Icom -->
+        <div class="header_socil"> 
+            <ul>
+                <li>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                </li>
+                <li>
+                    <a href="#" class="fab fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="fab fa-youtube"></a>
+                </li>
+                <li>
+                    <a href="#" class="fab fa-instagram"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-map-marker-alt"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- End: Social Icom -->
     </div>
 
     <!-- End:  Slider Section
@@ -313,7 +318,7 @@
                 <div class="col-md-5 col-sm-12">
                     <div class="abut_title">
                         <h3>A Focus on Good Taste </h3>
-                        <p> We invite you to celebrate our restaurant’s delicious recipes whether you are here for a business lunch or dinner. Discover new tastes and inspired recipes from all over the world. Lorem ipsum dolor sit amet consectetur adipisicing.
+                        <p> We invite you to celebrate our restaurant’s delicious recipes whether you are here for a business lunch or dinner. Discover new tastes and inspired recipes from all over the world. Lorem ipsum dolor sit amet consectetur adipisicing.recipes whether you are here for a business lunch or dinner
                         </p>
                         <p>We invite you to celebrate our restaurant’s delicious recipes whether you are here for a business lunch or dinner. Discover new tastes and inspired recipes from all over the world.
                         </p>
@@ -383,12 +388,8 @@
                             </div>
                         </div>
                         <!--End:  Team Member 2 -->
-
-
                     </div>
                 </div>
-
-
             </div>
             <!-- /. row -->
         </div>
@@ -401,7 +402,7 @@
 
     <!-- Start: Promotion of Product   
 ==================================================-->
-    <div class="promo-product-area">
+    <section class="promo-product-area">
         <div class="container">
             <!-- Start: Heading -->
             <div class="base-header">
@@ -410,13 +411,13 @@
             </div>
             <!-- End: Heading -->
             <div class="row">
-                <!-- Start: Product 1 -->
-                <div class="col-md-4 col-sm-12">
+                <div class="col-sm-12" id="product_pro">
+                    <!-- Start: Product 1 --> 
                     <div class="product-list">
                         <div class="product-img">
                             <img src="images/product_1.jpg" alt="">
                             <div class="pro_back">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequatur delectus, saepe eligendi, rerum molestiae consequuntur vel nisi cumque vitae quisquam cupiditate temporibus.</p>
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Veniam const equatur us saepe eligendi, rerum mole stiae conse quuntur vel nisi cumque vitae quisquam cup iditate temporibus veniam const us.</p>
                                 <a href="#" class="more-link ">Order Now</a>
                             </div>
                         </div>
@@ -433,16 +434,14 @@
                             <i class="far fa-star"></i> 
                         </span>
                         </div>
-                    </div>
-                </div>
-                <!-- End: Product 1 -->
-                <!-- Start: Product 2 -->
-                <div class="col-md-4 col-sm-12">
+                    </div> 
+                    <!-- End: Product 1 -->
+                    <!-- Start: Product 2 --> 
                     <div class="product-list">
                         <div class="product-img">
-                            <img src="images/product_1.jpg" alt="">
+                            <img src="images/product_2.jpg" alt="">
                             <div class="pro_back">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequatur delectus, saepe eligendi, rerum molestiae consequuntur vel nisi cumque vitae quisquam cupiditate temporibus.</p>
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Veniam const equatur us saepe eligendi, rerum mole stiae conse quuntur vel nisi cumque vitae quisquam cup iditate temporibus veniam const us.</p>
                                 <a href="#" class="more-link ">Order Now</a>
                             </div>
                         </div>
@@ -459,16 +458,14 @@
                             <i class="far fa-star"></i> 
                         </span>
                         </div>
-                    </div>
-                </div>
-                <!--  ENd: Product 2 -->
-                <!-- Start: Product 3 -->
-                <div class="col-md-4 col-sm-12">
+                    </div> 
+                    <!--  ENd: Product 2 -->
+                    <!-- Start: Product 3 --> 
                     <div class="product-list">
                         <div class="product-img">
-                            <img src="images/product_1.jpg" alt="">
+                            <img src="images/product_3.jpg" alt="">
                             <div class="pro_back">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequatur delectus, saepe eligendi, rerum molestiae consequuntur vel nisi cumque vitae quisquam cupiditate temporibus.</p>
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Veniam const equatur us saepe eligendi, rerum mole stiae conse quuntur vel nisi cumque vitae quisquam cup iditate temporibus veniam const us.</p>
                                 <a href="#" class="more-link ">Order Now</a>
                             </div>
                         </div>
@@ -485,12 +482,12 @@
                             <i class="far fa-star"></i> 
                         </span>
                         </div>
-                    </div>
+                    </div> 
+                   <!--  ENd: Product 3 -->
                 </div>
-                <!--  ENd: Product 3 -->
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- End:Promo Section 
 ==================================================-->
@@ -550,73 +547,68 @@
             <!-- End: Heading -->
             <div class="row">
                 <div class="col-sm-12" id="event_carousel">
+                    <!--Start: event 1-->
                     <div class="event_item">
-                        <!-- event 1-->
-                        <div class="team_wrp">
-                            <div class="enent_img">
-                                <img alt="team" class="img-responsive" src="images/team1.jpg">
-                            </div>
-                            <div class="event_info">
-                                <h4>Happy New Year</h4>
-                                <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
-                            </div>
+                        <div class="enent_img">
+                            <img alt="team" class="img-responsive" src="images/event_2.jpg">
                         </div>
+                        <div class="event_info">
+                            <a href=""> <a href=""> <h4>Happy New Year</h4> </a> </a>
+                            <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
+                        </div> 
                     </div>
                     <!--End: event 1-->
+
+                    <!--Start: event 1-->
                     <div class="event_item">
-                        <!-- event 1-->
-                        <div class="team_wrp">
-                            <div class="enent_img">
-                                <img alt="team" class="img-responsive" src="images/team1.jpg">
-                            </div>
-                            <div class="event_info">
-                                <h4>Happy New Year</h4>
-                                <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
-                            </div>
+                        <div class="enent_img">
+                            <img alt="team" class="img-responsive" src="images/event_1.jpg">
                         </div>
+                        <div class="event_info">
+                            <a href=""> <h4>Happy New Year</h4> </a>
+                            <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
+                        </div> 
                     </div>
                     <!--End: event 1-->
+
+                    <!--Start: event 1-->
                     <div class="event_item">
-                        <!-- event 1-->
-                        <div class="team_wrp">
-                            <div class="enent_img">
-                                <img alt="team" class="img-responsive" src="images/team1.jpg">
-                            </div>
-                            <div class="event_info">
-                                <h4>Happy New Year</h4>
-                                <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
-                            </div>
+                        <div class="enent_img">
+                            <img alt="team" class="img-responsive" src="images/event_3.jpg">
                         </div>
+                        <div class="event_info">
+                            <a href=""> <h4>Happy New Year</h4> </a>
+                            <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
+                        </div> 
                     </div>
                     <!--End: event 1-->
+
+                    <!--Start: event 1-->
                     <div class="event_item">
-                        <!-- event 1-->
-                        <div class="team_wrp">
-                            <div class="enent_img">
-                                <img alt="team" class="img-responsive" src="images/team1.jpg">
-                            </div>
-                            <div class="event_info">
-                                <h4>Happy New Year</h4>
-                                <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
-                            </div>
+                        <div class="enent_img">
+                            <img alt="team" class="img-responsive" src="images/event_1.jpg">
                         </div>
+                        <div class="event_info">
+                            <a href=""> <h4>Happy New Year</h4> </a>
+                            <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
+                        </div> 
                     </div>
                     <!--End: event 1-->
+
+                    <!--Start: event 1-->
                     <div class="event_item">
-                        <!-- event 1-->
-                        <div class="team_wrp">
-                            <div class="enent_img">
-                                <img alt="team" class="img-responsive" src="images/team1.jpg">
-                            </div>
-                            <div class="event_info">
-                                <h4>Happy New Year</h4>
-                                <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
-                            </div>
+                        <div class="enent_img">
+                            <img alt="team" class="img-responsive" src="images/event_3.jpg">
                         </div>
+                        <div class="event_info">
+                            <a href=""> <h4>Happy New Year</h4> </a>
+                            <span class="event_date"> <i class="far fa-calendar"></i> 1st Jannuary 2021</span>
+                        </div> 
                     </div>
                     <!--End: event 1-->
 
                 </div>
+                <!--/.col-sm-12 -->
             </div>
             <!--/.row -->
         </div>
@@ -641,7 +633,7 @@
                     <div class="gallery-item">
                         <img src="images/pro1.jpg" alt="">
                         <div class="gallery-hover">
-                            <a class="project-link" href="images/pro1.jpg"><i class="fas fa-search-plus"></i></a>
+                            <a class="project-link" href="images/pro1.jpg"><img src="images/search-icon.svg" alt="icon"></a>
                         </div>
                     </div>
                 </div>
@@ -650,7 +642,7 @@
                     <div class="gallery-item">
                         <img src="images/pro2.jpg" alt="">
                         <div class="gallery-hover">
-                            <a class="project-link" href="images/pro2.jpg"><i class="fas fa-search-plus"></i></a>
+                            <a class="project-link" href="images/pro2.jpg"><img src="images/search-icon.svg" alt="icon"></a>
                         </div>
                     </div>
                 </div>
@@ -659,7 +651,7 @@
                     <div class="gallery-item">
                         <img src="images/pro3.jpg" alt="">
                         <div class="gallery-hover">
-                            <a class="project-link" href="images/pro3.jpg"><i class="fas fa-search-plus"></i></a>
+                            <a class="project-link" href="images/pro3.jpg"><img src="images/search-icon.svg" alt="icon"></a>
                         </div>
                     </div>
                 </div>
@@ -669,7 +661,7 @@
                     <div class="gallery-item">
                         <img src="images/pro4.jpg" alt="">
                         <div class="gallery-hover">
-                            <a class="project-link" href="images/pro4.jpg"><i class="fas fa-search-plus"></i></a>
+                            <a class="project-link" href="images/pro4.jpg"><img src="images/search-icon.svg" alt="icon"></a>
                         </div>
                     </div>
                 </div>
@@ -678,7 +670,7 @@
                     <div class="gallery-item">
                         <img src="images/pro5.jpg" alt="">
                         <div class="gallery-hover">
-                            <a class="project-link" href="images/pro5.jpg"><i class="fas fa-search-plus"></i></a>
+                            <a class="project-link" href="images/pro5.jpg"><img src="images/search-icon.svg" alt="icon"></a>
                         </div>
                     </div>
                 </div>
@@ -687,7 +679,7 @@
                     <div class="gallery-item">
                         <img src="images/pro6.jpg" alt="">
                         <div class="gallery-hover">
-                            <a class="project-link" href="images/pro6.jpg"><i class="fas fa-search-plus"></i></a>
+                            <a class="project-link" href="images/pro6.jpg"><img src="images/search-icon.svg" alt="icon"></a>
                         </div>
                     </div>
                 </div>
@@ -696,7 +688,7 @@
                     <div class="gallery-item">
                         <img src="images/pro7.jpg" alt="">
                         <div class="gallery-hover">
-                            <a class="project-link" href="images/pro7.jpg"><i class="fas fa-search-plus"></i></a>
+                            <a class="project-link" href="images/pro7.jpg"><img src="images/search-icon.svg" alt="icon"></a>
                         </div>
                     </div>
                 </div>
@@ -705,7 +697,7 @@
                     <div class="gallery-item">
                         <img src="images/pro8.jpg" alt="">
                         <div class="gallery-hover">
-                            <a class="project-link" href="images/pro8.jpg"><i class="fas fa-search-plus"></i></a>
+                            <a class="project-link" href="images/pro8.jpg"> <img src="images/search-icon.svg" alt="icon"></a>
                         </div>
                     </div>
                 </div>
@@ -723,7 +715,7 @@
 
     <!-- Start: Testimonial Section
 ==================================================-->
-    <div class="testimonials-section">
+    <section class="testimonials-section">
         <div class="container">
             <!-- Start: Heading -->
             <div class="base-header">
@@ -835,8 +827,76 @@
             <!--/.row-->
         </div>
         <!--/.container-->
-    </div>
+    </section>
     <!-- End: Testimonial Section 
+==================================================-->
+
+
+<!-- Start: Client Section
+==================================================-->
+<section class="client-section">
+    <!-- Container -->
+    <div class="container">
+        <div class="row">
+            <!-- client list  -->
+            <div class="client_carousel" id="client_carousel">
+                <!-- client 1 -->
+                <div class="item">
+                    <a href="" class="client-box">
+                        <img alt="client" src="images/client-1.png">
+                        <h5>Cinnamon Stick</h5>
+                    </a>
+                </div>
+                <!-- client 2 -->
+                <div class="item">
+                    <a href="" class="client-box">
+                        <img alt="client" src="images/client-2.png">
+                        <h5>Black Seeds </h5>
+                    </a>
+                </div>
+                <!-- client 3 -->
+                <div class="item">
+                    <a href="" class="client-box">
+                        <img alt="client" src="images/client-3.png">
+                        <h5>Black Seeds </h5>
+                    </a>
+                </div>
+                <!-- client 4 -->
+                <div class="item">
+                    <a href="" class="client-box">
+                        <img alt="client" src="images/client-4.png">
+                        <h5>Cinnamon Stick</h5>
+                    </a>
+                </div>
+                <!-- client 5 -->
+                <div class="item">
+                    <a href="" class="client-box">
+                        <img alt="client" src="images/client-1.png">
+                        <h5>Cinnamon Stick</h5>
+                    </a>
+                </div>
+                <!-- client 6 -->
+                <div class="item">
+                    <a href="" class="client-box">
+                        <img alt="client" src="images/client-2.png">
+                        <h5>Cinnamon Stick</h5>
+                    </a>
+                </div>
+                <!-- client 7 -->
+                <div class="item">
+                    <a href=""  class="client-box">
+                        <img alt="client" src="images/client-3.png">
+                        <h5>Cinnamon Stick</h5>
+                    </a>
+                </div>
+            </div>
+            <!--/ client list  -->
+        </div>
+        <!--/ row - -->
+    </div>
+    <!--/ Container - -->
+</section>
+<!--   End:Client Section
 ==================================================-->
 
 
@@ -853,7 +913,7 @@
                             <img class="img-responsive" src="images/logo.png" alt="">
                         </div>
                         <div class="footer_p">
-                            <p class="footer_para">Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of tempor inci didunt know youlab</p>
+                            <p class="footer_para">Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of tempor inci didunt know youlab </p>
                         </div>
                         <div class="footer_socil">
                             <ul class="list-icons link-list footer_soc">
@@ -895,9 +955,6 @@
                             <li>
                                 <i class="icofont-ui-call"></i> <a href="services.html">  +88 01268 785 818 </a>
                             </li>
-                            <li>
-                                <i class="icofont-ui-call"></i> <a href="services.html">  +88 01268 785 818 </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -920,9 +977,6 @@
                             <li>
                                 <a href="services.html">Delevery Schedule</a>
                             </li>
-                            <li>
-                                <a href="services.html">Online Organic Service</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -938,7 +992,7 @@
                             <form class="mailchimp">
                                 <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
                                 <input class="email_field" type="text" name="email" id="subscriber-email" placeholder="Email Address">
-                                <button class="submit-contact" type="submit" id="subscribe-button">Subscribe</button>
+                                <button class="submit-contact" type="submit" id="subscribe-button"><i class="icofont-paper-plane"></i></button>
                                 <span class="subscription-success"> </span>
                                 <span class="subscription-error"> </span>
                                 <label class="subscription-label" for="subscriber-email"></label>
