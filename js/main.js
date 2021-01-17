@@ -5,13 +5,13 @@
         Sticky Menu Activation
     ------------------------------------------*/
 
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 85) {
-            $('.navigation').addClass('header-sticky');
-        } else {
-            $('.navigation').removeClass('header-sticky');
-        }
-    });
+    // $(window).on('scroll', function () {
+    //     if ($(this).scrollTop() > 85) {
+    //         $('.navigation').addClass('header-sticky');
+    //     } else {
+    //         $('.navigation').removeClass('header-sticky');
+    //     }
+    // });
 
 
     /* =======================================

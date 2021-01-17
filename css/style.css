@@ -780,11 +780,10 @@ section {
     z-index: 999;
     position: relative;
     border-top: 1px solid #2a2a2d; 
+    position: sticky;
+    top: 0px;
 }
 
-.navigation{
-
-}
 .navigation.header-sticky{
     animation: stickyMenu 0.4s linear;
     position: fixed;
@@ -2849,3 +2848,154 @@ footer .contact_info li a:hover {
     margin-left: -22px;
 }
 
+
+
+/*=================================
+    Offer  page 
+================================= */
+
+/*   Loyalty Card Signup   */
+
+.loyalty-signup .base-header { 
+    padding-bottom: 17px;
+}
+
+.loyalty-signup .base-header h2::after { 
+    display: none;
+}
+.loyalty-signup .base-header h2 { 
+     margin-bottom: 10px;
+}
+.loyalty-signup .contact-form {
+    margin-top: 0px;
+    padding-right: 30px;
+}
+
+.loyalty-card {
+    position: relative;
+  }
+  .loyalty-card img {
+    transform: rotateY(184deg);
+  }
+  .loyalty-card h4 {
+    position: absolute;
+    top: 50%;
+    background: #19C133;
+    padding: 40px;
+    margin: 0px;
+    width: 56%;
+    right: 0px;
+    margin-top: 0px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.3;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+  }
+
+
+/*   Subscribe  Section */
+.subscribe-section {
+    background: transparent url("../images/subscribe-bg.jpg");
+    position: relative;
+    background-attachment: fixed;
+}
+.subscribe-section::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #1b1b1c;
+    top: 0px;
+    opacity: 0.8;
+    z-index: 1;
+}
+.subscribe-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+  }
+ 
+  .subscribe-text h2 {
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  .subscribe-text p {
+    color: #ddd;
+    font-size: 16px;
+  }
+
+  .subscribe-form {
+    position: relative;
+    flex: 1;
+    padding-left: 140px;
+  }
+  .subscribe-form #email {
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 4px;
+    border: none;
+  }
+  .subscribe-form .submit {
+    position: absolute;
+    right: 3px;
+    background: #19C133;
+    border: none;
+    color: #fff;
+    padding: 13px 35px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    border-radius: 4px;
+  }
+  .subscribe-text {
+    flex: 1;
+  }
+
+  /*  Gift Card Section */
+  .git-card-wrap {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    background: #F6F8FA;
+  } 
+ 
+  .git-card-info {
+    background: #F6F8FA;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    padding-top: 23px; 
+    position: relative;
+  }
+  .git-card-info p {
+    color: #19C133;
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+  .git-card-info a {
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 99;
+  }
+  .git-card-info h4 {
+    margin-bottom: 6px;
+    font-size: 22px;
+  }
+ 
+  .git-card-img img {
+    border-radius: 15px;
+  }
+  /* .git-card-info::after {
+    position: absolute;
+    content: "";
+    background: #F6F8FA;
+    width: 175px;
+    height: 68px;
+    border-radius: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    box-shadow: 0px 7px 7px -5px rgba(0, 0, 0, 0.11);
+} */
