@@ -282,22 +282,22 @@ section {
     letter-spacing: .5px;
 }
 
-.base-header.base_header_left {
+.base-header.base-header-left {
     width: 100%;
     text-align: left;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 
-.base-header.base_header_left small {
+.base-header.base-header-left small {
     padding-left: 35px;
 }
 
-.base-header.base_header_left h2 {
+.base-header.base-header-left h2 {
     padding-bottom: 16px;
 }
 
 .base-header h2::after,
-.base-header.base_header_left small::after {
+.base-header.base-header-left small::after {
     position: absolute;
     content: "";
     background-color: #19C133;
@@ -309,7 +309,7 @@ section {
     margin-bottom: -11px;
 }
 
-.base-header.base_header_left small::after {
+.base-header.base-header-left small::after {
     left: 0%;
     margin-left: 0px;
     bottom: 50%;
@@ -317,7 +317,7 @@ section {
     margin-bottom: -1px;
 }
 
-.base-header.base_header_left h2::after {
+.base-header.base-header-left h2::after {
     display: none;
 }
 /* 
@@ -2118,7 +2118,7 @@ input.header-search-input:-ms-input-placeholder {
     padding-bottom: 95px;
     /*! background-size: cover; */
     /*! padding-top: 95px; */
-    background: #F6F8FA;
+    background: #FFF;
 }
 
 .testimonials-section .item .col-lg-6 {
@@ -2159,7 +2159,7 @@ input.header-search-input:-ms-input-placeholder {
 }
 
 .testimonials-section .testimonial_content {
-    background: #ebf0f6;
+    background: #F6F8FA;
     padding: 20px 30px 25px 30px;
     margin-bottom: 25px;
     position: relative;
@@ -2173,7 +2173,7 @@ input.header-search-input:-ms-input-placeholder {
     color: #333;
     width: 30px;
     height: 45px;
-    background: #ebf0f6;
+    background: #F6F8FA;
     left: 16px;
     bottom: -14px;
     transform: rotate(-45deg);
@@ -2286,6 +2286,7 @@ input.header-search-input:-ms-input-placeholder {
 ------------------------------------------------------*/
 .client-section {
     padding: 60px;
+    background: #F6F8FA;
 }
 .client-section .client-box img {
     width: 160px ;
@@ -2595,7 +2596,7 @@ footer .contact_info li a:hover {
     position: absolute;
     bottom: 0px;
     left: 15px;
-    background: #effcfa;
+    background: #F6F8FA;
     padding: 13px 20px 11px;
     margin-bottom: 0px;
     border-top-left-radius: 5px;
@@ -2627,13 +2628,14 @@ footer .contact_info li a:hover {
 /*  Contact Info */
 
 .single_address {
-    background: #f4f4f4;
+    background: #F2F4F7;
     padding: 50px 15px;
     box-shadow: 1px 1px 20px hsla(0, 0%, 0%, 0.02);
     margin-bottom: 30px;
+    border-radius: 5px;
   }
   .single_address i {
-    font-size: 45px;
+    font-size: 50px;
     color: #19C133;
   }
   .single_address p {
@@ -2696,18 +2698,28 @@ footer .contact_info li a:hover {
     height: 45px; 
     padding-top: 0px;
   }
-  .contact-form textarea::-webkit-input-placeholder,
+  
+ .contact-form textarea::-webkit-input-placeholder,
   .contact-form input::-webkit-input-placeholder { 
-    color: #575757
+    color: #4b4b4b;
+     opacity: 1;
   }
   .contact-form textarea::-ms-input-placeholder,
   .contact-form input::-ms-input-placeholder { 
-    color: #575757
+    color: #4b4b4b;
+     opacity: 1;
+  }  
+  .contact-form textarea::-moz-input-placeholder,
+  .contact-form input::-moz-input-placeholder { 
+    color: #4b4b4b;
+     opacity: 1;
+
   }
   .contact-form textarea::placeholder,
   .contact-form input::placeholder {
-    color:#575757 
-  }
+    color:#4b4b4b;
+     opacity: 1;
+  } 
  
   .contact-form  .submit-contact {
     background: #19C133;
@@ -2728,10 +2740,20 @@ footer .contact_info li a:hover {
 /*=================================
     Review page 
 ================================= */
+.testimonials-section.review-section {
+    background: #F6F8FA;
+}
+.testimonials-section.review-section .testimonial_content {
+    background: #fff; 
+}
+.testimonials-section.review-section .testimonial_content::after { 
+    background: #fff; 
+}
 .review-form-section .contact-form {
     background: #F6F8FA;
     padding: 56px 60px 60px;
     margin-top: 0px;
+    border-radius: 8px;
 }
 
 .review-form-section select {
@@ -2744,7 +2766,8 @@ footer .contact_info li a:hover {
     appearance: none;
     position: relative;
     z-index: 99;
-    color: #575757;
+    color: #4b4b4b;
+    cursor: pointer;
 }
 .review-form-section #image {
     display: flex;
@@ -2758,7 +2781,7 @@ footer .contact_info li a:hover {
 .select-group::before {
     position: absolute;
     content: "\eac8";
-    right: 40px;
+    right: 35px;
     font-family: IcoFont;
     top: 23px;
     font-size: 20px;
@@ -2768,3 +2791,61 @@ footer .contact_info li a:hover {
     height: 0px;
     line-height: 0px;
 }
+
+ 
+/*=================================
+    Team page 
+================================= */
+.team-section {
+    background: #F6F8FA;
+}
+.team-section .team_wrap {
+    background: #19C133 url("../images/chef-bg.png");
+    background-size: cover;
+    position: relative; 
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,.3);
+}
+ 
+.team-section .team_item { 
+    grid-template-columns: 1fr 2fr;
+    gap: 00px;
+    padding: 80px;
+    align-items:center
+}
+.team-section .team_img img {
+    border-radius: 10px;
+    height: 400px;
+    width: auto !important;
+}
+.team-section .team_info {
+    padding-left: 40px;
+}
+.team-section .team_info h4 { 
+    color: #fff;
+}
+.team-section .team_wrap p {
+    color: #eeebeb;
+}
+ 
+.team-section .team-social-icon ul li a {
+    font-size: 18px;
+    color: #fff;
+}
+/*  owl-controls  */
+.team-section .team_wrap .owl-controls .owl-nav div {
+    background: #fff;
+}
+.team-section .team_wrap .owl-nav div:hover {
+    color: #fff;
+    background-color: #19C133;
+}
+.team-section .team_wrap .owl-controls .owl-nav .owl-next {
+    left: 100%;
+    margin-left: -19px;
+}
+.team-section .team_wrap .owl-controls .owl-nav .owl-prev {
+    left: 0px;
+    margin-left: -22px;
+}
+
