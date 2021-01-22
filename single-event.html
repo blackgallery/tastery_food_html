@@ -234,7 +234,7 @@
     <div class="container">
         <div class="row">
             <!-- Blog Area -->
-            <div class="col-lg-9 col-sm-12 blog-area">
+            <div class="col-lg-9 col-sm-12">
                 <div class="blog-post-list">
 
                     <div class="blog_wrp">
@@ -243,7 +243,7 @@
                         </a>
                         <div class="blog_info">
                             <div class="blog_date"> 
-                                <span><i class="fa fa-comment-o"></i> 0 comments</span>
+                                <span><i class="fas fa-comment"></i> 0 comments</span>
                                 <span> <i class="fa fa-calendar"></i>6 Nov 2019</span>
                             </div>
                             <a href="blog.html">
@@ -260,31 +260,33 @@
                                 </h6>
                                 <p>Lorem ipsum dolor sit amet, in urna molestie tristique. Cong erment sed at facilisis lacinia aliqu after fusce wisi porta ligula nibh vel congue diam. Sed ligula erat molestie cras morbi in facilisis euelito an rem ipsum psum dolor sit amet molestie cras morbi in facilisis eu elit Lorem ipsum psum dolor sit amet, in urna molestie tristique</p> <p>in urna molestie tristique. Cong erment sed at facilisi lacinia aliqua  fusce wisi porta ligula nibh vel congue diam. Sed ligula erat molestie cras morbi in facilisis eu elit Lorem ipsum si porta ligula nibh vel congue  cras morbi in facilisis eu</p>
                             </div>
-                            <div class="post_tags">
-                                <h5> Tags</h5>
-                                <a href="#">Food</a> 
-                                <a href="#">Red</a> 
-                                <a href="#">Grapes</a> 
-                                <a href="#">Fresh</a>  
-                            </div>
-                            <div class="post_share footer_socil"> 
-                                <ul class="list-icons link-list footer_soc">
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-behance"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                                    </li>
-                                </ul>
+                            <div class="post_tag_grid">
+                                <div class="post_tags">
+                                    <h5> Tags:</h5>
+                                    <a href="#">Food</a>
+                                    <a href="#">Red</a>  
+                                    <a href="#">Fresh</a>  
+                                </div>
+                                <div class="post_share footer_socil"> 
+                                    <h5>Share On:</h5>
+                                    <ul class="list-icons link-list footer_soc">
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-behance"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        </li>
+                                    </ul>
+                                </div> 
                             </div> 
                         </div>
                     </div>
@@ -349,42 +351,37 @@
                 </div>
                 <!--/comments list -->
 
-                <!-- comment box   -->
-                <div class="contact">
-                    <div class="contact-form-warper blog-contact">
-                        <div class="contact-warper">
-                            <div class="comments-section-title">
-                                <h4>Leave a Comment</h4>
-                            </div>
-                            <!-- .section-title -->
-                            <!--  Contact Form  -->
-                            <div class="contact-form">
-                                <form method="post" action="mailer.php" id="contact-form">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-xs-12">
-                                            <textarea class="con-field" name="message" id="message" rows="6" placeholder="Your Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-xs-12">
-                                            <input class="con-field" name="name" id="name" type="text" placeholder="Name">
-                                        </div>
-                                        <div class="col-lg-6 col-xs-12">
-                                            <input class="con-field" name="email" id="email" type="text" placeholder="Email">
-                                        </div>                                
-                                        <div class="col-lg-12 col-xs-12 submit-area">
-                                            <input type="submit" id="submit-contact" class="submit-contact" value="Post Comment">
-                                            <div id="msg" class="message"></div>
-                                        </div>
-                                    </div>
-
-                                </form>
-                            </div>
-                            <!-- End:Contact Form  -->
-                        </div>
+                <!-- comment-form-warper   --> 
+                <div class="comment-form-warper">
+                    <div class="comments-title">
+                        <h4>Leave a Comment</h4>
                     </div>
-                </div>
-                <!--/.comment box-->
+                    <!-- .section-title -->
+                    <!--  Contact Form  -->
+                    <div class="comment-form">
+                        <form method="post" action="">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <input class="con-field" name="name" id="name" type="text" placeholder="Name">
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <input class="con-field" name="email" id="email" type="text" placeholder="Email">
+                                </div>                                
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <textarea class="con-field" name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-sm-12 submit-area">
+                                    <input type="submit" id="submit" class="submit" value="Post Comment">
+                                    <div id="msg" class="message"></div>
+                                </div>
+                            </div>  
+                        </form>
+                    </div>
+                    <!-- End:comment Form  -->
+                </div> 
+                <!--/.comment-form-warper-->
 
             </div>
             <!--/ Blog Area -->
@@ -408,7 +405,7 @@
                     <h3 class="widget-title">Recent Post</h3>
                     <div class="recent-post-box">
                         <div class="recnt_pst_imge">
-                            <img src="images/blog1.jpg" alt="">
+                            <img src="images/event_1.jpg" alt="">
                         </div>                            
                         <div class="recent-title">
                              <span><i class="fa fa-calendar"></i> 1st Dec 2019</span>
@@ -417,7 +414,7 @@
                     </div>
                     <div class="recent-post-box">
                         <div class="recnt_pst_imge">
-                            <img src="images/blog2.jpg" alt="">
+                            <img src="images/event_2.jpg" alt="">
                         </div> 
                         <div class="recent-title">
                              <span><i class="fa fa-calendar"></i> 1st Dec 2018</span>
@@ -426,7 +423,7 @@
                     </div>
                     <div class="recent-post-box">
                         <div class="recnt_pst_imge">
-                            <img src="images/blog3.jpg" alt="">
+                            <img src="images/event_3.jpg" alt="">
                         </div> 
                         <div class="recent-title">
                              <span><i class="fa fa-calendar"></i> 1st Dec 2015</span>
