@@ -2756,7 +2756,7 @@ footer .contact_info li a:hover {
     border-radius: 8px;
 }
 
-.review-form-section select {
+.select-group select {
     width: 100%;
     height: 45px;
     border: 1px solid #d2cdcd;
@@ -3812,3 +3812,119 @@ footer .contact_info li a:hover {
     background: #19C133;
   }
   
+
+
+
+
+
+
+
+
+
+
+  /*  ===========================================
+            Catering Page
+  =============================================== */
+
+/*  Cart Items Section */
+
+  .catering-section{
+      background-color: #F6F8FA;
+  }
+.catering-img {
+    position: relative;
+    height: 250px;
+  }
+  .catering-wrap {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 20px hsla(0, 0%, 0%, 0.02);
+    border: 1px solid #f7eeee;
+  }
+  .catering-img::after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    background:  url(../images/border-zigzag.png) bottom center repeat-x;
+    width: 100%;
+    height: 8px;
+    background-position: bottom center;
+    background-size: contain;
+    z-index: 1;
+}
+  .catering-img span {
+    position: absolute;
+    background: #1b1b1c;
+    bottom: -30px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    z-index: 9;
+  }
+  .catering-img img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .catering-text {
+    padding: 42px 20px 26px;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .catering-text h4 {
+    font-size: 22px;
+  }
+  .catering-text ul li {
+    position: relative;
+    list-style: circle;
+    color: #333;
+    display: inline-block;
+    padding-left: 23px;
+  }
+  .catering-text ul li:after {
+    position: absolute;
+    content: "\f021";
+    left: 0px;
+    font-family: IcoFont;
+    color: #19C133;
+    font-size: 14px;
+    top: 3px;
+  }
+
+ 
+ /*   Catering Form   */
+
+.catering-form {
+    background-color: #fff;
+}
+.catering-form {
+    margin-top: 0px;
+}
+.catering-form input,
+.catering-form textarea,
+.catering-form .select-group select
+ {
+    border-radius: 50px;
+    height: 60px;
+    padding-left: 24px;
+    border: 1px dashed #c6bbbb;
+}
+
+.catering-form textarea {
+    height: 80px;
+    padding-top: 20px;
+}
+.catering-form  .select-group::before { 
+    right: 43px; 
+    top: 30px; 
+}
