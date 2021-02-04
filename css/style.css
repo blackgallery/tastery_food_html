@@ -213,7 +213,9 @@ ul {
     margin: 0;
     list-style-type: none;
 }
-
+input{
+    outline: none;
+}
 
 /* === Hyperlink === */
 
@@ -320,18 +322,7 @@ section {
 .base-header.base-header-left h2::after {
     display: none;
 }
-/* 
-#preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9999999;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    background: #fff url("../images/pre_loader.gif") no-repeat center center;
-    color: #000;
-} */
+ 
 
 .preloader {
     position: absolute;
@@ -404,9 +395,6 @@ section {
         visibility: hidden;
     }
 }
-
-
-
 
 /*  Preloder end */
 
@@ -3814,14 +3802,6 @@ footer .contact_info li a:hover {
   
 
 
-
-
-
-
-
-
-
-
   /*  ===========================================
             Catering Page
   =============================================== */
@@ -3927,4 +3907,325 @@ footer .contact_info li a:hover {
 .catering-form  .select-group::before { 
     right: 43px; 
     top: 30px; 
+}
+
+
+
+  /*  ===========================================
+       Checkout  Page
+  =============================================== */
+  /*  Card Header */
+    .checkout-section .card-header a {
+        color: #fff;
+        font-size: 18px;
+        display: block;
+    }
+    .checkout-section .card-header {
+        background: #19C133;
+        border-radius: 10px 10px 0px 0px !important;
+    }
+    .checkout-section .card-header a i {
+        float: right;
+        margin-top: 5px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    /*  Form  */
+    .checkout-section form {
+        background: #F6F8FA;
+        padding: 20px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .checkout-section form h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 10px;
+    }
+  .checkout-section form input, 
+  .checkout-section form textarea,
+  .checkout-section form .select-group select {
+    border: 2px dotted #d0cbcb;
+    border-radius: 40px;
+    padding: 0px 20px;
+    width: 100%;
+    margin: 7px 0px;
+    height: 50px;
+    background: transparent;
+  }
+
+  .checkout-section form textarea {
+    height: 80px;
+  }
+
+  .checkout-section form input{ 
+    padding: 0px 20px;
+  }
+
+  .checkout-section form textarea {
+    height: 65px;
+    border-radius: 20px;
+  }
+
+  .checkout-section .select-group::before { 
+        top: 33px; 
+    }
+    .checkout-section .submit {
+        width: auto;
+        background: #19C133;
+        color: #fff;
+        padding: 12px 25px;
+        height: auto;
+        text-transform: uppercase;
+        font-size: 13px;
+        border: none;
+    }
+
+    /*  Term  and Condition */
+    .term-and-condition label {
+        font-size: 13px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+    .signup_checkout {
+        margin-top: 45px;
+    }
+
+
+  /*  User Details */
+    .user_deatils {
+        /*! border: 1px solid #ddd; */
+        margin: 15px;
+        width: 100%;
+        background: #ECEFF2;
+        border-radius: 8px;
+        padding: 10px 0px;
+    }
+    .user_deatils p {
+        color: #262c33;
+        margin-bottom: 5px;
+        /*! text-align: center; */
+        font-size: 15px;
+        font-weight: 600;
+    }
+/*  End: User Details */
+
+/*  Coupon */
+.order_coupon {
+    background: #ECEFF2;
+    border-radius: 8px;
+    padding: 10px 0px;
+    margin: 0px 15px;
+    width: 100%;
+}
+.coupon_field {
+    position: relative;
+}
+.coupon_field .submit {
+    position: absolute;
+    right: 20px;
+    top: 5px; 
+}
+/*  End::Coupon */
+
+/*  Gift card / Tips/ Donation */
+ 
+.order_giftcard .submit,
+.order_tips .submit,
+.order_donation .submit {
+    position: absolute;
+    right: 21px;
+    margin-top: 12px;
+}
+/*  end:: Gift card / Tips/ Donation */
+
+/*  Order Total  */
+.order_total .price {
+    display: flex;
+    justify-content: space-between;
+}
+.order_total .price h3,
+.order_total .price span {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #262c33;
+}
+
+/* End::  Column 2  */
+
+
+/*  =====  Column 3 ===== */
+/*  Customer Info */
+.customer_info .payment_info input {
+    width: auto;
+    height: auto;
+  }
+  .payment_card {
+    display: flex;
+    justify-content: space-between;
+    background: #F6F8FA;
+    padding: 20px 20px 0px;
+}
+.expires_end {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4,auto);
+    grid-column-gap: 5px;
+}
+.expires_end h4 {
+    grid-column: 1/-1;
+}
+.expires_end p {
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+
+
+
+/* ===========================================
+    Faq Page
+=============================================== */
+.faq-section {
+    padding-top: 85px;
+}
+/*  Faq Search */
+
+.faq-search-wrap {
+    text-align: center;
+  }
+  .faq-search {
+    position: relative;
+  }
+  .faq-search input {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    padding: 0px 25px;
+  }
+  .faq-search button {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: none;
+    top: 50%;
+    margin-top: -10px;
+    margin-right: 20px;
+  }
+  .faq-search-wrap p {
+    padding: 0px 20px;
+    margin-bottom: 30px;
+  } 
+  .faq-qes a {
+    color: #19C133; 
+  }  
+  .faq-qes  {
+    margin-top: 15px;
+  }
+
+  /*  Faq accordion */
+  .faq-accordion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin-top: 50px;
+  }
+  .faq-accro-header {
+    border: 1px solid #ddd;
+    padding: 15px 17px 18px;
+    border-radius: 5px;
+}
+  .faq-accro-body {
+    /*! border-top: 1px solid #ddd; */
+    /*! padding-top: 15px; */
+    margin-top: 15px;
+  }
+  .faq-accordion .faq-accro-card h5 button {
+    color: #222;
+    padding: 0px 0px 0px 42px;
+    outline: none;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    font-size: 18px;
+}
+.btn.faq-link[aria-expanded="true"]::after {
+    content: "-";
+    line-height: 24px;
+}
+.faq-accordion .faq-accro-card h5 button:hover,
+.faq-accordion .faq-accro-card h5 button:active,
+.faq-accordion .faq-accro-card h5 button:focus{
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.faq-link {
+    background: transparent;
+    position: relative;
+  }
+  .btn.faq-link:after {
+    position: absolute;
+    content: "+";
+    left: 0px;
+    border: 1px solid #19C133;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    line-height: 28px;
+    top: -1px;
+    font-size: 18px;
+    color: #19C133;
+  }
+
+
+
+  /* ============================================
+        Menu Page
+  ================================================ */
+  /*  Menu Select */
+  .menu-select-wrap .select-group select {
+    border: 1px dashed #cac2c2;
+    height: 60px;
+    border-radius: 50px;
+  }
+  .menu-select-wrap .select-group:before {
+    top: 30px;
+  }
+
+  /*  Menu Category */
+  
+.menu-category {
+    background: #F6F8FA;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  .menu-category .menu-filter img {
+    width: 40px;
+    height: 40px;
+  }
+  .menu-category .menu-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    align-items: center;
+  }
+  .menu-category .menu-filter p {
+    color: #2b343b;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+  .menu-category .menu-filter p i {
+    margin-left: 5px;
+    color: #19C133;
 }
