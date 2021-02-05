@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     'use strict';
 
     /*----------------------------------------
@@ -17,15 +17,15 @@
     /* =======================================
         For Sidebar
     =======================================*/
-    $(".siderbar_btn").on("click", function() {
+    $(".siderbar_btn").on("click", function () {
         $(".menu_sidebar_info").addClass("info-opened");
         $(".body-overlay").addClass("opened");
     });
-    $(".menu_info_close-btn").on("click", function() {
+    $(".menu_info_close-btn").on("click", function () {
         $(".menu_sidebar_info").removeClass("info-opened");
         $(".body-overlay").removeClass("opened");
     });
-    $(".body-overlay").on("click", function() {
+    $(".body-overlay").on("click", function () {
         $(".menu_sidebar_info").removeClass("info-opened");
         $(".body-overlay").removeClass("opened");
     });
@@ -52,15 +52,15 @@
     /*=======================================
         slider Section
      ========================================== */
-    $(".search_icon").on('click', function() {
+    $(".search_icon").on('click', function () {
         $(".search_icon_inr").slideToggle();
     });
-    $(".slider_home").on("translate.owl.carousel", function() {
+    $(".slider_home").on("translate.owl.carousel", function () {
         $(".single_slider h2, .single_slider h5, .single_slider p").removeClass("animated fadeInUp").css("opacity", "0");
         $(".single_slider .slider_btn").removeClass("animated fadeInDown").css("opacity", "0");
     });
 
-    $(".slider_home").on("translated.owl.carousel", function() {
+    $(".slider_home").on("translated.owl.carousel", function () {
         $(".single_slider h2, .single_slider h5, .single_slider p").addClass("animated fadeInUp").css("opacity", "1");
         $(".single_slider .slider_btn").addClass("animated fadeInDown").css("opacity", "1");
     });
@@ -241,7 +241,7 @@
         }
     });
 
-  
+
 
     /* =======================================
         For Menu
@@ -251,17 +251,17 @@
         format: "multitoggle"
     });
 
- 
-/*=======================================
-       * gallery.min.js        
-======================================= */
 
-     $(".project-link").magnificPopup({
-         type: 'image',
-         gallery: {
-             enabled: true,
-         },
-     });
+    /*=======================================
+           * gallery.min.js        
+    ======================================= */
+
+    $(".project-link").magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true,
+        },
+    });
 
 
 
