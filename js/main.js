@@ -47,6 +47,21 @@
         touchDrag: true,
     });
 
+    // /* =======================================
+    //     For menu menu
+    // =======================================*/
+    // $(".menu-menu-nav").owlCarousel({
+    //     items: 5,
+    //     nav: true,
+    //     dots: true,
+    //     autoplay: false,
+    //     autoplayTimeout: 900, // Default is 5000
+    //     smartSpeed: 100, // Default is 250
+    //     loop: false,
+    //     navText: ["<i class='icon-glyph-205'></i>", "<i class='icon-glyph-204'></i>"],
+    //     mouseDrag: true,
+    //     touchDrag: false,
+    // });
 
 
     /*=======================================

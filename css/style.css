@@ -2780,7 +2780,7 @@ footer .contact_info li a:hover {
     font-family: IcoFont;
     top: 23px;
     font-size: 20px;
-    color: #000;
+    color: #fff;
     z-index: 999;
     width: 0px;
     height: 0px;
@@ -4196,23 +4196,201 @@ footer .contact_info li a:hover {
         Menu Page
   ================================================ */
 /* ========= Find Menu Section ============= */
+.findmenu-section {
+  background: #0bc050 url("../images/chef-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background: #F6F8FA;
+  padding-top: 100px;
+}
+.findmenu-section .col-sm-12 {
+  background: #0bc050 url("../images/menu-find-bg.png");
+  background: #19C133 url("../images/chef-bg.png");
+  background-position: center;
+  border-right: 15px solid #F6F8FA;
+  border-left: 15px solid #F6F8FA;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.findmenu-section .col-sm-12::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #178227;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: .4;
+}
+.findmenu-section .col-sm-12:hover {
+  transition: 0.5s; 
+  background-position: top;
+  transform: translateY(-2%);
+}
 .findmenu-section .col-md-4 > div {
-  background: #ddd;
-  padding: 20px;
+  /*! background: #F6F8FA; */
+  padding: 40px 20px 40px;
+  /*! background: url("../images/menu-find-bg.png"); */
+  /*! box-shadow: 0px 1px 21px #ece4e4; */
 }
 .fmenu-text .base-header {
   width: 100%;
+  padding-bottom: 25px;
 }
 .fmenu-text .base-header h2 {
   font-size: 35px;
 }
- 
+.fmenu-text .base-header h2::after{
+  background: #fff;
+}
+.fmenu-list li span.fmenu-txt {
+  width: 134px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+.fmenu-list li span.fmenu-txt:after {
+  position: absolute;
+  content: ":";
+  right: 0;
+  color: #fff;
+}
+.fmenu-text .base-header h2,
+.fmenu-text .base-header small,
+.fmenu-list li,
+.fmenu-contact-text h4,
+.fmenu-contact-text p,
+.fmenu-Delivery-form h4,
+.fmenu-Delivery-form input,
+.fmenu-icon i,
+.del-post-code button{
+  color: #fff !important;
+}
+
+/*  Find Menu Contact */
+
+.fmenu-contact-col {
+  position: relative;
+  margin-bottom: 26px;
+}
+.fmenu-icon {
+  position: absolute;
+}
+.fmenu-contact-text {
+  padding-left: 68px;
+}
+.fmenu-icon i {
+  color: #19C133;
+  font-size: 22px;
+  border: 1px solid #FFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+.fmenu-contact-text h4 {
+  margin-bottom: 3px;
+  font-size: 22px;
+}
+.fmenu-contact-text p {
+  margin-bottom: 0px; 
+}
+.fmenu-contact-col:last-child {
+  margin-bottom: 0px;
+}
+/*  Delivery Coverage */
+
+.fmenu-Delivery-form h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.del-post-code {
+  position: relative;
+}
+.fmenu-Delivery-form input {
+  border: 1px dashed #f6e6e6;
+  background: transparent;
+  height: 50px;
+  border-radius: 50px;
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 14px; 
+}
+
+.fmenu-Delivery-form input::placeholder {
+color: rgb(233, 223, 223);
+opacity: 1;
+}
+.fmenu-Delivery-form input:focus {
+  border: 1px dashed #fff !important; 
+}
+.fmenu-Delivery-form #fmenu-charge {
+  margin-bottom: 0px;
+}
+.del-post-code button {
+  position: absolute;
+  right: 0px;
+  background: transparent;
+  border: none;
+  top: 50%;
+  margin-top: -14px;
+  margin-right: 13px;
+  font-size: 16px;
+  color: #19C133;
+}
+
+
+
 /* =========  Menu Section ============= */
   /*  Menu Select */
+  .menu-section{ 
+    background: url("../images/menu-bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;
+    /* background: #fff; */
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .menu-section::after{  
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background: #111;
+    opacity: .8;
+    z-index: -1;
+  }
+
+  .menu-section::before{  
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30%;
+    top: 0px;
+    background: #F6F8FA;
+    opacity: 0; 
+  }
+
   .menu-select-wrap .select-group select {
-    border: 1px dashed #cac2c2;
+    border: 1px dashed #b1b6bb;
     height: 60px;
     border-radius: 50px;
+    background: transparent;
+    color: #e8d9d9;
+  }
+  .menu-select-wrap .select-group select option{
+    color: #222;
   }
   .menu-select-wrap .select-group:before {
     top: 30px;
@@ -4226,7 +4404,7 @@ footer .contact_info li a:hover {
     justify-content: space-between;
     padding: 20px 40px;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .menu-category .menu-filter img {
     width: 40px;
@@ -4257,22 +4435,32 @@ footer .contact_info li a:hover {
 }
 .full-menu-btn {
   position: absolute;
-  right: 4px;
-  top: 3px;
+  right: 6px;
+  top: 6px;
   background: #19C133;
   border: 0px;
   color: #fff;
-  padding: 13px 40px;
+  padding: 15px 40px;
   border-radius: 50px;
 }
 .full-menu-search input {
-  height: 50px;
-  border-radius: 50px;
+  height: 60px;
+  border-radius: 50px; 
   padding-left: 25px;
   padding-right: 151px;
-  border: 1px dashed #ced4da;
+  border: 1px dashed #b1b6bb;
+  background: transparent;
+  color: #fff;
 }
-
+.full-menu-search input::placeholder { 
+  color: #e8d9d9;
+  opacity: 1;
+}
+.full-menu-search input:focus { 
+  border: 1px dashed #ffffff;
+  background: transparent;
+  color: #e8d9d9;
+}
 /*  Menu List */
 .nav.nav-pills.menu-list-nav {
   background: #F6F8FA;
@@ -4299,12 +4487,13 @@ footer .contact_info li a:hover {
 }
 /* ============= Menu Item box ================*/
 .menu-accordion {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .menu-accro-header {
-  border: 1px solid #ddd;
+  /*! border: 1px solid #ddd; */
   padding: 15px 17px 18px;
   border-radius: 5px;
+  background: #F6F8FA;
 }
 .menu-accordion .menu-accro-card h5 button {
   color: #222;
@@ -4342,7 +4531,7 @@ footer .contact_info li a:hover {
 /*  menu card */
 
 .menu-accro-body {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .menu-accro-body .card-columns {
   column-count: 2;
@@ -4407,7 +4596,7 @@ footer .contact_info li a:hover {
 }
 .menu-item-cart {
   background: #F6F8FA;
-  margin-top: 30px;
+  margin-top: 20px;
   /*! padding: 20px; */
   border-radius: 10px;
 }

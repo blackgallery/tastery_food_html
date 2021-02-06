@@ -227,11 +227,6 @@
 
 
 
-
-
-
-
-
     <!-- Start: Menu  Section
 ==================================================-->
     <section class="findmenu-section">
@@ -245,24 +240,24 @@
                         </div>
                         <ul class="fmenu-list">
                             <li>
-                                <span class="text"> Day Time</span>
-                                <div class="time">9am-2pm</div>
+                                <span class="fmenu-txt"> Day Time</span>
+                                <span class="fmenu-time">9am-2pm</span>
                             </li>
                             <li>
-                                <span class="text">Evening Time</span>
-                                <div class="time">2pm-11pm</div>
+                                <span class="fmenu-txt">Evening Time</span>
+                                <span class="fmenu-time">2pm-11pm</span>
                             </li>
                             <li>
-                                <span class="text">Collection Time </span>
-                                <div class="time">2 Min</div>
+                                <span class="fmenu-txt">Collection Time </span>
+                                <span class="fmenu-time">2 Min</span>
                             </li>
                             <li>
-                                <span class="text">Delivery Time </span>
-                                <div class="time">2 Min</div>
+                                <span class="fmenu-txt">Delivery Time </span>
+                                <span class="fmenu-time">2 Min</span>
                             </li>
                             <li>
-                                <span class="text">Pickup Discount </span>
-                                <div class="time"> 10</div>
+                                <span class="fmenu-txt">Pickup Discount </span>
+                                <span class="fmenu-time"> 10</span>
                             </li>
                         </ul>
                     </div>
@@ -272,7 +267,7 @@
                 <!-- Start: Contact Info -->
                 <div class="col-md-4 col-sm-12">
                     <div class="fmenu-contact">
-                        <div class="fmenu-phone">
+                        <div class="fmenu-contact-col">
                             <div class="fmenu-icon">
                                 <i class="fa fa-phone"></i>
                             </div>
@@ -283,7 +278,7 @@
                         </div>
                         <!-- end: Phone -->
 
-                        <div class="fmenu-email">
+                        <div class="fmenu-contact-col">
                             <div class="fmenu-icon">
                                 <i class="fa fa-envelope"></i>
                             </div>
@@ -294,28 +289,37 @@
                         </div>
                         <!-- end: email -->
 
-                        <div class="fmenu-heart">
+                        <div class="fmenu-contact-col">
                             <div class="fmenu-icon">
                                 <i class="fa fa-heart"></i>
                             </div>
                             <div class="fmenu-contact-text">
-                                <h4 id="heart-count">Email</h4>
+                                <h4 id="heart-count">Loved</h4>
                                 <p>88</p>
                             </div>
                         </div>
                         <!-- end: heart count -->
-
                     </div>
                     <!-- End: Contact Info -->
                 </div>
                 <!-- End: col-md-4 col-sm-12 -->
 
-                <!-- Start:  Coverage Form-->
+                <!-- Start:  Delivery Coverage Form-->
                 <div class="col-md-4 col-sm-12">
-                    <div class="fmenu-form">
-
+                    <div class="fmenu-Delivery-form">
+                        <h4> Delivery Coverage Checker </h4>
+                        <form>
+                            <div class="del-post-code">
+                                <input type="text" id="post-code-input" placeholder="Post Code Entry">
+                                <button type="button" id="post-code-btn"><i class="icofont-search-1"></i></button>
+                            </div>
+                            <div class="del-branch">
+                                <input type="text" id="fmenu-branch" placeholder="Branch (Your Nearest)">
+                                <input type="text" id="fmenu-charge" placeholder="Delivery Charge (£ 10)">
+                            </div>
+                        </form>
                     </div>
-                    <!-- End: Coverage Form -->
+                    <!-- End: Delivery Coverage Form -->
                 </div>
                 <!-- End: col-md-4 col-sm-12 -->
             </div>
@@ -370,37 +374,37 @@
                         <div id="filters" class="menu-filter vegetarian">
                             <a href="http://">
                                 <img src="images/vegetarian.png" alt="">
-                                <p id="veg-element">Vegetarian <i class="icofont-search"></i></p>
+                                <p id="veg-element">Vegetarian <i class="icofont-search-1"></i></p>
                             </a>
                         </div>
                         <div id="filters" class="menu-filter vegan">
                             <a href="http://">
                                 <img src="images/veg.png" alt="">
-                                <p id="vegan-element">Vegan <i class="icofont-search"></i> </p>
+                                <p id="vegan-element">Vegan <i class="icofont-search-1"></i> </p>
                             </a>
                         </div>
                         <div id="filters" class="menu-filter meat">
                             <a href="http://">
                                 <img src="images/meat.png" alt="">
-                                <p id="meat-element">Meat <i class="icofont-search"></i> </p>
+                                <p id="meat-element">Meat <i class="icofont-search-1"></i> </p>
                             </a>
                         </div>
                         <div id="filters" class="menu-filter chicken">
                             <a href="http://">
                                 <img src="images/chicken.png" alt="">
-                                <p id="poultry-element">Chicken <i class="icofont-search"></i> </p>
+                                <p id="poultry-element">Chicken <i class="icofont-search-1"></i> </p>
                             </a>
                         </div>
                         <div id="filters" class="menu-filter seaFood">
                             <a href="http://">
                                 <img src="images/sea.png" alt="">
-                                <p id="sea_food-element">SeaFood <i class="icofont-search"></i></p>
+                                <p id="sea_food-element">SeaFood <i class="icofont-search-1"></i></p>
                             </a>
                         </div>
                         <div id="filters" class="menu-filter quorn">
                             <a href="http://">
                                 <img src="images/quorn.png" alt="">
-                                <p id="quorn-element">Quorn <i class="icofont-search"></i></p>
+                                <p id="quorn-element">Quorn <i class="icofont-search-1"></i></p>
                             </a>
                         </div>
                     </div>
@@ -567,60 +571,11 @@
                                                             </div>
                                                             <!--  End: Menu Card 4 -->
 
-                                                            <!--  Start: Menu Card 5 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card  5-->
-
-                                                            <!--  Start: Menu Card 6 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 6 -->
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- End: faq 3 -->
+                                            <!-- End: Menu 3 -->
 
                                         </div>
                                         <!-- / menu-list-accordion -->
