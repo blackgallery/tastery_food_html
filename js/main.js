@@ -47,11 +47,11 @@
         touchDrag: true,
     });
 
-    // /* =======================================
-    //     For menu menu
-    // =======================================*/
-    // $(".menu-menu-nav").owlCarousel({
-    //     items: 5,
+    /* =======================================
+        For menu menu
+    =======================================*/
+    // $(".cursel").owlCarousel({
+    //     items: 3,
     //     nav: true,
     //     dots: true,
     //     autoplay: false,
@@ -135,6 +135,40 @@
                 items: 1
             },
             280: {
+                items: 1
+            }
+        }
+    });
+    /* =======================================
+         Gallery Section 
+     =======================================*/
+    $(".gallery_carousel").owlCarousel({
+        autoPlay: 1000, //Set AutoPlay to 5 seconds
+        autoplay: false,
+        smartSpeed: 200, // Default is 250
+        items: 4, //Set Testimonial items
+        loop: true,
+        singleItem: true,
+        touchDrag: true,
+        mouseDrag: true,
+        pagination: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='icofont-thin-left'></i>", "<i class='icofont-thin-right'></i>"],
+        responsive: {
+            1200: {
+                items: 4
+            },
+            992: {
+                items: 4
+            },
+            768: {
+                items: 3
+            },
+            480: {
+                items: 2
+            },
+            320: {
                 items: 1
             }
         }
@@ -287,17 +321,11 @@
 
     // $('.scrollup').on('click', function () {
     //     $('html,body').animate({
-    //       scrollTop: 0
+    //         scrollTop: 0
     //     }, 900);
-    //   });
-
-    // $(window).on('scroll', function () {
-    // 	if ($(window).scrollTop() >= 500) {
-    // 	  $('.scrollup').slideDown(450);
-    // 	} else {
-    // 	  $('.scrollup').slideUp(450);
-    // 	}
     // });
+
+
 
 
 
