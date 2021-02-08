@@ -110,8 +110,6 @@
         items: 3, //Set Testimonial items
         loop: true,
         margin: 30,
-        center: true,
-        singleItem: true,
         touchDrag: true,
         mouseDrag: true,
         pagination: true,
@@ -123,18 +121,15 @@
                 items: 3
             },
             992: {
-                items: 3
+                items: 2
             },
             768: {
-                items: 1
+                items: 2
             },
             480: {
                 items: 1
             },
             320: {
-                items: 1
-            },
-            280: {
                 items: 1
             }
         }
@@ -160,7 +155,7 @@
                 items: 4
             },
             992: {
-                items: 4
+                items: 3
             },
             768: {
                 items: 3
@@ -184,7 +179,6 @@
         items: 3, //Set Testimonial items
         loop: true,
         margin: 30,
-        center: true,
         singleItem: true,
         touchDrag: true,
         mouseDrag: true,
@@ -200,7 +194,7 @@
                 items: 3
             },
             768: {
-                items: 1
+                items: 2
             },
             480: {
                 items: 1
@@ -241,14 +235,13 @@
                 items: 3
             },
             480: {
-                items: 3
+                items: 1,
+                center: false,
             },
             320: {
-                items: 2
-            },
-            280: {
-                items: 2
-            }
+                items: 1,
+                center: false,
+            } 
         }
     });
 
