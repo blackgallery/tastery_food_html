@@ -1786,7 +1786,7 @@ input.header-search-input:-ms-input-placeholder {
   height: 40px;
   left: 20px !important;
   line-height: 28px;
-  margin-top: -76px;
+  margin-top: -79px;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   position: absolute;
@@ -2782,6 +2782,9 @@ header.single-banner .col-sm-12 {
 /* =================================
     Contact page 
 ================================= */
+.contact-section {
+  padding-top: 100px;
+}
 
 /*  Contact Info */
 
@@ -2853,6 +2856,7 @@ header.single-banner .col-sm-12 {
 /*  Map */
 .map-container {
   margin-top: 40px;
+  margin-bottom: -10px;
 }
 
 .map-container iframe {
@@ -3082,7 +3086,11 @@ header.single-banner .col-sm-12 {
     Offer  page 
 ================================= */
 
-/*   Loyalty Card Signup   */
+/* Loyalty Card Signup   */
+.loyalty-signup {
+  padding-bottom: 90px;
+  padding-top: 100px;
+}
 
 .loyalty-signup .base-header {
   padding-bottom: 17px;
@@ -3099,10 +3107,17 @@ header.single-banner .col-sm-12 {
 .loyalty-signup .contact-form {
   margin-top: 0px;
   padding-right: 30px;
+  padding-left: 0px;
+}
+
+.loyalty-signup .contact-form input {
+  border-radius: 50px;
+  padding-left: 25px;
 }
 
 .loyalty-card {
   position: relative;
+  margin-top: 10px;
 }
 
 .loyalty-card::after {
@@ -3170,11 +3185,11 @@ header.single-banner .col-sm-12 {
   position: absolute;
   top: 50%;
   background: #19C133;
-  padding: 40px;
+  padding: 30px 40px 37px;
   margin: 0px;
   width: 56%;
   right: 0px;
-  margin-top: 0px;
+  margin-top: 3px;
   color: #fff;
   font-size: 30px;
   line-height: 1.3;
@@ -3212,6 +3227,7 @@ header.single-banner .col-sm-12 {
 .subscribe-text h2 {
   color: #fff;
   letter-spacing: 1px;
+  font-size: 45px;
 }
 
 .subscribe-text p {
@@ -3222,34 +3238,39 @@ header.single-banner .col-sm-12 {
 .subscribe-form {
   position: relative;
   flex: 1;
-  padding-left: 140px;
+  padding-left: 0px;
 }
 
 .subscribe-form #email {
   width: 100%;
-  height: 50px;
-  padding-left: 15px;
-  border-radius: 4px;
+  height: 58px;
+  padding-left: 28px;
+  border-radius: 50px;
   border: none;
 }
 
 .subscribe-form .submit {
   position: absolute;
-  right: 3px;
+  right: 6px;
   background: #19C133;
   border: none;
   color: #fff;
-  padding: 13px 35px;
+  padding: 15px 38px;
   text-transform: uppercase;
-  margin-top: 3px;
-  border-radius: 4px;
+  margin-top: 5px;
+  border-radius: 50px;
 }
 
 .subscribe-text {
-  flex: 1;
+  flex: 1.5;
 }
 
 /*  Gift Card Section */
+.gift-card-section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
 .git-card-wrap {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
   border-radius: 20px;
@@ -3387,8 +3408,8 @@ header.single-banner .col-sm-12 {
   width: 100%;
   margin-bottom: 20px;
   padding: 5px 20px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+  border-radius: 30px;
+  border: 1px dashed #c1b9b9;
 }
 
 .login-form h2,
@@ -3435,13 +3456,14 @@ header.single-banner .col-sm-12 {
   top: 50%;
   transform: translateY(-50%);
   background: #F6F8FA;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 50%;
   width: 49px;
   height: 50px;
   line-height: 50px;
   text-align: center;
   color: #333;
+  text-transform: uppercase;
 }
 
 .account-section .login-form {
@@ -3450,7 +3472,7 @@ header.single-banner .col-sm-12 {
 
 .account-section .registration-form {
   padding-left: 70px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #e8e0e0;
 }
 
 /*  Term & Condition */
@@ -3458,7 +3480,7 @@ header.single-banner .col-sm-12 {
   float: left;
   height: 17px !important;
   width: 17px !important;
-  margin-right: 12px;
+  margin-right: 8px;
   margin-top: 6px;
 }
 
@@ -3475,7 +3497,7 @@ header.single-banner .col-sm-12 {
 
 .blog-section {
   background: #fff;
-  padding-bottom: 90px;
+  padding-bottom: 100px;
   padding-top: 120px;
 }
 
@@ -3617,7 +3639,7 @@ header.single-banner .col-sm-12 {
 ================================= */
 
 .single_blog {
-  padding-bottom: 120px;
+  padding-bottom: 70px;
   padding-top: 100px;
 }
 
@@ -3626,6 +3648,20 @@ header.single-banner .col-sm-12 {
   padding: 28px 30px 30px;
   overflow: hidden;
   border-radius: 0px 0px 10px 10px;
+}
+
+.single_blog .blog_info h4 {
+  padding-bottom: 20px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.single_blog .blog_date span {
+  margin-right: 10px;
+}
+
+.single_blog .blog_date span i {
+  color: #19C133;
 }
 
 .blog_quote {
@@ -3640,7 +3676,7 @@ header.single-banner .col-sm-12 {
   margin-top: 28px;
   margin-bottom: 13px;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 25px;
 }
 
 .single_blog .marked {
@@ -3712,11 +3748,11 @@ header.single-banner .col-sm-12 {
 .post_share .list-icons li a {
   padding-right: 0px;
   padding-left: 5px;
-  color: #646060;
-  font-size: 18px;
-  margin-top: -3px;
+  color: #575757;
+  font-size: 16px;
+  margin-top: -1px;
   position: relative;
-  top: -4px;
+  top: -3px;
 }
 
 .post_tags {
@@ -3729,6 +3765,7 @@ header.single-banner .col-sm-12 {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 0px;
+  text-transform: capitalize;
 }
 
 .post_tags a {
@@ -3872,7 +3909,7 @@ header.single-banner .col-sm-12 {
 }
 
 .comments li>ul {
-  padding-bottom: 7px;
+  padding-bottom: 0px;
   padding-left: 30px;
   border-top: 1px solid #ece3e3;
 }
@@ -4052,6 +4089,10 @@ header.single-banner .col-sm-12 {
   height: auto;
 }
 
+.widget-search .input-group input:focus {
+  border: 1px dashed transparent !important;
+}
+
 .widget-search .input-group button {
   background: #19C133;
   border: medium none;
@@ -4152,7 +4193,7 @@ header.single-banner .col-sm-12 {
 }
 
 .recent-title>a {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 5px;
   display: inline-block;
   color: #2b343b;
@@ -4166,8 +4207,9 @@ header.single-banner .col-sm-12 {
 .recent-title>span {
   font-size: 13px;
   color: #515050;
-  margin-top: -8px;
+  margin-top: -3px;
   margin-bottom: 0px;
+  display: block;
 }
 
 .recent-title>span i {
@@ -4381,7 +4423,7 @@ header.single-banner .col-sm-12 {
   border-radius: 40px;
   padding: 0px 20px;
   width: 100%;
-  margin: 7px 0px;
+  margin: 5px 0px;
   height: 50px;
   background: transparent;
 }
@@ -4400,7 +4442,7 @@ header.single-banner .col-sm-12 {
 }
 
 .checkout-section .select-group::before {
-  top: 33px;
+  top: 31px;
 }
 
 .checkout-section .submit {
@@ -4412,28 +4454,57 @@ header.single-banner .col-sm-12 {
   text-transform: uppercase;
   font-size: 13px;
   border: none;
+  /*! width: 100%; */
 }
 
 /*  Term  and Condition */
 .term-and-condition label {
   font-size: 13px;
   margin-left: 5px;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .signup_checkout {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 
 /*  User Details */
+.user_deatils_wrap {
+  width: 100%;
+  padding-right: 30px;
+}
+
+.user_deatils_btn {
+  border: 2px dotted #d0cbcb;
+  width: 100%;
+  display: block;
+  margin-left: 15px;
+  padding: 10px 10px 10px 25px;
+  border-radius: 50px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  color: #4b4b4b;
+}
+
+.user_deatils_btn::after {
+  position: absolute;
+  content: "\eac8";
+  right: 15px;
+  font-family: IcoFont;
+  font-size: 20px;
+  color: #090707;
+}
+
 .user_deatils {
   /*! border: 1px solid #ddd; */
   margin: 15px;
   width: 100%;
   background: #ECEFF2;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 10px 0px;
+  margin-top: -10px;
 }
 
 .user_deatils p {
@@ -4451,7 +4522,7 @@ header.single-banner .col-sm-12 {
   background: #ECEFF2;
   border-radius: 8px;
   padding: 10px 0px;
-  margin: 0px 15px;
+  margin: 0px 15px 5px;
   width: 100%;
 }
 
@@ -4463,6 +4534,7 @@ header.single-banner .col-sm-12 {
   position: absolute;
   right: 20px;
   top: 5px;
+  width: auto;
 }
 
 /*  End::Coupon */
@@ -4475,6 +4547,7 @@ header.single-banner .col-sm-12 {
   position: absolute;
   right: 21px;
   margin-top: 12px;
+  width: auto;
 }
 
 /*  end:: Gift card / Tips/ Donation */
@@ -4603,9 +4676,11 @@ header.single-banner .col-sm-12 {
   text-transform: capitalize;
   letter-spacing: .5px;
   font-size: 18px;
+  border: none;
+  text-align: left;
 }
 
-.btn.faq-link[aria-expanded="true"]::after {
+.faq-link[aria-expanded="true"]::after {
   content: "-";
   line-height: 24px;
 }
@@ -4618,12 +4693,12 @@ header.single-banner .col-sm-12 {
   box-shadow: none;
 }
 
-.btn.faq-link {
+.faq-link {
   background: transparent;
   position: relative;
 }
 
-.btn.faq-link:after {
+.faq-link:after {
   position: absolute;
   content: "+";
   left: 0px;
@@ -4635,6 +4710,7 @@ header.single-banner .col-sm-12 {
   top: -1px;
   font-size: 18px;
   color: #19C133;
+  text-align: center;
 }
 
 body::-webkit-scrollbar-thumb {
