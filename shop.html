@@ -213,7 +213,7 @@
             <div class="row banner-text">
                 <div class="col-sm-12">
                     <!-- Headline Goes Here -->
-                    <h3>Our Menus</h3>
+                    <h3>Our Shop</h3>
                     <p><a href="index.html"> Home </a> <i class="icofont-rounded-right"></i> Our Menus </p>
                 </div>
             </div>
@@ -229,44 +229,125 @@
 
     <!-- Start: Menu  Section
 ==================================================-->
-    <section class="findmenu-section">
+    <section class="findshop-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="fmenu-text">
-                        <div class="base-header">
-                            <small>Our Menus</small>
-                            <h2>Find Our Menu </h2>
+                <div class="col-md-8 col-sm-12">
+                    <div class="findshop-wrap">
+                        <div class="row menu-select-wrap">
+                            <div class="menu-select-col">
+                                <div class="select-group allergie_select">
+                                    <!-- <select name="total_review">
+                                        <option value="0"> Select Order Type </option>
+                                        <option value="1">1 Address</option>
+                                        <option value="2">2 Address</option>
+                                        <option value="3">3 Address</option>
+                                    </select> -->
+                                    <div class="multiselect">
+                                        <div class="selectBox" onclick="showCheckboxes()">
+                                            <select>
+                                                <option>Select an option</option>
+                                            </select>
+                                            <div class="overSelect"></div>
+                                        </div>
+                                        <div id="checkboxes">
+                                            <label for="one">
+                                                <input type="checkbox" id="one" />First checkbox</label>
+                                            <label for="two">
+                                                <input type="checkbox" id="two" />Second checkbox</label>
+                                            <label for="three">
+                                                <input type="checkbox" id="three" />Third checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col-md-4 col-sm-12-->
+                            <div class="menu-select-col">
+                                <div class="select-group calories_select">
+                                    <select name="total_review">
+                                        <option value="0"> Select Order Type </option>
+                                        <option value="1">1 Address</option>
+                                        <option value="2">2 Address</option>
+                                        <option value="3">3 Address</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- /.col-md-4 col-sm-12-->
+                            <div class="menu-select-col">
+                                <div class="select-group spice_select">
+                                    <select name="total_review">
+                                        <option value="0"> Select Order Type </option>
+                                        <option value="1">1 Address</option>
+                                        <option value="2">2 Address</option>
+                                        <option value="3">3 Address</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- /.col-md-4 col-sm-12-->
                         </div>
-                        <ul class="fmenu-list">
-                            <li>
-                                <span class="fmenu-txt"> Day Time</span>
-                                <span class="fmenu-time">9am-2pm</span>
-                            </li>
-                            <li>
-                                <span class="fmenu-txt">Evening Time</span>
-                                <span class="fmenu-time">2pm-11pm</span>
-                            </li>
-                            <li>
-                                <span class="fmenu-txt">Collection Time </span>
-                                <span class="fmenu-time">2 Min</span>
-                            </li>
-                            <li>
-                                <span class="fmenu-txt">Delivery Time </span>
-                                <span class="fmenu-time">2 Min</span>
-                            </li>
-                            <li>
-                                <span class="fmenu-txt">Pickup Discount </span>
-                                <span class="fmenu-time"> 10</span>
-                            </li>
-                        </ul>
+                        <!-- /. row -->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="menu-category">
+                                    <div id="filters" class="menu-filter vegetarian">
+                                        <a href="http://">
+                                            <img src="images/vegetarian.png" alt="">
+                                            <p id="veg-element">Vegetarian <i class="icofont-search-1"></i></p>
+                                        </a>
+                                    </div>
+                                    <div id="filters" class="menu-filter vegan">
+                                        <a href="http://">
+                                            <img src="images/veg.png" alt="">
+                                            <p id="vegan-element">Vegan <i class="icofont-search-1"></i> </p>
+                                        </a>
+                                    </div>
+                                    <div id="filters" class="menu-filter meat">
+                                        <a href="http://">
+                                            <img src="images/meat.png" alt="">
+                                            <p id="meat-element">Meat <i class="icofont-search-1"></i> </p>
+                                        </a>
+                                    </div>
+                                    <div id="filters" class="menu-filter chicken">
+                                        <a href="http://">
+                                            <img src="images/chicken.png" alt="">
+                                            <p id="poultry-element">Chicken <i class="icofont-search-1"></i> </p>
+                                        </a>
+                                    </div>
+
+                                    <div id="filters" class="menu-filter quorn">
+                                        <a href="http://">
+                                            <img src="images/quorn.png" alt="">
+                                            <p id="quorn-element">Quorn <i class="icofont-search-1"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /. menu-category -->
+                            </div>
+                            <!-- /. col-sm-12  -->
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="full-menu-search">
+                                    <input type="text" class="search-bar" id="searchBar" placeholder="Search Item">
+
+                                    <button type="button" class="reset-menu-btn">Reset Search</button>
+                                </div>
+                            </div>
+                            <!-- /. full-menu-search -->
+                        </div>
+                        <!-- /. row  -->
                     </div>
+                    <!-- /. row  -->
+
+
+
                 </div>
                 <!-- End: col-md-4 col-sm-12 -->
 
                 <!-- Start: Contact Info -->
                 <div class="col-md-4 col-sm-12">
-                    <div class="fmenu-contact">
+                    <div class="fshop-contact">
                         <div class="fmenu-contact-col">
                             <div class="fmenu-icon">
                                 <i class="fa fa-phone"></i>
@@ -299,816 +380,227 @@
                             </div>
                         </div>
                         <!-- end: heart count -->
+
+
+                        <div class="fmenu-contact-col">
+                            <div class="fmenu-icon">
+                                <a href="http://"> <i class="fa fa-info"></i></a>
+                            </div>
+
+                            <div class="fmenu-contact-text">
+                                <h4 id="heart-count">
+                                    Opening
+                                    <br>Hours</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <!-- end: heart count -->
                     </div>
                     <!-- End: Contact Info -->
                 </div>
                 <!-- End: col-md-4 col-sm-12 -->
 
-                <!-- Start:  Delivery Coverage Form-->
-                <div class="col-md-4 col-sm-12">
-                    <div class="fmenu-Delivery-form">
-                        <h4> Delivery Coverage Checker </h4>
-                        <form>
-                            <div class="del-post-code">
-                                <input type="text" id="post-code-input" placeholder="Post Code Entry">
-                                <button type="button" id="post-code-btn"><i class="icofont-search-1"></i></button>
-                            </div>
-                            <div class="del-branch">
-                                <input type="text" id="fmenu-branch" placeholder="Branch (Your Nearest)">
-                                <input type="text" id="fmenu-charge" placeholder="Delivery Charge (£ 10)">
-                            </div>
-                        </form>
-                    </div>
-                    <!-- End: Delivery Coverage Form -->
-                </div>
-                <!-- End: col-md-4 col-sm-12 -->
             </div>
         </div>
     </section>
-
+    <!-- End: Find Shop  Section
+==================================================-->
 
 
     <!-- Start: Menu  Section
 ==================================================-->
-    <section class="menu-section">
+    <section class="shop-section">
         <div class="container">
-            <div class="row menu-select-wrap">
-                <div class="col-md-4 col-sm-12">
-                    <div class="select-group allergie_select">
-                        <select name="total_review">
-                            <option value="0"> Select Order Type </option>
-                            <option value="1">1 Address</option>
-                            <option value="2">2 Address</option>
-                            <option value="3">3 Address</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- /.col-md-4 col-sm-12-->
-                <div class="col-md-4 col-sm-12">
-                    <div class="select-group calories_select">
-                        <select name="total_review">
-                            <option value="0"> Select Order Type </option>
-                            <option value="1">1 Address</option>
-                            <option value="2">2 Address</option>
-                            <option value="3">3 Address</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- /.col-md-4 col-sm-12-->
-                <div class="col-md-4 col-sm-12">
-                    <div class="select-group spice_select">
-                        <select name="total_review">
-                            <option value="0"> Select Order Type </option>
-                            <option value="1">1 Address</option>
-                            <option value="2">2 Address</option>
-                            <option value="3">3 Address</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- /.col-md-4 col-sm-12-->
-            </div>
-            <!-- /. row -->
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="menu-category">
-                        <div id="filters" class="menu-filter vegetarian">
-                            <a href="http://">
-                                <img src="images/vegetarian.png" alt="">
-                                <p id="veg-element">Vegetarian <i class="icofont-search-1"></i></p>
-                            </a>
-                        </div>
-                        <div id="filters" class="menu-filter vegan">
-                            <a href="http://">
-                                <img src="images/veg.png" alt="">
-                                <p id="vegan-element">Vegan <i class="icofont-search-1"></i> </p>
-                            </a>
-                        </div>
-                        <div id="filters" class="menu-filter meat">
-                            <a href="http://">
-                                <img src="images/meat.png" alt="">
-                                <p id="meat-element">Meat <i class="icofont-search-1"></i> </p>
-                            </a>
-                        </div>
-                        <div id="filters" class="menu-filter chicken">
-                            <a href="http://">
-                                <img src="images/chicken.png" alt="">
-                                <p id="poultry-element">Chicken <i class="icofont-search-1"></i> </p>
-                            </a>
-                        </div>
-                        <div id="filters" class="menu-filter seaFood">
-                            <a href="http://">
-                                <img src="images/sea.png" alt="">
-                                <p id="sea_food-element">SeaFood <i class="icofont-search-1"></i></p>
-                            </a>
-                        </div>
-                        <div id="filters" class="menu-filter quorn">
-                            <a href="http://">
-                                <img src="images/quorn.png" alt="">
-                                <p id="quorn-element">Quorn <i class="icofont-search-1"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /. menu-category -->
-                </div>
-                <!-- /. col-sm-12  -->
-            </div>
-            <!-- /. row -->
-
-            <!-- Start: full-menu-search -->
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-sm-12">
-                    <div class="full-menu-search">
-                        <input type="text" class="form-control" id="searchBar" placeholder="Search Item">
-                        <button type="button" class="full-menu-btn">Full Menu</button>
-                    </div>
-                </div>
-                <!-- /. full-menu-search -->
-            </div>
-            <!-- /. row -->
-
-            <div class="menu-list-wrap">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="nav nav-pills menu-list-nav" role="tablist">
-                            <a class="nav-link active" id="v-pills-one-tab" data-toggle="pill" href="#v-pills-one"
-                                role="tab" aria-controls="v-pills-one" aria-selected="true">STARTERS </a>
-                            <a class="nav-link" id="v-pills-two-tab" data-toggle="pill" href="#v-pills-two" role="tab"
-                                aria-controls="v-pills-two" aria-selected="false">CHEF SPECIAL</a>
-                            <a class="nav-link" id="v-pills-three-tab" data-toggle="pill" href="#v-pills-three"
-                                role="tab" aria-controls="v-pills-three" aria-selected="false">SIDE DISHES</a>
-                            <a class="nav-link" id="v-pills-four-tab" data-toggle="pill" href="#v-pills-four" role="tab"
-                                aria-controls="v-pills-four" aria-selected="false">TRADITIONAL DISHES</a>
-                            <a class="nav-link" id="v-pills-five-tab" data-toggle="pill" href="#v-pills-five" role="tab"
-                                aria-controls="v-pills-five" aria-selected="false">SPICE HUT SPECIALS </a>
-                            <a class="nav-link" id="v-pills-six-tab" data-toggle="pill" href="#v-pills-six" role="tab"
-                                aria-controls="v-pills-six" aria-selected="false">CONDIMENTS & DRINKS</a>
-                        </div>
-                    </div>
-                    <!-- /. col-sm-12 -->
-
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-md-8 col-sm-12">
-                                <div class="tab-content">
-
-                                    <!-- Start: Tab content 1 -->
-                                    <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel"
-                                        aria-labelledby="v-pills-one-tab">
-                                        <div class="menu-accordion" id="accordion">
-                                            <!-- Start: faq 1 -->
-                                            <div class="menu-accro-card">
-                                                <div class="menu-accro-header" id="headingOne">
-                                                    <h5 class="mb-0">
-                                                        <button class="btn menu-item-link" data-toggle="collapse"
-                                                            data-target="#collapseOne" aria-expanded="true"
-                                                            aria-controls="collapseOne">
-                                                            Condiments and Drinks
-                                                        </button>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                                    data-parent="#accordion">
-                                                    <div class="menu-accro-body">
-                                                        <div class="card-columns">
-                                                            <!--  Start: Menu Card 1 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 1 -->
-
-                                                            <!--  Start: Menu Card 2 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 2 -->
-
-                                                            <!--  Start: Menu Card 3 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 3 -->
-
-
-                                                            <!--  Start: Menu Card 4 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 4 -->
-
+                <div class="col-md-12 col-sm-12">
+                    <div class="tab-content">
+                        <!-- Start: Tab content 1 -->
+                        <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel"
+                            aria-labelledby="v-pills-one-tab">
+                            <div class="menu-accordion" id="accordion">
+                                <!-- Start: menu-accrodian-card 1 -->
+                                <div class="menu-accro-card">
+                                    <div class="menu-accro-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn menu-item-link" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Condiments and Drinks
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="menu-accro-body">
+                                            <div class="card-columns">
+                                                <!--  Start: Menu Card 1 -->
+                                                <div class="card">
+                                                    <div class="menu-card">
+                                                        <div class="menu-card-img">
+                                                            <img src="images/pro1.jpg" alt="">
+                                                        </div>
+                                                        <div class="menu-card-body">
+                                                            <h4 class="menu-card-title">
+                                                                Chicken Tikka as Main
+                                                            </h4>
+                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <a href="#" class="menu-card-btn"> Add <i
+                                                                    class="icofont-cart-alt"></i> </a>
+                                                        </div>
+                                                        <div class="menu-card-des">
+                                                            <p class="card-text">Chicken pieces marinated
+                                                                over
+                                                                night in light spices and then barbequed in
+                                                                a
+                                                                clay oven (comes with salad)</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!-- End: Menu 3 -->
+                                                <!--  End: Menu Card 1 -->
 
-                                        </div>
-                                        <!-- / menu-list-accordion -->
-                                    </div>
-                                    <!-- End: Tab content  1-->
-
-
-                                    <!-- Start: Tab content 2 -->
-                                    <div class="tab-pane fade" id="v-pills-two" role="tabpanel"
-                                        aria-labelledby="v-pills-two-tab">
-
-                                        <div class="menu-accordion" id="accordion">
-                                            <!-- Start: faq 1 -->
-                                            <div class="menu-accro-card">
-                                                <div class="menu-accro-header" id="headingTwo">
-                                                    <h5 class="mb-0">
-                                                        <button class="btn menu-item-link" data-toggle="collapse"
-                                                            data-target="#collapseTwo" aria-expanded="true"
-                                                            aria-controls="collapseTwo">
-                                                            CHEF SPECIAL
-                                                        </button>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
-                                                    data-parent="#accordion">
-                                                    <div class="menu-accro-body">
-                                                        <div class="card-columns">
-                                                            <!--  Start: Menu Card 1 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 1 -->
-
-                                                            <!--  Start: Menu Card 2 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 2 -->
-
-                                                            <!--  Start: Menu Card 3 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 3 -->
-
-
-                                                            <!--  Start: Menu Card 4 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 4 -->
-
-                                                            <!--  Start: Menu Card 5 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card  5-->
-
-                                                            <!--  Start: Menu Card 6 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 6 -->
+                                                <!--  Start: Menu Card 2 -->
+                                                <div class="card">
+                                                    <div class="menu-card">
+                                                        <div class="menu-card-img">
+                                                            <img src="images/pro1.jpg" alt="">
+                                                        </div>
+                                                        <div class="menu-card-body">
+                                                            <h4 class="menu-card-title">
+                                                                Chicken Tikka as Main
+                                                            </h4>
+                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <a href="#" class="menu-card-btn"> Add <i
+                                                                    class="icofont-cart-alt"></i> </a>
+                                                        </div>
+                                                        <div class="menu-card-des">
+                                                            <p class="card-text">Chicken pieces marinated
+                                                                over
+                                                                night in light spices and then barbequed in
+                                                                a
+                                                                clay oven (comes with salad)</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!-- End: faq 3 -->
+                                                <!--  End: Menu Card 2 -->
 
-                                        </div>
-                                        <!-- / menu-list-accordion -->
-                                    </div>
-                                    <!-- End: Tab content  2 -->
-
-
-                                    <!-- Start: Tab content 3 -->
-                                    <div class="tab-pane fade show" id="v-pills-three" role="tabpanel"
-                                        aria-labelledby="v-pills-three-tab">
-                                        <div class="menu-accordion" id="accordion">
-                                            <!-- Start: menu accrodion 1 -->
-                                            <div class="menu-accro-card">
-                                                <div class="menu-accro-header" id="headingThree">
-                                                    <h5 class="mb-0">
-                                                        <button class="btn menu-item-link" data-toggle="collapse"
-                                                            data-target="#collapseThree" aria-expanded="true"
-                                                            aria-controls="collapseThree">
-                                                            Side Dishes
-                                                        </button>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseThree" class="collapse show"
-                                                    aria-labelledby="headingThree" data-parent="#accordion">
-                                                    <div class="menu-accro-body">
-                                                        <div class="card-columns">
-                                                            <!--  Start: Menu Card 1 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 1 -->
-
-                                                            <!--  Start: Menu Card 2 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 2 -->
+                                                <!--  Start: Menu Card 3 -->
+                                                <div class="card">
+                                                    <div class="menu-card">
+                                                        <div class="menu-card-img">
+                                                            <img src="images/pro1.jpg" alt="">
+                                                        </div>
+                                                        <div class="menu-card-body">
+                                                            <h4 class="menu-card-title">
+                                                                Chicken Tikka as Main
+                                                            </h4>
+                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <a href="#" class="menu-card-btn"> Add <i
+                                                                    class="icofont-cart-alt"></i> </a>
+                                                        </div>
+                                                        <div class="menu-card-des">
+                                                            <p class="card-text">Chicken pieces marinated
+                                                                over
+                                                                night in light spices and then barbequed in
+                                                                a
+                                                                clay oven (comes with salad)</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!-- End: menu accrodion 3 -->
-                                        </div>
-                                        <!-- / menu-list-accordion -->
-                                    </div>
-                                    <!-- End: Tab content  3 -->
+                                                <!--  End: Menu Card 3 -->
 
-                                    <!-- Start: Tab content 4 -->
-                                    <div class="tab-pane fade show" id="v-pills-four" role="tabpanel"
-                                        aria-labelledby="v-pills-four-tab">
-                                        <div class="menu-accordion" id="accordion">
-                                            <!-- Start: menu accrodion 1 -->
-                                            <div class="menu-accro-card">
-                                                <div class="menu-accro-header" id="headingFour">
-                                                    <h5 class="mb-0">
-                                                        <button class="btn menu-item-link" data-toggle="collapse"
-                                                            data-target="#collapseFour" aria-expanded="true"
-                                                            aria-controls="collapseFour">
-                                                            Traditional Dishes
-                                                        </button>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseFour" class="collapse show"
-                                                    aria-labelledby="headingFour" data-parent="#accordion">
-                                                    <div class="menu-accro-body">
-                                                        <div class="card-columns">
-                                                            <!--  Start: Menu Card 1 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 1 -->
 
-                                                            <!--  Start: Menu Card 2 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 2 -->
+                                                <!--  Start: Menu Card 4 -->
+                                                <div class="card">
+                                                    <div class="menu-card">
+                                                        <div class="menu-card-img">
+                                                            <img src="images/pro1.jpg" alt="">
+                                                        </div>
+                                                        <div class="menu-card-body">
+                                                            <h4 class="menu-card-title">
+                                                                Chicken Tikka as Main
+                                                            </h4>
+                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <a href="#" class="menu-card-btn"> Add <i
+                                                                    class="icofont-cart-alt"></i> </a>
+                                                        </div>
+                                                        <div class="menu-card-des">
+                                                            <p class="card-text">Chicken pieces marinated
+                                                                over
+                                                                night in light spices and then barbequed in
+                                                                a
+                                                                clay oven (comes with salad)</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!-- End: menu accrodion 3 -->
-                                        </div>
-                                        <!-- / menu-list-accordion -->
-                                    </div>
-                                    <!-- End: Tab content  4 -->
-
-                                    <!-- Start: Tab content 5 -->
-                                    <div class="tab-pane fade show" id="v-pills-five" role="tabpanel"
-                                        aria-labelledby="v-pills-five-tab">
-                                        <div class="menu-accordion" id="accordion">
-                                            <!-- Start: menu accrodion 1 -->
-                                            <div class="menu-accro-card">
-                                                <div class="menu-accro-header" id="headingFive">
-                                                    <h5 class="mb-0">
-                                                        <button class="btn menu-item-link" data-toggle="collapse"
-                                                            data-target="#collapsFive" aria-expanded="true"
-                                                            aria-controls="collapsFive">
-                                                            Spice Hut Specials
-                                                        </button>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapsFive" class="collapse show"
-                                                    aria-labelledby="headingFive" data-parent="#accordion">
-                                                    <div class="menu-accro-body">
-                                                        <div class="card-columns">
-                                                            <!--  Start: Menu Card 1 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 1 -->
-
-                                                            <!--  Start: Menu Card 2 -->
-                                                            <div class="card">
-                                                                <div class="menu-card">
-                                                                    <div class="menu-card-img">
-                                                                        <img src="images/pro1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="menu-card-body">
-                                                                        <h4 class="menu-card-title">
-                                                                            Chicken Tikka as Main
-                                                                        </h4>
-                                                                        <span class="menu-card-price"> £ 5.95 </span>
-                                                                        <a href="#" class="menu-card-btn"> Add <i
-                                                                                class="icofont-cart-alt"></i> </a>
-                                                                    </div>
-                                                                    <div class="menu-card-des">
-                                                                        <p class="card-text">Chicken pieces marinated
-                                                                            over
-                                                                            night in light spices and then barbequed in
-                                                                            a
-                                                                            clay oven (comes with salad)</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--  End: Menu Card 2 -->
+                                                <!--  End: Menu Card 4 -->
+                                                <!--  Start: Menu Card 5 -->
+                                                <div class="card">
+                                                    <div class="menu-card">
+                                                        <div class="menu-card-img">
+                                                            <img src="images/pro1.jpg" alt="">
+                                                        </div>
+                                                        <div class="menu-card-body">
+                                                            <h4 class="menu-card-title">
+                                                                Chicken Tikka as Main
+                                                            </h4>
+                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <a href="#" class="menu-card-btn"> Add <i
+                                                                    class="icofont-cart-alt"></i> </a>
+                                                        </div>
+                                                        <div class="menu-card-des">
+                                                            <p class="card-text">Chicken pieces marinated
+                                                                over
+                                                                night in light spices and then barbequed in
+                                                                a
+                                                                clay oven (comes with salad)</p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!--  End: Menu Card 5 -->
+
+
+                                                <!--  Start: Menu Card 6 -->
+                                                <div class="card">
+                                                    <div class="menu-card">
+                                                        <div class="menu-card-img">
+                                                            <img src="images/pro1.jpg" alt="">
+                                                        </div>
+                                                        <div class="menu-card-body">
+                                                            <h4 class="menu-card-title">
+                                                                Chicken Tikka as Main
+                                                            </h4>
+                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <a href="#" class="menu-card-btn"> Add <i
+                                                                    class="icofont-cart-alt"></i> </a>
+                                                        </div>
+                                                        <div class="menu-card-des">
+                                                            <p class="card-text">Chicken pieces marinated
+                                                                over
+                                                                night in light spices and then barbequed in
+                                                                a
+                                                                clay oven (comes with salad)</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--  End: Menu Card 6-->
+
                                             </div>
-                                            <!-- End: menu accrodion 3 -->
                                         </div>
-                                        <!-- / menu-list-accordion -->
-                                    </div>
-                                    <!-- End: Tab content  5 -->
-
-                                </div>
-                            </div>
-                            <!-- /. col-md-8 -->
-
-                            <!-- Start: cart -->
-                            <div class="col-md-4 col-sm-12">
-                                <div class="menu-item-cart">
-                                    <div class="menu-cart-head">
-                                        <span>View Cart : 2 Items</span>
-                                        <span> £ 3.2 </span>
-                                    </div>
-                                    <table class="menu-cart-body">
-                                        <tbody>
-                                            <tr>
-                                                <td class="item-name"> Spicy papadom </td>
-                                                <td class="item-qty">
-                                                    <div class="menu-cart-qty">
-                                                        <input type="number" class="input-qty" step="1" min="1" max=""
-                                                            name="quantity" value="1" title="Qty" size="4"
-                                                            placeholder="" inputmode="numeric">
-                                                        <span class="q_inc"> </span>
-                                                        <span class="q_dec"> </span>
-                                                    </div>
-                                                </td>
-                                                <td class="item-price text-right">
-                                                    £ 0.70
-                                                </td>
-                                                <td class="text-center">
-                                                    <a class="cart-remove">
-                                                        <i class="icofont-ui-delete"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name"> Onion Salad </td>
-                                                <td class="item-qty">
-                                                    <div class="menu-cart-qty">
-                                                        <input type="number" class="input-qty" step="1" min="1" max=""
-                                                            name="quantity" value="1" title="Qty" size="4"
-                                                            placeholder="" inputmode="numeric">
-                                                        <span class="q_inc"> </span>
-                                                        <span class="q_dec"> </span>
-                                                    </div>
-                                                </td>
-                                                <td class="item-price text-right">
-                                                    £ 0.70
-                                                </td>
-                                                <td class="text-center">
-                                                    <a class="cart-remove">
-                                                        <i class="icofont-ui-delete"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name"> Mango Chutney </td>
-                                                <td class="item-qty">
-                                                    <div class="menu-cart-qty">
-                                                        <input type="number" class="input-qty" step="1" min="1" max=""
-                                                            name="quantity" value="1" title="Qty" size="4"
-                                                            placeholder="" inputmode="numeric">
-                                                        <span class="q_inc"> </span>
-                                                        <span class="q_dec"> </span>
-                                                    </div>
-                                                </td>
-                                                <td class="item-price text-right">
-                                                    £ 0.70
-                                                </td>
-                                                <td class="text-center">
-                                                    <a class="cart-remove">
-                                                        <i class="icofont-ui-delete"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name"> Chicken Tikka as Main </td>
-                                                <td class="item-qty">
-                                                    <div class="menu-cart-qty">
-                                                        <input type="number" class="input-qty" step="1" min="1" max=""
-                                                            name="quantity" value="1" title="Qty" size="4"
-                                                            placeholder="" inputmode="numeric">
-                                                        <span class="q_inc"> </span>
-                                                        <span class="q_dec"> </span>
-                                                    </div>
-                                                </td>
-                                                <td class="item-price text-right">
-                                                    £ 0.70
-                                                </td>
-                                                <td class="text-center">
-                                                    <a class="cart-remove">
-                                                        <i class="icofont-ui-delete"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="menu-cart-footer">
-                                        <a href="checkout.html"> Proceed To Checkout </a>
                                     </div>
                                 </div>
-                                <!-- End: cart col -->
+                                <!-- End: Menu 3 -->
                             </div>
-
+                            <!-- / menu-list-accordion -->
                         </div>
-                        <!-- End: Tab content -->
+                        <!-- End: Tab content  1-->
+
+
                     </div>
-                    <!-- /. col-sm-12 -->
+                    <!-- End: Tab content -->
                 </div>
-                <!-- /. row -->
+                <!-- /. col-sm-12 -->
             </div>
-            <!-- /. menu-list-wrap -->
+            <!-- /. row -->
 
         </div>
         <!-- /. container -->
@@ -1326,6 +818,21 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/owl-carousel.js"></script>
     <script src="js/magnific-popup.js"></script>
+
+    <script>
+        var expanded = false;
+
+        function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+    </script>
 
     <!-- Custom Scripts
 ========================================-->

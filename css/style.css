@@ -4780,7 +4780,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   transition: 0.5s;
 }
 
@@ -4807,6 +4807,7 @@ body::-webkit-scrollbar-thumb {
   padding: 40px 20px 40px;
   /*! background: url("../images/menu-find-bg.png"); */
   /*! box-shadow: 0px 1px 21px #ece4e4; */
+  width: 100%;
 }
 
 .fmenu-text .base-header {
@@ -4815,7 +4816,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fmenu-text .base-header h2 {
-  font-size: 35px;
+  font-size: 22px;
+  margin-top: -6px;
 }
 
 .fmenu-text .base-header h2::after {
@@ -4892,6 +4894,7 @@ body::-webkit-scrollbar-thumb {
 .fmenu-Delivery-form h4 {
   font-size: 22px;
   margin-bottom: 20px;
+  margin-top: -3px;
 }
 
 .del-post-code {
@@ -5085,7 +5088,7 @@ body::-webkit-scrollbar-thumb {
   text-transform: capitalize;
   border-radius: 50px;
   border: 1px dashed #c6b9b9;
-  margin-right: 10px;
+  margin: 0px 5px;
   padding: 5px 16px;
   margin-bottom: 10px;
 }
@@ -5115,6 +5118,10 @@ body::-webkit-scrollbar-thumb {
   background: transparent;
   width: 100%;
   text-align: left;
+}
+
+.menu-accro-card h5 button:focus {
+  box-shadow: none;
 }
 
 .btn.menu-item-link[aria-expanded="true"]::after {
@@ -5316,4 +5323,180 @@ body::-webkit-scrollbar-thumb {
 
 .menu-cart-qty span.q_dec:before {
   content: '\eac8';
+}
+
+
+
+/*  =========================================
+      Shop  Page 
+============================================== */
+.findshop-section {
+  background: #fff;
+}
+
+.findshop-section .container>.row>.col-sm-12 {
+  background: #19C133 url("../images/chef-bg.png");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  transition: 0.5s;
+  border-left: 15px solid #fff;
+  border-right: 15px solid #fff;
+  display: grid;
+}
+
+.findshop-section .container>.row>.col-sm-12::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #178227;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: .4;
+}
+
+.findshop-wrap {
+  padding: 50px 25px;
+}
+
+/*  Select  */
+.findshop-wrap .row.menu-select-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 0px 15px;
+}
+
+.findshop-wrap .menu-select-wrap .select-group select {
+  border: 1px dashed #fff;
+}
+
+/* Start: multiselect */
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+/* End: multiselect */
+
+
+/*  Filter Grid */
+.findshop-wrap .menu-category {
+  background: transparent;
+  padding: 20px 0px;
+}
+
+.findshop-wrap .menu-category .menu-filter p {
+  color: #fff;
+}
+
+.menu-category .menu-filter p i {
+  margin-left: 5px;
+  color: #fff;
+}
+
+/*  Search */
+.findshop-wrap .full-menu-search input {
+  border: 1px dashed #fff;
+  width: 100%;
+}
+
+.findshop-wrap .full-menu-search input:focus {
+  border: 1px dashed #fff !important;
+}
+
+.findshop-wrap .full-menu-search {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.findshop-wrap .full-menu-btn {
+  right: 103px;
+}
+
+.findshop-wrap .reset-menu-btn {
+  background: #19C133;
+  border: 0px;
+  color: #fff;
+  padding: 15px 0px;
+  border-radius: 50px;
+  width: 270px;
+}
+
+/*  Shop Contact */
+.fshop-contact {
+  padding-left: 20px;
+}
+
+.fshop-contact .fmenu-contact-text h4 {
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+
+/*================
+    Shop Section 
+==================*/
+.shop-section {
+  background: url("../images/menu-bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.shop-section::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background: #111;
+  opacity: .8;
+  z-index: -1;
+}
+
+.shop-section .menu-accro-body .card-columns {
+  column-count: 3;
+  column-gap: 22px;
+  columns: 100px 3;
 }
