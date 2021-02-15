@@ -5379,7 +5379,7 @@ body::-webkit-scrollbar-thumb {
 /* Start: multiselect */
 
 .multiselect {
-  width: 200px;
+  width: 100%;
 }
 
 .selectBox {
@@ -5397,11 +5397,17 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 99;
 }
 
 #checkboxes {
   display: none;
   border: 1px #dadada solid;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 9;
+  padding: 10px 15px 2px;
 }
 
 #checkboxes label {
