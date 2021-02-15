@@ -237,38 +237,22 @@
                         <div class="row menu-select-wrap">
                             <div class="menu-select-col">
                                 <div class="select-group allergie_select">
-                                    <!-- <select name="total_review">
-                                        <option value="0"> Select Order Type </option>
-                                        <option value="1">1 Address</option>
-                                        <option value="2">2 Address</option>
-                                        <option value="3">3 Address</option>
-                                    </select> -->
-                                    <div class="multiselect">
-                                        <div class="selectBox" onclick="showCheckboxes()">
-                                            <select>
-                                                <option>Select an option</option>
-                                            </select>
-                                            <div class="overSelect"></div>
-                                        </div>
-                                        <div id="checkboxes">
-                                            <label for="one">
-                                                <input type="checkbox" id="one" />First checkbox</label>
-                                            <label for="two">
-                                                <input type="checkbox" id="two" />Second checkbox</label>
-                                            <label for="three">
-                                                <input type="checkbox" id="three" />Third checkbox</label>
-                                        </div>
-                                    </div>
+                                    <select name="total_review">
+                                        <option value="0"> Select Allergy </option>
+                                        <option value="1"> Sulphur dioxide</option>
+                                        <option value="2"> Sesame Seeds</option>
+                                        <option value="3"> Peanuts</option>
+                                    </select>
                                 </div>
                             </div>
                             <!-- /.col-md-4 col-sm-12-->
                             <div class="menu-select-col">
                                 <div class="select-group calories_select">
                                     <select name="total_review">
-                                        <option value="0"> Select Order Type </option>
-                                        <option value="1">1 Address</option>
-                                        <option value="2">2 Address</option>
-                                        <option value="3">3 Address</option>
+                                        <option value="0"> Choose Calories </option>
+                                        <option value="1"> Sulphur dioxide</option>
+                                        <option value="2"> Sesame Seeds</option>
+                                        <option value="3"> Peanuts</option>
                                     </select>
                                 </div>
                             </div>
@@ -276,10 +260,10 @@
                             <div class="menu-select-col">
                                 <div class="select-group spice_select">
                                     <select name="total_review">
-                                        <option value="0"> Select Order Type </option>
-                                        <option value="1">1 Address</option>
-                                        <option value="2">2 Address</option>
-                                        <option value="3">3 Address</option>
+                                        <option value="0"> Select Spice Level </option>
+                                        <option value="1"> Sulphur dioxide</option>
+                                        <option value="2"> Sesame Seeds</option>
+                                        <option value="3"> Peanuts</option>
                                     </select>
                                 </div>
                             </div>
@@ -292,32 +276,32 @@
                                 <div class="menu-category">
                                     <div id="filters" class="menu-filter vegetarian">
                                         <a href="http://">
-                                            <img src="images/vegetarian.png" alt="">
+                                            <i class="icofont-broccoli"></i>
                                             <p id="veg-element">Vegetarian <i class="icofont-search-1"></i></p>
                                         </a>
                                     </div>
                                     <div id="filters" class="menu-filter vegan">
                                         <a href="http://">
-                                            <img src="images/veg.png" alt="">
+                                            <i class="icofont-vimeo"></i>
                                             <p id="vegan-element">Vegan <i class="icofont-search-1"></i> </p>
                                         </a>
                                     </div>
                                     <div id="filters" class="menu-filter meat">
                                         <a href="http://">
-                                            <img src="images/meat.png" alt="">
+                                            <i class="icofont-steak"></i>
                                             <p id="meat-element">Meat <i class="icofont-search-1"></i> </p>
                                         </a>
                                     </div>
                                     <div id="filters" class="menu-filter chicken">
                                         <a href="http://">
-                                            <img src="images/chicken.png" alt="">
+                                            <i class="icofont-chicken"></i>
                                             <p id="poultry-element">Chicken <i class="icofont-search-1"></i> </p>
                                         </a>
                                     </div>
 
                                     <div id="filters" class="menu-filter quorn">
                                         <a href="http://">
-                                            <img src="images/quorn.png" alt="">
+                                            <i class="icofont-brand-qvc"></i>
                                             <p id="quorn-element">Quorn <i class="icofont-search-1"></i></p>
                                         </a>
                                     </div>
@@ -339,9 +323,6 @@
                         <!-- /. row  -->
                     </div>
                     <!-- /. row  -->
-
-
-
                 </div>
                 <!-- End: col-md-4 col-sm-12 -->
 
@@ -365,7 +346,7 @@
                             </div>
                             <div class="fmenu-contact-text">
                                 <h4>Email</h4>
-                                <p>info@spicehutonline.co.uk</p>
+                                <p>info@spihline.co.uk</p>
                             </div>
                         </div>
                         <!-- end: email -->
@@ -381,18 +362,20 @@
                         </div>
                         <!-- end: heart count -->
 
-
                         <div class="fmenu-contact-col">
                             <div class="fmenu-icon">
-                                <a href="http://"> <i class="fa fa-info"></i></a>
+                                <a href="http://" data-toggle="modal" data-target="#openingHrsModal">
+                                    <i class="fa fa-info"></i>
+                                </a>
                             </div>
 
                             <div class="fmenu-contact-text">
-                                <h4 id="heart-count">
+                                <h4>
                                     Opening
-                                    <br>Hours</h4>
-                                <p></p>
+                                    <br>Hours
+                                </h4>
                             </div>
+
                         </div>
                         <!-- end: heart count -->
                     </div>
@@ -405,6 +388,46 @@
     </section>
     <!-- End: Find Shop  Section
 ==================================================-->
+
+    <!-- Opening Modal Hours-->
+    <div class="modal fade openinghrs-modal" id="openingHrsModal" tabindex="-1" role="dialog"
+        aria-labelledby="openingHrsModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Opening Hours </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Day Time</td>
+                                    <td>Close</td>
+                                </tr>
+                                <tr>
+                                    <td>Evening Time</td>
+                                    <td>4pm-9pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Collection Time</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Pickup Discount</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end: Opening Modal Hours-->
 
 
     <!-- Start: Menu  Section
@@ -462,7 +485,7 @@
                                                 <div class="card">
                                                     <div class="menu-card">
                                                         <div class="menu-card-img">
-                                                            <img src="images/pro1.jpg" alt="">
+                                                            <img src="images/pro2.jpg" alt="">
                                                         </div>
                                                         <div class="menu-card-body">
                                                             <h4 class="menu-card-title">
@@ -487,7 +510,7 @@
                                                 <div class="card">
                                                     <div class="menu-card">
                                                         <div class="menu-card-img">
-                                                            <img src="images/pro1.jpg" alt="">
+                                                            <img src="images/pro3.jpg" alt="">
                                                         </div>
                                                         <div class="menu-card-body">
                                                             <h4 class="menu-card-title">
@@ -513,7 +536,7 @@
                                                 <div class="card">
                                                     <div class="menu-card">
                                                         <div class="menu-card-img">
-                                                            <img src="images/pro1.jpg" alt="">
+                                                            <img src="images/pro4.jpg" alt="">
                                                         </div>
                                                         <div class="menu-card-body">
                                                             <h4 class="menu-card-title">
@@ -537,7 +560,7 @@
                                                 <div class="card">
                                                     <div class="menu-card">
                                                         <div class="menu-card-img">
-                                                            <img src="images/pro1.jpg" alt="">
+                                                            <img src="images/pro5.jpg" alt="">
                                                         </div>
                                                         <div class="menu-card-body">
                                                             <h4 class="menu-card-title">
@@ -563,7 +586,7 @@
                                                 <div class="card">
                                                     <div class="menu-card">
                                                         <div class="menu-card-img">
-                                                            <img src="images/pro1.jpg" alt="">
+                                                            <img src="images/pro6.jpg" alt="">
                                                         </div>
                                                         <div class="menu-card-body">
                                                             <h4 class="menu-card-title">
@@ -818,21 +841,6 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/owl-carousel.js"></script>
     <script src="js/magnific-popup.js"></script>
-
-    <script>
-        var expanded = false;
-
-        function showCheckboxes() {
-            var checkboxes = document.getElementById("checkboxes");
-            if (!expanded) {
-                checkboxes.style.display = "block";
-                expanded = true;
-            } else {
-                checkboxes.style.display = "none";
-                expanded = false;
-            }
-        }
-    </script>
 
     <!-- Custom Scripts
 ========================================-->

@@ -595,6 +595,36 @@ section {
   }
 }
 
+/*  Modal */
+.modal-dialog {
+  margin-top: 138px;
+}
+
+.modal .close {
+  font-size: 30px;
+  color: #fff;
+  opacity: 1;
+  position: relative;
+  top: 1px;
+}
+
+.modal-header {
+  padding: 15px 27px;
+  background: #19C133;
+}
+
+.modal-header h5 {
+  color: #fff;
+}
+
+.modal-content {
+  border: none;
+}
+
+.modal-body {
+  padding: 0px 25px;
+}
+
 /*----------------------------------------------------
    2. Header Section
 ------------------------------------------------------*/
@@ -4439,6 +4469,7 @@ header.single-banner .col-sm-12 {
 .checkout-section form textarea {
   height: 65px;
   border-radius: 20px;
+  padding-top: 10px;
 }
 
 .checkout-section .select-group::before {
@@ -4498,13 +4529,13 @@ header.single-banner .col-sm-12 {
 }
 
 .user_deatils {
-  /*! border: 1px solid #ddd; */
+  border: 1px dashed #d0cbcb;
   margin: 15px;
   width: 100%;
-  background: #ECEFF2;
+  /*! background: #ECEFF2; */
   border-radius: 20px;
   padding: 10px 0px;
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 .user_deatils p {
@@ -4522,8 +4553,12 @@ header.single-banner .col-sm-12 {
   background: #ECEFF2;
   border-radius: 8px;
   padding: 10px 0px;
-  margin: 0px 15px 5px;
+  margin: 0px 5px 5px;
   width: 100%;
+}
+
+.order_coupon .col-sm-12 {
+  padding: 0px 10px;
 }
 
 .coupon_field {
@@ -4532,7 +4567,7 @@ header.single-banner .col-sm-12 {
 
 .coupon_field .submit {
   position: absolute;
-  right: 20px;
+  right: 16px;
   top: 5px;
   width: auto;
 }
@@ -4546,7 +4581,7 @@ header.single-banner .col-sm-12 {
 .order_donation .submit {
   position: absolute;
   right: 21px;
-  margin-top: 12px;
+  margin-top: 10px;
   width: auto;
 }
 
@@ -4561,8 +4596,12 @@ header.single-banner .col-sm-12 {
 .order_total .price h3,
 .order_total .price span {
   font-size: 24px;
-  margin-top: 10px;
+  margin-top: 20px;
   color: #262c33;
+}
+
+.order_total .table {
+  margin-bottom: 5px;
 }
 
 /* End::  Column 2  */
@@ -4570,7 +4609,7 @@ header.single-banner .col-sm-12 {
 
 /*  =====  Column 3 ===== */
 /*  Customer Info */
-.customer_info .payment_info input {
+.payment_info input {
   width: auto;
   height: auto;
 }
@@ -4580,6 +4619,7 @@ header.single-banner .col-sm-12 {
   justify-content: space-between;
   background: #F6F8FA;
   padding: 20px 20px 0px;
+  margin-bottom: -20px;
 }
 
 .expires_end {
@@ -4587,6 +4627,11 @@ header.single-banner .col-sm-12 {
   justify-content: space-between;
   grid-template-columns: repeat(4, auto);
   grid-column-gap: 5px;
+}
+
+.checkout-section form .expires_end input {
+  height: 40px;
+  padding: 0px 15px;
 }
 
 .expires_end h4 {
@@ -5368,7 +5413,7 @@ body::-webkit-scrollbar-thumb {
 .findshop-wrap .row.menu-select-wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 15px;
   padding: 0px 15px;
 }
 
@@ -5376,64 +5421,38 @@ body::-webkit-scrollbar-thumb {
   border: 1px dashed #fff;
 }
 
-/* Start: multiselect */
-
-.multiselect {
-  width: 100%;
-}
-
-.selectBox {
-  position: relative;
-}
-
-.selectBox select {
-  width: 100%;
-  font-weight: bold;
-}
-
-.overSelect {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 99;
-}
-
-#checkboxes {
-  display: none;
-  border: 1px #dadada solid;
-  position: absolute;
-  width: 100%;
-  background: #fff;
-  z-index: 9;
-  padding: 10px 15px 2px;
-}
-
-#checkboxes label {
-  display: block;
-}
-
-#checkboxes label:hover {
-  background-color: #1e90ff;
-}
-
-/* End: multiselect */
 
 
 /*  Filter Grid */
 .findshop-wrap .menu-category {
   background: transparent;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 .findshop-wrap .menu-category .menu-filter p {
   color: #fff;
 }
 
-.menu-category .menu-filter p i {
+.findshop-wrap .menu-category .menu-filter p i {
   margin-left: 5px;
   color: #fff;
+}
+
+.findshop-wrap .menu-category a>i {
+  color: #FFF;
+  font-size: 25px;
+  background: #19C133;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  line-height: 60px;
+}
+
+.findshop-wrap .menu-category .menu-filter:hover a>i {
+  -webkit-animation: pulsePrimary 1s 1 ease-in-out;
+  animation: pulsePrimary 1s 1 ease-in-out;
+
 }
 
 /*  Search */
@@ -5471,9 +5490,43 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fshop-contact .fmenu-contact-text h4 {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   font-size: 20px;
+  position: relative;
+  top: -3px;
 }
+
+/*  Opening Hours  modal content */
+
+
+
+.openinghrs-modal table tr td {
+  padding: 10px 0px;
+  width: 173px;
+  border-top: 0px solid #dee2e6;
+  position: relative;
+}
+
+.openinghrs-modal table tr td::after {
+  position: absolute;
+  content: ":";
+  left: -30px;
+}
+
+.openinghrs-modal .table {
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}
+
+.openinghrs-modal table tr {
+  display: flex;
+  border-top: 1px solid #dee2e6;
+}
+
+.openinghrs-modal table tr:first-child {
+  border-top: 0px solid #dee2e6;
+}
+
 
 /*================
     Shop Section 

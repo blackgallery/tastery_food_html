@@ -1,19 +1,6 @@
 (function ($) {
     'use strict';
-
-    /*----------------------------------------
-        Sticky Menu Activation
-    ------------------------------------------*/
-
-    // $(window).on('scroll', function () {
-    //     if ($(this).scrollTop() > 85) {
-    //         $('.navigation').addClass('header-sticky');
-    //     } else {
-    //         $('.navigation').removeClass('header-sticky');
-    //     }
-    // });
-
-
+ 
     /* =======================================
         For Sidebar
     =======================================*/
