@@ -81,7 +81,7 @@
 
     <!-- Start: Header Section 
 ==================================================-->
-    <div class="header_topbar">
+    <div class="header_topbar" id="top">
         <!-- Logo -->
         <div class="container">
             <div class="row">
@@ -95,77 +95,63 @@
                 </div>
                 <div class="header_top_left">
                     <div class="opening-hrs">
-                        <p>Opening Hours : 9am-5pm & 9am-11pm </p>
-                        <div class="opening-hrs-tbl">
-                            <table class="table table-bordered">
+                        <p> <i class="fas fa-business-time"></i> Hours : 9am-5pm & 9am-11pm </p>
+                        <div class="opening-table-wrap">
+                            <table class="table opening-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Evening Opening Time</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Days</td>
-                                        <td>Day Opening Time</td>
-                                        <td>Evening Opening Time</td>
+                                        <td> Sunday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Sunday
-                                        </td>
-                                        <td>9am-5pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Monday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Monday
-                                        </td>
-                                        <td>8am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Tuesday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Tuesday
-                                        </td>
-                                        <td>8am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Wednesday</td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Wednesday
-                                        </td>
-                                        <td>9am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Thusday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Thusday
-                                        </td>
-                                        <td>9am-1pm</td>
-                                        <td>2pm-6pm</td>
+                                        <td> Friday </td>
+                                        <td>5pm-11pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Friday
-                                        </td>
-                                        <td>9am-2pm</td>
-                                        <td>2pm-11pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Statarday
-                                        </td>
-                                        <td>9am-5pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Statarday </td>
+                                        <td>5pm-11pm</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                        <!--  End: Opening Hrs Table -->
                     </div>
+                    <!--  Endd: opening-hrs -->
+
                     <ul class="header_cart">
                         <li><a href="my-account.html"> Login </a></li>
                         <li>
-                            <a href="checkout.html" class="icofont-cart"></a>
+                            <a href="checkout.html" class="icofont-cart-alt cart"></a>
                         </li>
                     </ul>
+                    <!--  Endd: Header  Login & Cart -->
                 </div>
+                <!-- End: header_top_left -->
             </div>
+            <!-- End: row  -->
         </div>
+        <!-- End: Container  -->
     </div>
     <!-- End: Header Info -->
 
@@ -174,20 +160,24 @@
         <div class="container">
             <div class="row">
                 <div class="logo col-md-3 col-sm-12">
-                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="">
+                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="tastery">
                     </a>
                 </div>
+                <!-- end: logo -->
+
                 <div class="col-md-9 col-sm-12">
                     <div id="navigation">
                         <ul>
                             <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="order.html">Order Online</a></li>
-                            <li><a href="menus.html">Our Menus </a></li>
+                            <li><a href="menu.html">Order </a></li>
+                            <li><a href="shop.html">Menus </a></li>
                             <li class="has-sub"><a href="#">Pages</a>
                                 <ul>
-                                    <li><a href="event.html">Event</a> </li>
-                                    <li><a href="categing.html">Event Categing</a> </li>
+                                    <li><a href="catering.html">Event Categing</a> </li>
                                     <li><a href="branches.html">Our Branches </a> </li>
+                                    <li><a href="single-event.html"> Single Event </a> </li>
+                                    <li><a href="event.html">Event</a> </li>
+                                    <li><a href="offer.html"> Offer </a> </li>
                                     <li><a href="faq.html"> Faq </a> </li>
                                 </ul>
                             </li>
@@ -196,8 +186,9 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <!-- End: Menu  -->
+                    <!-- End: navigation  -->
                 </div>
+                <!--/ col-md-9 col-sm-12 -->
             </div>
             <!--/ row -->
         </div>
@@ -232,7 +223,7 @@
     <section class="findshop-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-12">
+                <div class="col-lg-8 col-sm-12">
                     <div class="findshop-wrap">
                         <div class="row menu-select-wrap">
                             <div class="menu-select-col">
@@ -327,7 +318,7 @@
                 <!-- End: col-md-4 col-sm-12 -->
 
                 <!-- Start: Contact Info -->
-                <div class="col-md-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="fshop-contact">
                         <div class="fmenu-contact-col">
                             <div class="fmenu-icon">
@@ -353,7 +344,9 @@
 
                         <div class="fmenu-contact-col">
                             <div class="fmenu-icon">
-                                <i class="fa fa-heart"></i>
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
                             </div>
                             <div class="fmenu-contact-text">
                                 <h4 id="heart-count">Loved</h4>
@@ -364,7 +357,7 @@
 
                         <div class="fmenu-contact-col">
                             <div class="fmenu-icon">
-                                <a href="http://" data-toggle="modal" data-target="#openingHrsModal">
+                                <a href="#" data-toggle="modal" data-target="#openingHrsModal">
                                     <i class="fa fa-info"></i>
                                 </a>
                             </div>
@@ -430,11 +423,103 @@
     <!-- end: Opening Modal Hours-->
 
 
-    <!-- Start: Menu  Section
+    <!--  Start: Shop  Cart Modal -->
+    <div class="modal fade cart-modal" id="cartTableModal" tabindex="-1" role="dialog" aria-labelledby="cartTableModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icofont-close-line"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="table-responsive shop-cart-modal">
+                        <table class="table">
+                            <thead>
+                                <tr class="shop_cart_tr">
+                                    <th class="text-center">Product</th>
+                                    <th>&nbsp;</th>
+                                    <th>&nbsp;</th>
+
+                                    <th class="text-left">Qty</th>
+                                    <th class="text-left">Price</th>
+                                    <th class="text-left">total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cart-prod" colspan="3">
+                                        <a href="#" class="cart-trash"> <i class="icofont-close-line"></i> </a>
+                                        <a href="#">
+                                            <img src="images/product_1.jpg" alt="">
+                                            <h4> Spicy Papadom </h4>
+                                        </a>
+                                    </td>
+                                    <td class="cart-qty">
+                                        <div class="shop-cart-qty">
+                                            <input type="number" class="input-qty" step="1" min="1" max=""
+                                                name="quantity" value="1" title="Qty" size="4" placeholder=""
+                                                inputmode="numeric">
+                                            <span class="q_inc"> </span>
+                                            <span class="q_dec"> </span>
+                                        </div>
+                                    </td>
+                                    <td class="cart-pri"><span> £ 47.75 </span> </td>
+                                    <td class="cart-tot"><span>£ 50.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="cart-prod" colspan="3">
+                                        <a href="#" class="cart-trash"> <i class="icofont-close-line"></i> </a>
+                                        <a href="#">
+                                            <img src="images/product_2.jpg" alt="">
+                                            <h4> Mango Chutney </h4>
+                                        </a>
+                                    </td>
+                                    <td class="cart-qty">
+                                        <div class="shop-cart-qty">
+                                            <input type="number" class="input-qty" step="1" min="1" max=""
+                                                name="quantity" value="1" title="Qty" size="4" placeholder=""
+                                                inputmode="numeric">
+                                            <span class="q_inc"> </span>
+                                            <span class="q_dec"> </span>
+                                        </div>
+                                    </td>
+                                    <td class="cart-pri"><span> £ 30.75 </span> </td>
+                                    <td class="cart-tot"><span>£ 70.00</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End::  Shop Cart Modal -->
+
+
+    <!-- Start: Shop  Section
 ==================================================-->
     <section class="shop-section">
         <div class="container">
             <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="shop-cart-wrap">
+                        <div class="select-group shop-sel-cat">
+                            <select name="total_review">
+                                <option value="0"> Select by Category </option>
+                                <option value="1"> Sulphur dioxide</option>
+                                <option value="2"> Sesame Seeds</option>
+                                <option value="3"> Peanuts</option>
+                            </select>
+                        </div>
+                        <div class="shop-view-cart">
+                            <button class="shop-cart-btn" data-toggle="modal" data-target="#cartTableModal">
+                                <i class="icofont-cart-alt"></i> View Cart
+                                <span class="shop-cart-item"> 0 Items </span>
+                                <span class="shop-cart-total"> Total £ 0.00 </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-12 col-sm-12">
                     <div class="tab-content">
                         <!-- Start: Tab content 1 -->
@@ -466,14 +551,17 @@
                                                             <h4 class="menu-card-title">
                                                                 Chicken Tikka as Main
                                                             </h4>
-                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <span class="menu-card-price"> £ 5.95
+                                                            </span>
                                                             <a href="#" class="menu-card-btn"> Add <i
                                                                     class="icofont-cart-alt"></i> </a>
                                                         </div>
                                                         <div class="menu-card-des">
-                                                            <p class="card-text">Chicken pieces marinated
+                                                            <p class="card-text">Chicken pieces
+                                                                marinated
                                                                 over
-                                                                night in light spices and then barbequed in
+                                                                night in light spices and then barbequed
+                                                                in
                                                                 a
                                                                 clay oven (comes with salad)</p>
                                                         </div>
@@ -491,14 +579,17 @@
                                                             <h4 class="menu-card-title">
                                                                 Chicken Tikka as Main
                                                             </h4>
-                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <span class="menu-card-price"> £ 5.95
+                                                            </span>
                                                             <a href="#" class="menu-card-btn"> Add <i
                                                                     class="icofont-cart-alt"></i> </a>
                                                         </div>
                                                         <div class="menu-card-des">
-                                                            <p class="card-text">Chicken pieces marinated
+                                                            <p class="card-text">Chicken pieces
+                                                                marinated
                                                                 over
-                                                                night in light spices and then barbequed in
+                                                                night in light spices and then barbequed
+                                                                in
                                                                 a
                                                                 clay oven (comes with salad)</p>
                                                         </div>
@@ -516,14 +607,17 @@
                                                             <h4 class="menu-card-title">
                                                                 Chicken Tikka as Main
                                                             </h4>
-                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <span class="menu-card-price"> £ 5.95
+                                                            </span>
                                                             <a href="#" class="menu-card-btn"> Add <i
                                                                     class="icofont-cart-alt"></i> </a>
                                                         </div>
                                                         <div class="menu-card-des">
-                                                            <p class="card-text">Chicken pieces marinated
+                                                            <p class="card-text">Chicken pieces
+                                                                marinated
                                                                 over
-                                                                night in light spices and then barbequed in
+                                                                night in light spices and then barbequed
+                                                                in
                                                                 a
                                                                 clay oven (comes with salad)</p>
                                                         </div>
@@ -542,14 +636,17 @@
                                                             <h4 class="menu-card-title">
                                                                 Chicken Tikka as Main
                                                             </h4>
-                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <span class="menu-card-price"> £ 5.95
+                                                            </span>
                                                             <a href="#" class="menu-card-btn"> Add <i
                                                                     class="icofont-cart-alt"></i> </a>
                                                         </div>
                                                         <div class="menu-card-des">
-                                                            <p class="card-text">Chicken pieces marinated
+                                                            <p class="card-text">Chicken pieces
+                                                                marinated
                                                                 over
-                                                                night in light spices and then barbequed in
+                                                                night in light spices and then barbequed
+                                                                in
                                                                 a
                                                                 clay oven (comes with salad)</p>
                                                         </div>
@@ -566,14 +663,17 @@
                                                             <h4 class="menu-card-title">
                                                                 Chicken Tikka as Main
                                                             </h4>
-                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <span class="menu-card-price"> £ 5.95
+                                                            </span>
                                                             <a href="#" class="menu-card-btn"> Add <i
                                                                     class="icofont-cart-alt"></i> </a>
                                                         </div>
                                                         <div class="menu-card-des">
-                                                            <p class="card-text">Chicken pieces marinated
+                                                            <p class="card-text">Chicken pieces
+                                                                marinated
                                                                 over
-                                                                night in light spices and then barbequed in
+                                                                night in light spices and then barbequed
+                                                                in
                                                                 a
                                                                 clay oven (comes with salad)</p>
                                                         </div>
@@ -592,14 +692,17 @@
                                                             <h4 class="menu-card-title">
                                                                 Chicken Tikka as Main
                                                             </h4>
-                                                            <span class="menu-card-price"> £ 5.95 </span>
+                                                            <span class="menu-card-price"> £ 5.95
+                                                            </span>
                                                             <a href="#" class="menu-card-btn"> Add <i
                                                                     class="icofont-cart-alt"></i> </a>
                                                         </div>
                                                         <div class="menu-card-des">
-                                                            <p class="card-text">Chicken pieces marinated
+                                                            <p class="card-text">Chicken pieces
+                                                                marinated
                                                                 over
-                                                                night in light spices and then barbequed in
+                                                                night in light spices and then barbequed
+                                                                in
                                                                 a
                                                                 clay oven (comes with salad)</p>
                                                         </div>
@@ -628,7 +731,7 @@
         </div>
         <!-- /. container -->
     </section>
-    <!-- End: About Us Section
+    <!-- End: Shop Section
 ==================================================-->
 
 
@@ -701,7 +804,6 @@
 ==================================================-->
 
 
-
     <!-- Start:Footer Section 
 ==================================================-->
     <footer class="footer-section">
@@ -714,7 +816,9 @@
                             <img class="img-responsive" src="images/logo.png" alt="">
                         </div>
                         <div class="footer_p">
-                            <p class="footer_para">Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of
+                            <p class="footer_para">Loren ipsum dolor conse ctetur at adipis cing elit
+                                sed do eiu
+                                smod of
                                 tempor inci didunt know youlab </p>
                         </div>
                         <div class="footer_socil">
@@ -746,7 +850,8 @@
                         <h5>Contact Info</h5>
                         <ul>
                             <li>
-                                <i class="icofont-location-pin"></i> <a href="#">59 Hullbridge Road.SS6 9NL</a>
+                                <i class="icofont-location-pin"></i> <a href="#">59 Hullbridge
+                                    Road.SS6</a>
                             </li>
                             <li>
                                 <i class="icofont-email"></i> <a href="#">nfo@spicehutonline.co.uk</a>
@@ -790,7 +895,7 @@
                         <h5>Newsletter</h5>
                         <!-- Start Subscribe -->
                         <div class="news_letter_wrp">
-                            <p>Subscribe our newsletter to get more update & join to Kleanbera</p>
+                            <p>Subscribe our newsletter to get more update & join to Tastery</p>
                             <form class="mailchimp">
                                 <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
                                 <input class="email_field" type="text" name="email" id="subscriber-email"
@@ -812,15 +917,14 @@
             <!-- Start: Subfooter -->
             <div class="subfooter_wrap">
                 <div class="subfooter">
-                    <p>2021 © Copyright <a href="index.html">Kleanbera.</a> All rights Reserved.</p>
+                    <p>2021 © Copyright <a href="index.html">Tastery.</a> All rights Reserved.</p>
                 </div>
-                <div class="scrollup">
+                <a href="#top" class="scrollup">
                     <i class="icon-glyph-266"></i>
-                </div>
+                </a>
                 <!-- End:Subfooter -->
             </div>
             <!-- End: Subfooter -->
-
         </div>
         <!-- End: Container -->
     </footer>
@@ -839,7 +943,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/waypoints.min.js"></script>
+    <!-- owl carousel-->
     <script src="js/owl-carousel.js"></script>
+    <!-- magnific popup-->
     <script src="js/magnific-popup.js"></script>
 
     <!-- Custom Scripts

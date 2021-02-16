@@ -23,7 +23,7 @@
 
 
     <!-- CSS Begins
-================================================== --> 
+================================================== -->
 
     <!-- For Image Preview -->
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -31,8 +31,8 @@
     <!--Owl Carousel -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.transitions.css" rel="stylesheet">
- 
-    <link rel="stylesheet" href="css/fontawesome.min.css"> 
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
 
     <!--BootStrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -81,7 +81,7 @@
 
     <!-- Start: Header Section 
 ==================================================-->
-    <div class="header_topbar">
+    <div class="header_topbar" id="top">
         <!-- Logo -->
         <div class="container">
             <div class="row">
@@ -95,77 +95,63 @@
                 </div>
                 <div class="header_top_left">
                     <div class="opening-hrs">
-                        <p>Opening Hours : 9am-5pm & 9am-11pm </p>
-                        <div class="opening-hrs-tbl">
-                            <table class="table table-bordered">
+                        <p> <i class="fas fa-business-time"></i> Hours : 9am-5pm & 9am-11pm </p>
+                        <div class="opening-table-wrap">
+                            <table class="table opening-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Evening Opening Time</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Days</td>
-                                        <td>Day Opening Time</td>
-                                        <td>Evening Opening Time</td>
+                                        <td> Sunday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Sunday
-                                        </td>
-                                        <td>9am-5pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Monday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Monday
-                                        </td>
-                                        <td>8am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Tuesday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Tuesday
-                                        </td>
-                                        <td>8am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Wednesday</td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Wednesday
-                                        </td>
-                                        <td>9am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Thusday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Thusday
-                                        </td>
-                                        <td>9am-1pm</td>
-                                        <td>2pm-6pm</td>
+                                        <td> Friday </td>
+                                        <td>5pm-11pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Friday
-                                        </td>
-                                        <td>9am-2pm</td>
-                                        <td>2pm-11pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Statarday
-                                        </td>
-                                        <td>9am-5pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Statarday </td>
+                                        <td>5pm-11pm</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                        <!--  End: Opening Hrs Table -->
                     </div>
+                    <!--  Endd: opening-hrs -->
+
                     <ul class="header_cart">
                         <li><a href="my-account.html"> Login </a></li>
                         <li>
-                            <a href="checkout.html" class="icofont-cart"></a>
+                            <a href="checkout.html" class="icofont-cart-alt cart"></a>
                         </li>
                     </ul>
+                    <!--  Endd: Header  Login & Cart -->
                 </div>
+                <!-- End: header_top_left -->
             </div>
+            <!-- End: row  -->
         </div>
+        <!-- End: Container  -->
     </div>
     <!-- End: Header Info -->
 
@@ -174,21 +160,24 @@
         <div class="container">
             <div class="row">
                 <div class="logo col-md-3 col-sm-12">
-                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="">
+                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="tastery">
                     </a>
                 </div>
+                <!-- end: logo -->
+
                 <div class="col-md-9 col-sm-12">
                     <div id="navigation">
                         <ul>
                             <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="order.html">Order Online</a></li>
-                            <li><a href="menus.html">Our Menus </a></li> 
+                            <li><a href="menu.html">Order </a></li>
+                            <li><a href="shop.html">Menus </a></li>
                             <li class="has-sub"><a href="#">Pages</a>
                                 <ul>
-                                    <li><a href="offer.html">Our Offer</a> </li>
-                                    <li><a href="event.html">Event</a> </li>
-                                    <li><a href="categing.html">Event Categing</a> </li>
+                                    <li><a href="catering.html">Event Categing</a> </li>
                                     <li><a href="branches.html">Our Branches </a> </li>
+                                    <li><a href="single-event.html"> Single Event </a> </li>
+                                    <li><a href="event.html">Event</a> </li>
+                                    <li><a href="offer.html"> Offer </a> </li>
                                     <li><a href="faq.html"> Faq </a> </li>
                                 </ul>
                             </li>
@@ -197,8 +186,9 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <!-- End: Menu  -->
+                    <!-- End: navigation  -->
                 </div>
+                <!--/ col-md-9 col-sm-12 -->
             </div>
             <!--/ row -->
         </div>
@@ -223,375 +213,510 @@
         <!-- End: Header Content -->
     </header>
     <!--/. header -->
- <!--/    
+    <!--/    
 ==================================================-->
 
- 
- 
-   <!-- Start: Contact Section 
+
+
+    <!-- Start: Loyalty Card Section 
 ==================================================-->
-<section class="loyalty-signup">    
-    <div class="container"> 
-        <div class="row">  
-            <!-- Start:  Contact Form  -->
-            <div class="col-lg-6 col-sm-12"> 
-                <div class="contact-form">
-                    <!-- Start: Heading -->
-                    <div class="base-header"> 
-                        <h2> Loyalty Card Signup </h2> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <!-- End: Heading -->
-                    <form method="post" action="mailer.php" id="contact-form">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <input class="con-field" name="fname" id="fname" type="text" placeholder="Full Name">
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <input class="con-field" name="mobile" id="lname" type="text" placeholder="Mobile">
-                            </div>    
-                            <div class="col-md-6 col-sm-12">
-                                <input class="con-field" name="email" id="email" type="text" placeholder="Email">
-                            </div>            
-                            <div class="col-md-6 col-sm-12">
-                                <input class="con-field" name="address" id="subject" type="text" placeholder="Address">
-                            </div> 
-                            <div class="col-md-12 col-sm-12"> 
-                                <div class="submit-area">
-                                    <input type="submit" class="submit-contact" value="Send Message">
-                                    <div id="msg" class="message"></div>
+    <section class="loyalty-signup">
+        <div class="container">
+            <div class="row">
+                <!-- Start:  Signup Form  -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="contact-form">
+                        <!-- Start: Heading -->
+                        <div class="base-header">
+                            <h2> Loyalty Card Signup </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.</p>
+                        </div>
+                        <!-- End: Heading -->
+                        <form method="post" action=" " id="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input class="con-field" name="fname" id="fname" type="text"
+                                        placeholder="Full Name">
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input class="con-field" name="mobile" id="lname" type="text" placeholder="Mobile">
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input class="con-field" name="email" id="email" type="text" placeholder="Email">
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <input class="con-field" name="address" id="subject" type="text"
+                                        placeholder="Address">
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="submit-area">
+                                        <input type="submit" class="submit-contact" value="Send Message">
+                                        <div id="msg" class="message"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- End:Contact Form  -->
-            </div>
-            <!-- .col-md-6 .col-sm-12 /- -->  
-            <!-- Start: Map- --> 
-            <div class="col-lg-6 col-sm-12">
-                <div class="loyalty-card"> 
-                    <img src="images/loyalty-card.svg" alt="" class="bounce_animate">
-                    <h4> Shop more, spend less with the loyalty card</h4> 
-                </div>
-            </div>
-             <!-- Emd: Map- -->  
-        </div>
-        <!-- row /- --> 
-    </div>
-    <!-- container /- -->
-</section>
-<!-- End : Contact Section 
-==================================================-->
- 
- <!-- Start: Subscribe Section 
-==================================================-->
-<section class="subscribe-section">    
-    <div class="container"> 
-        <div class="row">  
-            <!-- Start:  Subscribe Form  -->
-            <div class="col-md-12 col-sm-12"> 
-                <div class="subscribe-wrap">
-                    <!-- Start: Text -->
-                    <div class="subscribe-text"> 
-                        <h2> Subscribe to Our Offer! </h2> 
-                        <p>
-
-                            A new subscription scheme will help you save more money.
-                            </p>
-                    </div> 
-                    <!-- End: Text -->
-
-                    <div class="subscribe-form"> 
-                        <form method="post" action="">
-                            <input name="email" id="email" type="text" placeholder="Email Address"> 
-                            <input type="submit" class="submit" value="Submit"> 
                         </form>
+                        <!-- end: form -->
+                    </div>
+                    <!-- End:Signup Form  -->
+                </div>
+                <!-- .col-md-6 .col-sm-12 /- -->
+                <!-- Start: loyalty card image- -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="loyalty-card">
+                        <img src="images/loyalty-card.svg" alt="" class="bounce_animate">
+                        <h4> Shop more, spend less with the loyalty card</h4>
                     </div>
                 </div>
-                <!-- End:Contact Form  -->
+                <!-- Emd: loyalty card image - -->
             </div>
-            <!-- .col-md-12 .col-sm-12 /- -->  
+            <!-- row /- -->
         </div>
-        <!-- row /- --> 
-    </div>
-    <!-- container /- -->
-</section>
-<!-- End : Subscribe Section 
+        <!-- container /- -->
+    </section>
+    <!-- End : Loyalty Card Section 
 ==================================================-->
- 
 
-                  
-<!-- Start: Gift Card Section
+
+
+    <!-- Start: Promotion of Product   
 ==================================================-->
-<section class="gift-card-section">    
-    <div class="container"> 
-        <div class="row">  
-
-            <!-- Start: Col One - --> 
-            <div class="col-md-4 col-sm-12"> 
-                <div class="git-card-wrap"> 
-                    <div class="git-card-img">
-                        <img src="images/gift-card.jpg" alt="">
+    <section class="promo-product-area">
+        <div class="container">
+            <!-- Start: Heading -->
+            <div class="base-header">
+                <small>Our Product </small>
+                <h2>Product Promotion</h2>
+            </div>
+            <!-- End: Heading -->
+            <div class="row">
+                <div class="col-sm-12" id="product_pro">
+                    <!-- Start: Product 1 -->
+                    <div class="product-list">
+                        <div class="product-img">
+                            <img src="images/product_1.jpg" alt="">
+                            <div class="pro_back">
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Veniam const equatur us
+                                    saepe eligendi, rerum mole stiae conse quuntur vel nisi cumque vitae quisquam cup
+                                    iditate temporibus veniam const us.</p>
+                                <a href="menu.html" class="more-link ">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="product-title">
+                            <h4> Chicken Tikka </h4>
+                            <p class="price-product mb-0">
+                                <span class="price">$12.00</span>
+                            </p>
+                            <span class="badge-starrating">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
                     </div>
-                    <div class="git-card-info">  
-                        <h4> Spice Hut Gift Card </h4> 
-                        <p> £ 10.00</p>
-                        <a href="#" class="more-link"> Checkout</a>
+                    <!-- End: Product 1 -->
+                    <!-- Start: Product 2 -->
+                    <div class="product-list">
+                        <div class="product-img">
+                            <img src="images/product_2.jpg" alt="">
+                            <div class="pro_back">
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Veniam const equatur us
+                                    saepe eligendi, rerum mole stiae conse quuntur vel nisi cumque vitae quisquam cup
+                                    iditate temporibus veniam const us.</p>
+                                <a href="menu.html" class="more-link ">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="product-title">
+                            <h4> Shahi Samosa </h4>
+                            <p class="price-product mb-0">
+                                <span class="price">$14.00</span>
+                            </p>
+                            <span class="badge-starrating">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
                     </div>
+                    <!--  ENd: Product 2 -->
+                    <!-- Start: Product 3 -->
+                    <div class="product-list">
+                        <div class="product-img">
+                            <img src="images/product_3.jpg" alt="">
+                            <div class="pro_back">
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Veniam const equatur us
+                                    saepe eligendi, rerum mole stiae conse quuntur vel nisi cumque vitae quisquam cup
+                                    iditate temporibus veniam const us.</p>
+                                <a href="menu.html" class="more-link ">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="product-title">
+                            <h4> Shahi Samosa</h4>
+                            <p class="price-product mb-0">
+                                <span class="price">$18.00</span>
+                            </p>
+                            <span class="badge-starrating">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!--  ENd: Product 3 -->
+                    <!-- Start: Product 4 -->
+                    <div class="product-list">
+                        <div class="product-img">
+                            <img src="images/product_2.jpg" alt="">
+                            <div class="pro_back">
+                                <p>Lorem ipsum dolor sit amet cons ectetur adipisicing elit. Veniam const equatur us
+                                    saepe eligendi, rerum mole stiae conse quuntur vel nisi cumque vitae quisquam cup
+                                    iditate temporibus veniam const us.</p>
+                                <a href="menu.html" class="more-link ">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="product-title">
+                            <h4> Shahi Samosa </h4>
+                            <p class="price-product mb-0">
+                                <span class="price">$14.00</span>
+                            </p>
+                            <span class="badge-starrating">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!--  ENd: Product 4 -->
                 </div>
             </div>
-             <!-- Col One /- -->  
-            <!-- Start: Col Two - --> 
-            <div class="col-md-4 col-sm-12"> 
-                <div class="git-card-wrap"> 
-                    <div class="git-card-img">
-                        <img src="images/gift-card.jpg" alt="">
-                    </div>
-                    <div class="git-card-info">  
-                        <h4> Spice Hut Gift Card </h4> 
-                        <p> £ 15.00</p>
-                        <a href="#" class="more-link"> Checkout</a>
-                    </div>
-                </div>
-            </div>
-             <!-- Col Two /- -->  
-            <!-- Start: Col Three - --> 
-            <div class="col-md-4 col-sm-12"> 
-                <div class="git-card-wrap"> 
-                    <div class="git-card-img">
-                        <img src="images/gift-card.jpg" alt="">
-                    </div>
-                    <div class="git-card-info">  
-                        <h4> Spice Hut Gift Card </h4> 
-                        <p> £ 20.00</p>
-                        <a href="#" class="more-link"> Checkout</a>
-                    </div>
-                </div>
-            </div>
-             <!-- Col Three /- -->  
-
         </div>
-        <!-- row /- --> 
-    </div>
-    <!-- container /- -->
-</section>
+    </section>
 
-
-
-<!-- End : Gift Card Section 
+    <!-- End:Promo Section 
 ==================================================-->
- 
-                  
-<!-- Start: Client Section
+
+
+
+    <!-- Start: Subscribe Section 
 ==================================================-->
-<section class="client-section">
-    <!-- Container -->
-    <div class="container">
-        <div class="row">
-            <!-- client list  -->
-            <div class="client_carousel" id="client_carousel">
-                <!-- client 1 -->
-                <div class="item">
-                    <a href="" class="client-box">
-                        <img alt="client" src="images/client-1.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="row">
+                <!-- Start:  Subscribe Form  -->
+                <div class="col-md-12 col-sm-12">
+                    <div class="subscribe-wrap">
+                        <!-- Start: Text -->
+                        <div class="subscribe-text">
+                            <h2> Subscribe to Our Offer! </h2>
+                            <p>
+
+                                A new subscription scheme will help you save more money.
+                            </p>
+                        </div>
+                        <!-- End: Text -->
+
+                        <div class="subscribe-form">
+                            <form method="post" action="">
+                                <input name="email" id="email" type="text" placeholder="Email Address">
+                                <input type="submit" class="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End:Contact Form  -->
                 </div>
-                <!-- client 2 -->
-                <div class="item">
-                    <a href="" class="client-box">
-                        <img alt="client" src="images/client-2.png">
-                        <h5>Black Seeds </h5>
-                    </a>
-                </div>
-                <!-- client 3 -->
-                <div class="item">
-                    <a href="" class="client-box">
-                        <img alt="client" src="images/client-3.png">
-                        <h5>Black Seeds </h5>
-                    </a>
-                </div>
-                <!-- client 4 -->
-                <div class="item">
-                    <a href="" class="client-box">
-                        <img alt="client" src="images/client-4.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
-                </div>
-                <!-- client 5 -->
-                <div class="item">
-                    <a href="" class="client-box">
-                        <img alt="client" src="images/client-1.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
-                </div>
-                <!-- client 6 -->
-                <div class="item">
-                    <a href="" class="client-box">
-                        <img alt="client" src="images/client-2.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
-                </div>
-                <!-- client 7 -->
-                <div class="item">
-                    <a href=""  class="client-box">
-                        <img alt="client" src="images/client-3.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
-                </div>
+                <!-- .col-md-12 .col-sm-12 /- -->
             </div>
-            <!--/ client list  -->
+            <!-- row /- -->
         </div>
-        <!--/ row - -->
-    </div>
-    <!--/ Container - -->
-</section>
-<!--   End:Client Section
+        <!-- container /- -->
+    </section>
+    <!-- End : Subscribe Section 
 ==================================================-->
 
+
+
+    <!-- Start: Gift Card Section
+==================================================-->
+    <section class="gift-card-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Start: Col One - -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="git-card-wrap">
+                        <div class="git-card-img">
+                            <img src="images/gift-card.jpg" alt="">
+                        </div>
+                        <div class="git-card-info">
+                            <h4> Spice Hut Gift Card </h4>
+                            <p> £ 10.00</p>
+                            <a href="#" class="more-link"> Checkout</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Col One /- -->
+                <!-- Start: Col Two - -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="git-card-wrap">
+                        <div class="git-card-img">
+                            <img src="images/gift-card.jpg" alt="">
+                        </div>
+                        <div class="git-card-info">
+                            <h4> Spice Hut Gift Card </h4>
+                            <p> £ 15.00</p>
+                            <a href="#" class="more-link"> Checkout</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Col Two /- -->
+                <!-- Start: Col Three - -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="git-card-wrap">
+                        <div class="git-card-img">
+                            <img src="images/gift-card.jpg" alt="">
+                        </div>
+                        <div class="git-card-info">
+                            <h4> Spice Hut Gift Card </h4>
+                            <p> £ 20.00</p>
+                            <a href="#" class="more-link"> Checkout</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Col Three /- -->
+
+            </div>
+            <!-- row /- -->
+        </div>
+        <!-- container /- -->
+    </section>
+
+
+
+    <!-- End : Gift Card Section 
+==================================================-->
+
+
+    <!-- Start: Client Section
+==================================================-->
+    <section class="client-section">
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <!-- client list  -->
+                <div class="client_carousel" id="client_carousel">
+                    <!-- client 1 -->
+                    <div class="item">
+                        <a href="" class="client-box">
+                            <img alt="client" src="images/client-1.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                    <!-- client 2 -->
+                    <div class="item">
+                        <a href="" class="client-box">
+                            <img alt="client" src="images/client-2.png">
+                            <h5>Black Seeds </h5>
+                        </a>
+                    </div>
+                    <!-- client 3 -->
+                    <div class="item">
+                        <a href="" class="client-box">
+                            <img alt="client" src="images/client-3.png">
+                            <h5>Black Seeds </h5>
+                        </a>
+                    </div>
+                    <!-- client 4 -->
+                    <div class="item">
+                        <a href="" class="client-box">
+                            <img alt="client" src="images/client-4.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                    <!-- client 5 -->
+                    <div class="item">
+                        <a href="" class="client-box">
+                            <img alt="client" src="images/client-1.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                    <!-- client 6 -->
+                    <div class="item">
+                        <a href="" class="client-box">
+                            <img alt="client" src="images/client-2.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                    <!-- client 7 -->
+                    <div class="item">
+                        <a href="" class="client-box">
+                            <img alt="client" src="images/client-3.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                </div>
+                <!--/ client list  -->
+            </div>
+            <!--/ row - -->
+        </div>
+        <!--/ Container - -->
+    </section>
+    <!--   End:Client Section
+==================================================-->
 
 
     <!-- Start:Footer Section 
 ==================================================-->
-<footer class="footer-section">
-    <div class="container">
-        <div class="row">
-            <!-- Start: About -->
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="widget">
-                    <div class="footer_logo">
-                        <img class="img-responsive" src="images/logo.png" alt="">
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- Start: About -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="widget">
+                        <div class="footer_logo">
+                            <img class="img-responsive" src="images/logo.png" alt="">
+                        </div>
+                        <div class="footer_p">
+                            <p class="footer_para">Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of
+                                tempor inci didunt know youlab </p>
+                        </div>
+                        <div class="footer_socil">
+                            <ul class="list-icons link-list footer_soc">
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer_p">
-                        <p class="footer_para">Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of tempor inci didunt know youlab </p>
-                    </div>
-                    <div class="footer_socil">
-                        <ul class="list-icons link-list footer_soc">
+                </div>
+                <!-- End: About -->
+
+                <!-- Start: Contact Info -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="widget contact_info">
+                        <h5>Contact Info</h5>
+                        <ul>
                             <li>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <i class="icofont-location-pin"></i> <a href="#">59 Hullbridge Road.SS6</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <i class="icofont-email"></i> <a href="#">nfo@spicehutonline.co.uk</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <i class="icofont-web"></i> <a href="#"> spicehut.co.uk </a>
                             </li>
                             <li>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <i class="icofont-ui-call"></i> <a href="#"> +88 01268 785 818 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <!-- End: About -->
+                <!-- End: Contact Info -->
 
-            <!-- Start: Contact Info -->
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="widget contact_info">
-                    <h5>Contact Info</h5>
-                    <ul>
-                        <li>
-                            <i class="icofont-location-pin"></i> <a href="#">59 Hullbridge Road.SS6 9NL</a>
-                        </li>
-                        <li>
-                            <i class="icofont-email"></i> <a href="#">nfo@spicehutonline.co.uk</a>
-                        </li>
-                        <li>
-                            <i class="icofont-web"></i> <a href="#"> spicehut.co.uk </a>
-                        </li>
-                        <li>
-                            <i class="icofont-ui-call"></i> <a href="#">  +88 01268 785 818 </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End: Contact Info -->
-
-            <!-- Start: Quick Link -->
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="widget quick_lnk">
-                    <h5>Quick Link</h5>
-                    <ul>
-                        <li>
-                            <a href="#">Help and Ordering</a>
-                        </li>
-                        <li>
-                            <a href="#">Return & Cancellation</a>
-                        </li>
-                        <li>
-                            <a href="#">Online Organic Service</a>
-                        </li>
-                        <li>
-                            <a href="#">Delevery Schedule</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End: Quick Link -->
-
-            <!-- Start:Newsletter -->
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="widget">
-                    <h5>Newsletter</h5>
-                    <!-- Start Subscribe -->
-                    <div class="news_letter_wrp">
-                        <p>Subscribe our newsletter to get more update & join to Kleanbera</p>
-                        <form class="mailchimp">
-                            <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
-                            <input class="email_field" type="text" name="email" id="subscriber-email" placeholder="Email Address">
-                            <button class="submit-contact" type="submit" id="subscribe-button"><i class="icofont-paper-plane"></i></button>
-                            <span class="subscription-success"> </span>
-                            <span class="subscription-error"> </span>
-                            <label class="subscription-label" for="subscriber-email"></label>
-                        </form>
-                        <!-- /END MAILCHIMP FORM STARTS -->
+                <!-- Start: Quick Link -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="widget quick_lnk">
+                        <h5>Quick Link</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Help and Ordering</a>
+                            </li>
+                            <li>
+                                <a href="#">Return & Cancellation</a>
+                            </li>
+                            <li>
+                                <a href="#">Online Organic Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Delevery Schedule</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <!-- End: Quick Link -->
+
+                <!-- Start:Newsletter -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="widget">
+                        <h5>Newsletter</h5>
+                        <!-- Start Subscribe -->
+                        <div class="news_letter_wrp">
+                            <p>Subscribe our newsletter to get more update & join to Tastery</p>
+                            <form class="mailchimp">
+                                <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+                                <input class="email_field" type="text" name="email" id="subscriber-email"
+                                    placeholder="Email Address">
+                                <button class="submit-contact" type="submit" id="subscribe-button"><i
+                                        class="icofont-paper-plane"></i></button>
+                                <span class="subscription-success"> </span>
+                                <span class="subscription-error"> </span>
+                                <label class="subscription-label" for="subscriber-email"></label>
+                            </form>
+                            <!-- /END MAILCHIMP FORM STARTS -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Newsletter -->
             </div>
-            <!-- End: Newsletter -->
+            <!-- End: row -->
+
+            <!-- Start: Subfooter -->
+            <div class="subfooter_wrap">
+                <div class="subfooter">
+                    <p>2021 © Copyright <a href="index.html">Tastery.</a> All rights Reserved.</p>
+                </div>
+                <a href="#top" class="scrollup">
+                    <i class="icon-glyph-266"></i>
+                </a>
+                <!-- End:Subfooter -->
+            </div>
+            <!-- End: Subfooter -->
         </div>
-         <!-- End: row -->
-
-        <!-- Start: Subfooter -->
-        <div class="subfooter_wrap">
-            <div class="subfooter">
-                <p>2021 © Copyright <a href="index.html">Kleanbera.</a> All rights Reserved.</p>
-            </div>
-            <div class="scrollup">
-                <i class="icon-glyph-266"></i>
-            </div>
-            <!-- End:Subfooter -->
-        </div>
-        <!-- End: Subfooter -->
-
-    </div>
-    <!-- End: Container -->
-</footer>
-<!-- End: Footer Section 
+        <!-- End: Container -->
+    </footer>
+    <!-- End: Footer Section 
 ========================================-->
 
 
 
-<!-- Scripts
+    <!-- Scripts
 ========================================-->
-<!-- jquery -->
-<script src="js/jquery-1.12.4.min.js"></script>
-<!-- plugins -->
-<script src="js/plugins.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/owl-carousel.js"></script>
-<script src="js/magnific-popup.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- plugins -->
+    <script src="js/plugins.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- owl carousel-->
+    <script src="js/owl-carousel.js"></script>
+    <!-- magnific popup-->
+    <script src="js/magnific-popup.js"></script>
 
-<!-- Custom Scripts
+    <!-- Custom Scripts
 ========================================-->
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

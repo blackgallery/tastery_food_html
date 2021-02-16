@@ -23,7 +23,7 @@
 
 
     <!-- CSS Begins
-================================================== --> 
+================================================== -->
 
     <!-- For Image Preview -->
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -31,8 +31,8 @@
     <!--Owl Carousel -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.transitions.css" rel="stylesheet">
- 
-    <link rel="stylesheet" href="css/fontawesome.min.css"> 
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
 
     <!--BootStrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -81,7 +81,7 @@
 
     <!-- Start: Header Section 
 ==================================================-->
-    <div class="header_topbar">
+    <div class="header_topbar" id="top">
         <!-- Logo -->
         <div class="container">
             <div class="row">
@@ -95,77 +95,63 @@
                 </div>
                 <div class="header_top_left">
                     <div class="opening-hrs">
-                        <p>Opening Hours : 9am-5pm & 9am-11pm </p>
-                        <div class="opening-hrs-tbl">
-                            <table class="table table-bordered">
+                        <p> <i class="fas fa-business-time"></i> Hours : 9am-5pm & 9am-11pm </p>
+                        <div class="opening-table-wrap">
+                            <table class="table opening-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Evening Opening Time</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Days</td>
-                                        <td>Day Opening Time</td>
-                                        <td>Evening Opening Time</td>
+                                        <td> Sunday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Sunday
-                                        </td>
-                                        <td>9am-5pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Monday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Monday
-                                        </td>
-                                        <td>8am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Tuesday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Tuesday
-                                        </td>
-                                        <td>8am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Wednesday</td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Wednesday
-                                        </td>
-                                        <td>9am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Thusday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Thusday
-                                        </td>
-                                        <td>9am-1pm</td>
-                                        <td>2pm-6pm</td>
+                                        <td> Friday </td>
+                                        <td>5pm-11pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Friday
-                                        </td>
-                                        <td>9am-2pm</td>
-                                        <td>2pm-11pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Statarday
-                                        </td>
-                                        <td>9am-5pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Statarday </td>
+                                        <td>5pm-11pm</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                        <!--  End: Opening Hrs Table -->
                     </div>
+                    <!--  Endd: opening-hrs -->
+
                     <ul class="header_cart">
                         <li><a href="my-account.html"> Login </a></li>
                         <li>
-                            <a href="checkout.html" class="icofont-cart"></a>
+                            <a href="checkout.html" class="icofont-cart-alt cart"></a>
                         </li>
                     </ul>
+                    <!--  Endd: Header  Login & Cart -->
                 </div>
+                <!-- End: header_top_left -->
             </div>
+            <!-- End: row  -->
         </div>
+        <!-- End: Container  -->
     </div>
     <!-- End: Header Info -->
 
@@ -174,20 +160,24 @@
         <div class="container">
             <div class="row">
                 <div class="logo col-md-3 col-sm-12">
-                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="">
+                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="tastery">
                     </a>
                 </div>
+                <!-- end: logo -->
+
                 <div class="col-md-9 col-sm-12">
                     <div id="navigation">
                         <ul>
                             <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="order.html">Order Online</a></li>
-                            <li><a href="menus.html">Our Menus </a></li> 
+                            <li><a href="menu.html">Order </a></li>
+                            <li><a href="shop.html">Menus </a></li>
                             <li class="has-sub"><a href="#">Pages</a>
                                 <ul>
-                                    <li><a href="event.html">Event</a> </li>
-                                    <li><a href="categing.html">Event Categing</a> </li>
+                                    <li><a href="catering.html">Event Categing</a> </li>
                                     <li><a href="branches.html">Our Branches </a> </li>
+                                    <li><a href="single-event.html"> Single Event </a> </li>
+                                    <li><a href="event.html">Event</a> </li>
+                                    <li><a href="offer.html"> Offer </a> </li>
                                     <li><a href="faq.html"> Faq </a> </li>
                                 </ul>
                             </li>
@@ -196,8 +186,9 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <!-- End: Menu  -->
+                    <!-- End: navigation  -->
                 </div>
+                <!--/ col-md-9 col-sm-12 -->
             </div>
             <!--/ row -->
         </div>
@@ -222,11 +213,11 @@
         <!-- End: Header Content -->
     </header>
     <!--/. header -->
- <!--/    
+    <!--/    
 ==================================================-->
 
 
- 
+
 
 
     <!-- Start: About Us Section
@@ -243,9 +234,14 @@
                     <div class="base-header base-header-left">
                         <small>About Us</small>
                         <h2>We Serve The Best Food Of The Country </h2>
-                        <p> We invite you to celebrate our restaurant’s delicious recipes whether you are here for a business lunch or dinner. Discover new tastes and inspired recipes from all over the world. Lorem ipsum dolor sit amet consectetur adipisicing.recipes whether you are here for a business lunch or dinner </p> 
+                        <p> We invite you to celebrate our restaurant’s delicious recipes whether you are here for a
+                            business lunch or dinner. Discover new tastes and inspired recipes from all over the world.
+                            Lorem ipsum dolor sit amet consectetur adipisicing.recipes whether you are here for a
+                            business lunch or dinner </p>
 
-                        <p>  We invite you to celebrate our restaurant’s delicious recipes whether you are here for a business lunch or dinner. Discover new tastes and inspired recipes from all over the world. </p> 
+                        <p> We invite you to celebrate our restaurant’s delicious recipes whether you are here for a
+                            business lunch or dinner. Discover new tastes and inspired recipes from all over the world.
+                        </p>
                     </div>
                 </div>
                 <!-- /.about_wrp-->
@@ -258,277 +254,295 @@
 ==================================================-->
 
 
-  <!-- Start: Team Section
+    <!-- Start: Team Section
 ==================================================-->
-<section class="team-section">
-    <div class="container">
-        <!-- Start: Heading -->
-        <div class="base-header">
-            <small>Our Chefs </small>
-            <h2>Master Chefs</h2>
-        </div>
-        <!-- End: Heading -->
-        <div class="row">  
-            <div class="team_wrap" id="team_carsel">
-                <!-- Start: Team Member 1 -->
-                <div class="team_item">
-                    <div class="team_img">
-                        <img src="images/team1.jpg" alt="">
-                    </div>
-                    <div class="team_info">
-                        <h4>Chef Kholilur Rahman</h4>
-                        <p>British curry life chef of the year 2012. Chef Rahman combines his own exotic creation with classical ingredients to create some mouth watering dishes
-                          curry life chef of the year 2012. Chef Rahman combines his own exotic creation with classical ingredients to create some mouth watering dishes</p>
-                        <p> using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur adipisicing elit. 
-                         using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur adipisicing elit. 
-                        using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur adipisicing elit. </p>
-                        <div class="team-social-icon">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fab fa-facebook"></i> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--End:  Team Member 1 -->
-                <!-- Start: Team Member 2 -->
-                <div class="team_item">
-                    <div class="team_img">
-                        <img src="images/team1.jpg" alt="">
-                    </div>
-                    <div class="team_info">
-                        <h4>Chef Kholilur Rahman</h4>
-                        <p>British curry life chef of the year 2012. Chef Rahman combines his own exotic creation with classical ingredients to create some mouth watering dishes
-                          curry life chef of the year 2012. Chef Rahman combines his own exotic creation with classical ingredients to create some mouth watering dishes</p>
-                        <p> using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur adipisicing elit. 
-                         using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur adipisicing elit. 
-                        using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur adipisicing elit. </p>
-                        <div class="team-social-icon">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fab fa-facebook"></i> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-             <!--End:  Team Member 2 --> 
+    <section class="team-section">
+        <div class="container">
+            <!-- Start: Heading -->
+            <div class="base-header">
+                <small>Our Chefs </small>
+                <h2>Master Chefs</h2>
             </div>
-        </div>
-        <!-- /. row -->
-    </div>
-    <!-- /. container -->
-</section>
+            <!-- End: Heading -->
+            <div class="row">
+                <div class="team_wrap" id="team_carsel">
+                    <!-- Start: Team Member 1 -->
+                    <div class="team_item">
+                        <div class="team_img">
+                            <img src="images/team1.jpg" alt="">
+                        </div>
+                        <div class="team_info">
+                            <h4>Chef Kholilur Rahman</h4>
+                            <p>British curry life chef of the year 2012. Chef Rahman combines his own exotic creation
+                                with classical ingredients to create some mouth watering dishes
+                                curry life chef of the year 2012. Chef Rahman combines his own exotic creation with
+                                classical ingredients to create some mouth watering dishes</p>
+                            <p> using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur
+                                adipisicing elit.
+                                using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur
+                                adipisicing elit.
+                                using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur
+                                adipisicing elit. </p>
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End:  Team Member 1 -->
+                    <!-- Start: Team Member 2 -->
+                    <div class="team_item">
+                        <div class="team_img">
+                            <img src="images/team1.jpg" alt="">
+                        </div>
+                        <div class="team_info">
+                            <h4>Chef Kholilur Rahman</h4>
+                            <p>British curry life chef of the year 2012. Chef Rahman combines his own exotic creation
+                                with classical ingredients to create some mouth watering dishes
+                                curry life chef of the year 2012. Chef Rahman combines his own exotic creation with
+                                classical ingredients to create some mouth watering dishes</p>
+                            <p> using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur
+                                adipisicing elit.
+                                using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur
+                                adipisicing elit.
+                                using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons ectetur
+                                adipisicing elit. </p>
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
 
-<!-- End: Team Section
-==================================================-->
-
-
-<!-- Start: Testimonial Section
-==================================================-->
-<section class="testimonials-section">
-    <div class="container">
-        <!-- Start: Heading -->
-        <div class="base-header">
-            <small>Our Testimonial </small>
-            <h2>Customers Reviews </h2>
-        </div>
-        <!-- End: Heading -->
-        <div class="row">
-            <!-- Testimonials-->
-            <div class="col-sm-12" id="testimonial">
-                <!-- Start: Testimonial 1 -->
-                <div class="testimonial-item">
-                    <div class="testimonial-box">
-                        <div class="testimonial_content">
-                            <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit ametet infor verear in infor noluisse eumdiam congue refor midan was at atomorum his id, pri tae expetenda. Ests as mundi.</p>
-                            <div class="testi_star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
+                                    <li>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="testi_images">
-                            <a href="#" class="testi_social"><i class="fab fa-instagram"></i></a>
-                            <img alt="testimonial" src="images/testimonial1.jpg">
-                        </div>
-                        <div class="cus-title">
-                            <h4 class="tes-nam">John Watson</h4>
-                            <span class="tes-degree">CEO At Google</span>
-                        </div>
                     </div>
-                    <!--End: Testimonial 1 -->
-                </div>
-                <!-- Start: Testimonial 2 -->
-                <div class="testimonial-item">
-                    <div class="testimonial-box">
-                        <div class="testimonial_content">
-                            <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit ametet infor verear in infor noluisse eumdiam congue refor midan was at atomorum his id, pri tae expetenda. Ests as mundi.</p>
-                            <div class="testi_star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <div class="testi_images">
-                            <a href="#" class="testi_social"><i class="fab fa-pinterest"></i></a>
-                            <img alt="testimonial" src="images/testimonial2.jpg">
-                        </div>
-                        <div class="cus-title">
-                            <h4 class="tes-nam">John Watson</h4>
-                            <span class="tes-degree">CEO At Facebook</span>
-                        </div>
-                    </div>
-                    <!--End: Testimonial 2 -->
-                </div>
-                <!-- Start: Testimonial 3 -->
-                <div class="testimonial-item">
-                    <div class="testimonial-box">
-                        <div class="testimonial_content">
-                            <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit ametet infor verear in infor noluisse eumdiam congue refor midan was at atomorum his id, pri tae expetenda. Ests as mundi.</p>
-                            <div class="testi_star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <div class="testi_images">
-                            <a href="#" class="testi_social"><i class="fab fa-twitter"></i></a>
-                            <img alt="testimonial" src="images/testimonial3.jpg">
-                        </div>
-                        <div class="cus-title">
-                            <h4 class="tes-nam">John Watson</h4>
-                            <span class="tes-degree">CEO At Facebook</span>
-                        </div>
-                    </div>
-                    <!--End: Testimonial 3 -->
-                </div>
-                <!-- Start: Testimonial 3 -->
-                <div class="testimonial-item">
-                    <div class="testimonial-box">
-                        <div class="testimonial_content">
-                            <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit ametet infor verear in infor noluisse eumdiam congue refor midan was at atomorum his id, pri tae expetenda. Ests as mundi.</p>
-                            <div class="testi_star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <div class="testi_images">
-                            <a href="#" class="testi_social"><i class="fab fa-twitter"></i></a>
-                            <img alt="testimonial" src="images/testimonial4.jpg">
-                        </div>
-                        <div class="cus-title">
-                            <h4 class="tes-nam">John Watson</h4>
-                            <span class="tes-degree">CEO At Facebook</span>
-                        </div>
-                    </div>
-                    <!--End: Testimonial 3 -->
+                    <!--End:  Team Member 2 -->
                 </div>
             </div>
+            <!-- /. row -->
         </div>
-        <!--/.row-->
-    </div>
-    <!--/.container-->
-</section>
-<!-- End: Testimonial Section 
+        <!-- /. container -->
+    </section>
+
+    <!-- End: Team Section
 ==================================================-->
 
 
-  
-<!-- Start: Client Section
+    <!-- Start: Testimonial Section
 ==================================================-->
-<section class="client-section">
-    <!-- Container -->
-    <div class="container">
-        <div class="row">
-            <!-- client list  -->
-            <div class="client_carousel" id="client_carousel">
-                <!-- client 1 -->
-                <div class="item">
-                    <a href="#" class="client-box">
-                        <img alt="client" src="images/client-1.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
-                </div>
-                <!-- client 2 -->
-                <div class="item">
-                    <a href="#" class="client-box">
-                        <img alt="client" src="images/client-2.png">
-                        <h5>Black Seeds </h5>
-                    </a>
-                </div>
-                <!-- client 3 -->
-                <div class="item">
-                    <a href="#" class="client-box">
-                        <img alt="client" src="images/client-3.png">
-                        <h5>Black Seeds </h5>
-                    </a>
-                </div>
-                <!-- client 4 -->
-                <div class="item">
-                    <a href="#" class="client-box">
-                        <img alt="client" src="images/client-4.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
-                </div>
-                <!-- client 5 -->
-                <div class="item">
-                    <a href="#" class="client-box">
-                        <img alt="client" src="images/client-1.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
-                </div>
-                <!-- client 6 -->
-                <div class="item">
-                    <a href="#" class="client-box">
-                        <img alt="client" src="images/client-2.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
-                </div>
-                <!-- client 7 -->
-                <div class="item">
-                    <a href="#"  class="client-box">
-                        <img alt="client" src="images/client-3.png">
-                        <h5>Cinnamon Stick</h5>
-                    </a>
+    <section class="testimonials-section">
+        <div class="container">
+            <!-- Start: Heading -->
+            <div class="base-header">
+                <small>Our Testimonial </small>
+                <h2>Customers Reviews </h2>
+            </div>
+            <!-- End: Heading -->
+            <div class="row">
+                <!-- Testimonials-->
+                <div class="col-sm-12" id="testimonial">
+                    <!-- Start: Testimonial 1 -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-box">
+                            <div class="testimonial_content">
+                                <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit ametet infor verear in infor
+                                    noluisse eumdiam congue refor midan was at atomorum his id, pri tae expetenda. Ests
+                                    as mundi.</p>
+                                <div class="testi_star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="testi_images">
+                                <a href="#" class="testi_social"><i class="fab fa-instagram"></i></a>
+                                <img alt="testimonial" src="images/testimonial1.jpg">
+                            </div>
+                            <div class="cus-title">
+                                <h4 class="tes-nam">John Watson</h4>
+                                <span class="tes-degree">CEO At Google</span>
+                            </div>
+                        </div>
+                        <!--End: Testimonial 1 -->
+                    </div>
+                    <!-- Start: Testimonial 2 -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-box">
+                            <div class="testimonial_content">
+                                <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit ametet infor verear in infor
+                                    noluisse eumdiam congue refor midan was at atomorum his id, pri tae expetenda. Ests
+                                    as mundi.</p>
+                                <div class="testi_star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="testi_images">
+                                <a href="#" class="testi_social"><i class="fab fa-pinterest"></i></a>
+                                <img alt="testimonial" src="images/testimonial2.jpg">
+                            </div>
+                            <div class="cus-title">
+                                <h4 class="tes-nam">John Watson</h4>
+                                <span class="tes-degree">CEO At Facebook</span>
+                            </div>
+                        </div>
+                        <!--End: Testimonial 2 -->
+                    </div>
+                    <!-- Start: Testimonial 3 -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-box">
+                            <div class="testimonial_content">
+                                <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit ametet infor verear in infor
+                                    noluisse eumdiam congue refor midan was at atomorum his id, pri tae expetenda. Ests
+                                    as mundi.</p>
+                                <div class="testi_star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="testi_images">
+                                <a href="#" class="testi_social"><i class="fab fa-twitter"></i></a>
+                                <img alt="testimonial" src="images/testimonial3.jpg">
+                            </div>
+                            <div class="cus-title">
+                                <h4 class="tes-nam">John Watson</h4>
+                                <span class="tes-degree">CEO At Facebook</span>
+                            </div>
+                        </div>
+                        <!--End: Testimonial 3 -->
+                    </div>
+                    <!-- Start: Testimonial 3 -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-box">
+                            <div class="testimonial_content">
+                                <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit ametet infor verear in infor
+                                    noluisse eumdiam congue refor midan was at atomorum his id, pri tae expetenda. Ests
+                                    as mundi.</p>
+                                <div class="testi_star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="testi_images">
+                                <a href="#" class="testi_social"><i class="fab fa-twitter"></i></a>
+                                <img alt="testimonial" src="images/testimonial4.jpg">
+                            </div>
+                            <div class="cus-title">
+                                <h4 class="tes-nam">John Watson</h4>
+                                <span class="tes-degree">CEO At Facebook</span>
+                            </div>
+                        </div>
+                        <!--End: Testimonial 3 -->
+                    </div>
                 </div>
             </div>
-            <!--/ client list  -->
+            <!--/.row-->
         </div>
-        <!--/ row - -->
-    </div>
-    <!--/ Container - -->
-</section>
-<!--   End:Client Section
+        <!--/.container-->
+    </section>
+    <!-- End: Testimonial Section 
+==================================================-->
+
+
+
+    <!-- Start: Client Section
+==================================================-->
+    <section class="client-section">
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <!-- client list  -->
+                <div class="client_carousel" id="client_carousel">
+                    <!-- client 1 -->
+                    <div class="item">
+                        <a href="#" class="client-box">
+                            <img alt="client" src="images/client-1.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                    <!-- client 2 -->
+                    <div class="item">
+                        <a href="#" class="client-box">
+                            <img alt="client" src="images/client-2.png">
+                            <h5>Black Seeds </h5>
+                        </a>
+                    </div>
+                    <!-- client 3 -->
+                    <div class="item">
+                        <a href="#" class="client-box">
+                            <img alt="client" src="images/client-3.png">
+                            <h5>Black Seeds </h5>
+                        </a>
+                    </div>
+                    <!-- client 4 -->
+                    <div class="item">
+                        <a href="#" class="client-box">
+                            <img alt="client" src="images/client-4.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                    <!-- client 5 -->
+                    <div class="item">
+                        <a href="#" class="client-box">
+                            <img alt="client" src="images/client-1.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                    <!-- client 6 -->
+                    <div class="item">
+                        <a href="#" class="client-box">
+                            <img alt="client" src="images/client-2.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                    <!-- client 7 -->
+                    <div class="item">
+                        <a href="#" class="client-box">
+                            <img alt="client" src="images/client-3.png">
+                            <h5>Cinnamon Stick</h5>
+                        </a>
+                    </div>
+                </div>
+                <!--/ client list  -->
+            </div>
+            <!--/ row - -->
+        </div>
+        <!--/ Container - -->
+    </section>
+    <!--   End:Client Section
 ==================================================-->
 
 
@@ -545,7 +559,8 @@
                             <img class="img-responsive" src="images/logo.png" alt="">
                         </div>
                         <div class="footer_p">
-                            <p class="footer_para">Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of tempor inci didunt know youlab </p>
+                            <p class="footer_para">Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of
+                                tempor inci didunt know youlab </p>
                         </div>
                         <div class="footer_socil">
                             <ul class="list-icons link-list footer_soc">
@@ -576,7 +591,7 @@
                         <h5>Contact Info</h5>
                         <ul>
                             <li>
-                                <i class="icofont-location-pin"></i> <a href="#">59 Hullbridge Road.SS6 9NL</a>
+                                <i class="icofont-location-pin"></i> <a href="#">59 Hullbridge Road.SS6</a>
                             </li>
                             <li>
                                 <i class="icofont-email"></i> <a href="#">nfo@spicehutonline.co.uk</a>
@@ -585,7 +600,7 @@
                                 <i class="icofont-web"></i> <a href="#"> spicehut.co.uk </a>
                             </li>
                             <li>
-                                <i class="icofont-ui-call"></i> <a href="#">  +88 01268 785 818 </a>
+                                <i class="icofont-ui-call"></i> <a href="#"> +88 01268 785 818 </a>
                             </li>
                         </ul>
                     </div>
@@ -620,11 +635,13 @@
                         <h5>Newsletter</h5>
                         <!-- Start Subscribe -->
                         <div class="news_letter_wrp">
-                            <p>Subscribe our newsletter to get more update & join to Kleanbera</p>
+                            <p>Subscribe our newsletter to get more update & join to Tastery</p>
                             <form class="mailchimp">
                                 <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
-                                <input class="email_field" type="text" name="email" id="subscriber-email" placeholder="Email Address">
-                                <button class="submit-contact" type="submit" id="subscribe-button"><i class="icofont-paper-plane"></i></button>
+                                <input class="email_field" type="text" name="email" id="subscriber-email"
+                                    placeholder="Email Address">
+                                <button class="submit-contact" type="submit" id="subscribe-button"><i
+                                        class="icofont-paper-plane"></i></button>
                                 <span class="subscription-success"> </span>
                                 <span class="subscription-error"> </span>
                                 <label class="subscription-label" for="subscriber-email"></label>
@@ -635,20 +652,19 @@
                 </div>
                 <!-- End: Newsletter -->
             </div>
-             <!-- End: row -->
+            <!-- End: row -->
 
             <!-- Start: Subfooter -->
             <div class="subfooter_wrap">
                 <div class="subfooter">
-                    <p>2021 © Copyright <a href="index.html">Kleanbera.</a> All rights Reserved.</p>
+                    <p>2021 © Copyright <a href="index.html">Tastery.</a> All rights Reserved.</p>
                 </div>
-                <div class="scrollup">
+                <a href="#top" class="scrollup">
                     <i class="icon-glyph-266"></i>
-                </div>
+                </a>
                 <!-- End:Subfooter -->
             </div>
             <!-- End: Subfooter -->
-
         </div>
         <!-- End: Container -->
     </footer>
@@ -667,7 +683,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/waypoints.min.js"></script>
+    <!-- owl carousel-->
     <script src="js/owl-carousel.js"></script>
+    <!-- magnific popup-->
     <script src="js/magnific-popup.js"></script>
 
     <!-- Custom Scripts

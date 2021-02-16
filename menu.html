@@ -81,7 +81,7 @@
 
     <!-- Start: Header Section 
 ==================================================-->
-    <div class="header_topbar">
+    <div class="header_topbar" id="top">
         <!-- Logo -->
         <div class="container">
             <div class="row">
@@ -95,77 +95,63 @@
                 </div>
                 <div class="header_top_left">
                     <div class="opening-hrs">
-                        <p>Opening Hours : 9am-5pm & 9am-11pm </p>
-                        <div class="opening-hrs-tbl">
-                            <table class="table table-bordered">
+                        <p> <i class="fas fa-business-time"></i> Hours : 9am-5pm & 9am-11pm </p>
+                        <div class="opening-table-wrap">
+                            <table class="table opening-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Evening Opening Time</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Days</td>
-                                        <td>Day Opening Time</td>
-                                        <td>Evening Opening Time</td>
+                                        <td> Sunday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Sunday
-                                        </td>
-                                        <td>9am-5pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Monday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Monday
-                                        </td>
-                                        <td>8am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Tuesday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Tuesday
-                                        </td>
-                                        <td>8am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Wednesday</td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Wednesday
-                                        </td>
-                                        <td>9am-2pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Thusday </td>
+                                        <td>5pm-10:30pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Thusday
-                                        </td>
-                                        <td>9am-1pm</td>
-                                        <td>2pm-6pm</td>
+                                        <td> Friday </td>
+                                        <td>5pm-11pm</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            Friday
-                                        </td>
-                                        <td>9am-2pm</td>
-                                        <td>2pm-11pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Statarday
-                                        </td>
-                                        <td>9am-5pm</td>
-                                        <td>9am-11pm</td>
+                                        <td> Statarday </td>
+                                        <td>5pm-11pm</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                        <!--  End: Opening Hrs Table -->
                     </div>
+                    <!--  Endd: opening-hrs -->
+
                     <ul class="header_cart">
                         <li><a href="my-account.html"> Login </a></li>
                         <li>
-                            <a href="checkout.html" class="icofont-cart"></a>
+                            <a href="checkout.html" class="icofont-cart-alt cart"></a>
                         </li>
                     </ul>
+                    <!--  Endd: Header  Login & Cart -->
                 </div>
+                <!-- End: header_top_left -->
             </div>
+            <!-- End: row  -->
         </div>
+        <!-- End: Container  -->
     </div>
     <!-- End: Header Info -->
 
@@ -174,20 +160,24 @@
         <div class="container">
             <div class="row">
                 <div class="logo col-md-3 col-sm-12">
-                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="">
+                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="tastery">
                     </a>
                 </div>
+                <!-- end: logo -->
+
                 <div class="col-md-9 col-sm-12">
                     <div id="navigation">
                         <ul>
                             <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="order.html">Order Online</a></li>
-                            <li><a href="menus.html">Our Menus </a></li>
+                            <li><a href="menu.html">Order </a></li>
+                            <li><a href="shop.html">Menus </a></li>
                             <li class="has-sub"><a href="#">Pages</a>
                                 <ul>
-                                    <li><a href="event.html">Event</a> </li>
-                                    <li><a href="categing.html">Event Categing</a> </li>
+                                    <li><a href="catering.html">Event Categing</a> </li>
                                     <li><a href="branches.html">Our Branches </a> </li>
+                                    <li><a href="single-event.html"> Single Event </a> </li>
+                                    <li><a href="event.html">Event</a> </li>
+                                    <li><a href="offer.html"> Offer </a> </li>
                                     <li><a href="faq.html"> Faq </a> </li>
                                 </ul>
                             </li>
@@ -196,8 +186,9 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <!-- End: Menu  -->
+                    <!-- End: navigation  -->
                 </div>
+                <!--/ col-md-9 col-sm-12 -->
             </div>
             <!--/ row -->
         </div>
@@ -1186,7 +1177,6 @@
 ==================================================-->
 
 
-
     <!-- Start:Footer Section 
 ==================================================-->
     <footer class="footer-section">
@@ -1231,7 +1221,7 @@
                         <h5>Contact Info</h5>
                         <ul>
                             <li>
-                                <i class="icofont-location-pin"></i> <a href="#">59 Hullbridge Road.SS6 9NL</a>
+                                <i class="icofont-location-pin"></i> <a href="#">59 Hullbridge Road.SS6</a>
                             </li>
                             <li>
                                 <i class="icofont-email"></i> <a href="#">nfo@spicehutonline.co.uk</a>
@@ -1275,7 +1265,7 @@
                         <h5>Newsletter</h5>
                         <!-- Start Subscribe -->
                         <div class="news_letter_wrp">
-                            <p>Subscribe our newsletter to get more update & join to Kleanbera</p>
+                            <p>Subscribe our newsletter to get more update & join to Tastery</p>
                             <form class="mailchimp">
                                 <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
                                 <input class="email_field" type="text" name="email" id="subscriber-email"
@@ -1297,15 +1287,14 @@
             <!-- Start: Subfooter -->
             <div class="subfooter_wrap">
                 <div class="subfooter">
-                    <p>2021 © Copyright <a href="index.html">Kleanbera.</a> All rights Reserved.</p>
+                    <p>2021 © Copyright <a href="index.html">Tastery.</a> All rights Reserved.</p>
                 </div>
-                <div class="scrollup">
+                <a href="#top" class="scrollup">
                     <i class="icon-glyph-266"></i>
-                </div>
+                </a>
                 <!-- End:Subfooter -->
             </div>
             <!-- End: Subfooter -->
-
         </div>
         <!-- End: Container -->
     </footer>
@@ -1324,7 +1313,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/waypoints.min.js"></script>
+    <!-- owl carousel-->
     <script src="js/owl-carousel.js"></script>
+    <!-- magnific popup-->
     <script src="js/magnific-popup.js"></script>
 
     <!-- Custom Scripts

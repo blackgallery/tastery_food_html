@@ -17,7 +17,9 @@
         $(".body-overlay").removeClass("opened");
     });
 
-
+	$('.popup-youtube').magnificPopup({
+        type: 'iframe'
+      });
     /* =======================================
         For slider
     =======================================*/

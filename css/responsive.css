@@ -208,6 +208,12 @@
     margin-top: 12px;
     margin-bottom: 5px;
   }
+
+  /*  Shop Page  */
+  .shop-section .menu-accro-body .card-columns {
+    columns: 2;
+  }
+
 }
 
 
@@ -339,6 +345,21 @@
     margin-bottom: 0px;
     margin-top: -10px;
   }
+
+  /*  Shop Page */
+  .findshop-section .container>.row>.col-lg-4 {
+    margin-top: 30px;
+    padding: 40px 20px 10px;
+  }
+
+  .fshop-contact {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+  }
+
+
 }
 
 
@@ -719,6 +740,51 @@
   .menu-accro-body .card-columns {
     column-count: 1;
   }
+
+  .menu-cart-body tr {
+    grid-template-columns: 9fr 2fr 2fr 1fr;
+    padding-left: 13px;
+  }
+
+  /*  Shop Page */
+  .findshop-wrap {
+    padding: 40px 10px;
+  }
+
+  .findshop-wrap .row.menu-select-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .findshop-wrap .full-menu-search {
+    flex-wrap: wrap;
+  }
+
+  /*  Shop contact */
+  .findshop-section .container>.row>.col-lg-4 {
+    padding: 40px 20px;
+  }
+
+  .fshop-contact {
+    padding-left: 10px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0px;
+  }
+
+  .findshop-section .menu-category {
+    gap: 22px;
+    justify-content: center;
+  }
+
+  .findshop-wrap .reset-menu-btn {
+    width: 100%;
+  }
+
+  /*  Shop accrodian */
+
+  .shop-section .menu-accro-body .card-columns {
+    columns: 1;
+  }
 }
 
 /* Mobile Vertical Layout: 488px 
@@ -726,6 +792,16 @@
 @media only screen and (min-width: 488px) and (max-width: 767px) {
   .catering-text {
     padding: 42px 104px 26px;
+  }
+
+  /*  Shop Page */
+  .findshop-section .container>.row>.col-lg-4 {
+    padding: 40px 20px 10px;
+  }
+
+  .fshop-contact {
+    padding-left: 10px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
