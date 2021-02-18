@@ -73,6 +73,31 @@
     font-size: 16px;
     margin-bottom: 1px;
   }
+
+  /* Profile Page */
+  .profile-tab-wrap::after {
+    width: 303px;
+  }
+
+  .profile-tab-wrap .nav-pills .nav-link {
+    font-size: 18px;
+  }
+
+  .gift-card-wrap .table thead th {
+    vertical-align: middle;
+    line-height: 1.2;
+  }
+
+  .walet-creadit input {
+    height: 42px;
+    border-radius: 50px;
+    border: 1px dashed #9b9595;
+    padding-right: 10px;
+    padding-left: 20px;
+    float: left;
+    background: transparent;
+    width: 127px;
+  }
 }
 
 
@@ -210,6 +235,7 @@
   }
 
   /*  Shop Page  */
+
   .shop-section .menu-accro-body .card-columns {
     columns: 2;
   }
@@ -217,6 +243,60 @@
   .shop-view-cart .shop-cart-btn {
     padding: 20px 25px;
   }
+
+  /* Profile Page */
+  .profile-info {
+    padding-left: 10px;
+  }
+
+  .profile-image img {
+    width: 55px;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+  }
+
+  .profile-tab-wrap::after {
+    width: 216px;
+  }
+
+  .profile-tab-wrap {
+    padding: 40px 20px;
+  }
+
+  .profile-tab-wrap .nav-pills .nav-link {
+    font-size: 15px;
+    line-height: 1.2;
+    padding-left: 25px;
+  }
+
+  .profile-tab-wrap .nav-pills .nav-link:hover {
+    padding-right: 40px;
+    color: #222;
+  }
+
+  .gift-card-wrap .table thead th {
+    vertical-align: middle;
+    line-height: 1.2;
+  }
+
+  .profile-tab-wrap .nav-pills .nav-link::before {
+    right: 8px;
+  }
+
+  .order-no {
+    margin-left: 15px;
+  }
+
+  .walet-bal {
+    text-align: left;
+  }
+
+  .wallet-card-wrap {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 
@@ -812,8 +892,82 @@
     columns: 1;
   }
 
+  /*  Profile Page */
+  .profile-tab-wrap::after {
+    width: 100%;
+    border-radius: 25px 25px;
+    height: 520px;
+  }
 
+  .order-no {
+    margin-left: 12px;
+  }
 
+  .profile-details-section .tab-content {
+    margin-top: 65px;
+  }
+
+  .profile-tab-wrap .nav-pills .nav-link {
+    justify-content: flex-start;
+    padding-left: 25px;
+    font-size: 15px;
+    height: 45px;
+  }
+
+  .profile-tab-wrap .nav-pills .nav-link::after {
+    border-radius: 50px;
+    border: 1px dashed #E3F0E5;
+  }
+
+  .profile-details {
+    margin-bottom: 20px;
+  }
+
+  .wallet-card-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .walet-checkout-btn button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .walet-creadit input {
+    width: 100%;
+  }
+
+  .walet-bal {
+    text-align: left;
+  }
+
+  .wallet-btn {
+    padding: 0px !important;
+  }
+
+  .profile-tab-wrap {
+    padding: 25px 20px;
+  }
+
+  .order-track-wrap ul li {
+    width: 100%;
+  }
+
+  .order-track-wrap ul li span::after {
+    display: none;
+  }
+
+  .order-track-wrap ul li {
+    margin-bottom: 20px;
+  }
+
+  .order-track-wrap ul li span {
+    margin-bottom: 5px;
+  }
+
+  .order-no {
+    margin-left: 0px;
+    text-align: center;
+  }
 }
 
 /* Mobile Vertical Layout: 488px 

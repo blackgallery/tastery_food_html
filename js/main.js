@@ -272,6 +272,21 @@
         }
     });
 
+     /*-------------------------------------
+       Menu Page Menu  Scroll 
+    -------------------------------------*/
+    var scrollLeftAmount =240;
+    $("#arrow_right").click(function () { 
+        $('.menu-list-nav-sm').animate({
+            scrollLeft:'+='+scrollLeftAmount
+        },300);
+    }); 
+	$("#arrow_left").click(function () { 
+        $('.menu-list-nav-sm').animate({
+            scrollLeft:'-='+scrollLeftAmount
+        },300);
+    });
+
 
 
     /* =======================================

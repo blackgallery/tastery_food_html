@@ -1,12 +1,12 @@
 /*------------------------------------------------------------------
-Project: Kleanbera - Cleaning Service HTML Template
+Project: Kleanbera - Restaurant HTML Template
 Version: 1.1
-Primary use: Cleaning Service Company
+Primary use: Restaurant
 -------------------------------------------------------------------*/
-
 
 /* Index of CSS
 ==================================================
+
 1. Global styles
 
 2. Header Section / .header_topbar
@@ -15,47 +15,21 @@ Primary use: Cleaning Service Company
 
 4. Slider Section / .slides_wrapper
 
-5. Promo Section / .promo_section
+5. About Section / .about-section
 
-6. About Section / .about-section
+6. Promo Product Section / .promo-product-area
 
-7. Service Section / .service-section
+7. Promo Section / .promo-area
 
-8. Quote Section / .quote-section
+8. Event Section / .event-section
 
-9. Comparison Section / .comparison_sec
+9. Gallery Section / .gallery-section
 
-10. Why choose us Section / .why-choose-section
+10. Testimonials Section / .testimonials-section
 
-11. Project Section / .project-section
+11. Client Section / .client-section
 
-12. Testimonial Section / .testi-section
-
-13. Blog Section / .blog-section
-
-14. Call to action Section / .bottom_cta
-
-15. Footer Section/ .footer-section
-
-[===== Home Page Two ===== ]
-
-16. Header Section
-
-17. Navigation Section
-
-18. Slider Section
-
-19. Promo Section 
-
-20. Service Section
-
-21. Quote Section
-
-22. Project Section
-
-23. Call to action Section
-
-24. Team Section 
+12. Footer Section / .footer-section
 
 [===== Single Page ===== ]
 
@@ -3634,6 +3608,10 @@ header.single-banner .col-sm-12 {
 /* ============================================ 
     Profile Page
 =========================================== */
+.profile-details-section {
+  padding-top: 100px;
+}
+
 .profile-tab-wrap {
   background: #fff;
   padding: 40px;
@@ -5584,6 +5562,79 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*  Menu List */
+/* Meni tab for Mobile  */
+.menu-arrow-sm {
+  display: none;
+}
+
+.menu-arrow-sm #arrow_left,
+.menu-arrow-sm #arrow_right {
+  position: absolute;
+  top: -106px;
+  z-index: 999999999999;
+  border: 1px solid #19C133;
+  width: 35px;
+  height: 81px;
+  border-radius: 100px;
+  background: #19C133;
+  text-align: center;
+  line-height: 23px;
+  color: #fff;
+  background-color: rgba(25, 193, 51, 0.73);
+}
+
+.menu-arrow-sm #arrow_left {
+  left: -35px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.menu-arrow-sm #arrow_right {
+  right: -35px;
+  padding-left: 2px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.menu-arrow-sm .right {
+  text-align: right;
+}
+
+.menu-arrow-sm .right i,
+.menu-arrow-sm .left i {
+  right: 1px;
+  position: relative;
+  font-size: 18px;
+}
+
+.menu-arrow-sm .right i {
+  right: -4px;
+}
+
+/* -----  Phone  -----*/
+@media only screen and (max-width: 767px) {
+  .menu-arrow-sm {
+    position: relative;
+    display: block;
+  }
+
+  .menu-list-nav-sm {
+    margin-bottom: 25px;
+    z-index: 999999;
+    height: 81px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px !important;
+    border-radius: 0px !important;
+  }
+
+  .menu-list-col {
+    padding-left: 36px;
+    padding-right: 35px;
+  }
+}
+
+/* end: Meni tab for Mobile  */
+
 .menu-list-nav {
   background: #F6F8FA;
   padding: 20px 20px 10px;
