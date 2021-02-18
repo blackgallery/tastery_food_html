@@ -2815,6 +2815,7 @@ header.single-banner .col-sm-12 {
   letter-spacing: 1px;
   font-weight: 700;
   margin-bottom: 0px;
+  margin-top: -15px;
 }
 
 .banner-text p a:hover {
@@ -5787,11 +5788,14 @@ body::-webkit-scrollbar-thumb {
 
 .item-name {
   text-transform: capitalize;
+  line-height: 1.2;
 }
 
 /*  Qnt */
 .menu-cart-qty {
   position: relative;
+  width: 63px;
+  padding-left: 5px;
 }
 
 .menu-cart-qty input {
@@ -5799,6 +5803,7 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #ddd;
   padding: 5px 0px 5px 7px;
   border-radius: 5px;
+  width: 63px;
 }
 
 .menu-cart-qty input[type="number"] {
@@ -5809,7 +5814,7 @@ body::-webkit-scrollbar-thumb {
   display: block;
   position: absolute;
   z-index: 1;
-  right: 2px;
+  right: -2px;
   width: 23px;
   height: 40%;
   text-align: center;
@@ -5827,7 +5832,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu-cart-qty span.q_dec {
-  bottom: 3px;
+  bottom: 2.5px;
   line-height: 13px;
 }
 
