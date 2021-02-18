@@ -17,9 +17,7 @@
         $(".body-overlay").removeClass("opened");
     });
 
-	$('.popup-youtube').magnificPopup({
-        type: 'iframe'
-      });
+ 
     /* =======================================
         For slider
     =======================================*/
@@ -310,19 +308,7 @@
     });
 
 
-
-
-    /*=======================================
-        Scroll Top
-    =======================================*/
-
-    // $('.scrollup').on('click', function () {
-    //     $('html,body').animate({
-    //         scrollTop: 0
-    //     }, 900);
-    // });
-
-
+ 
 
 
 

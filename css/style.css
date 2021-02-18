@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------
-Project: Kleanbera - Restaurant HTML Template
-Version: 1.1
+Project: Tastery - Restaurant HTML Template
+Version: 1.0
 Primary use: Restaurant
 -------------------------------------------------------------------*/
 
@@ -32,28 +32,38 @@ Primary use: Restaurant
 12. Footer Section / .footer-section
 
 [===== Single Page ===== ]
+ 
+13. Single Page Header
 
-25. Single Page Header
+14. About page 
 
-26. Team page 
+15. Contact page
 
-27. Service page 
+16. Review page 
 
-28. Gallery page
+17. Team page
 
-29. Gallery page
+18. Offer page
 
-30. Single Gallery Page
+19. Login Page /  My account
 
-31. Contact page 
+20. Profile Page 
 
-32. Pricing page 
+21. Event Page
 
-33. Single Service page 
+22. Single Event Page
 
-34. Blog Page
+23. Catering Page
 
-35. Single Blog Page
+24. Checkout Page
+
+25. Faq Page
+
+26. Branche Page
+
+27. Menu Page
+
+28. Shop Page
 
 */
 
@@ -706,7 +716,6 @@ section {
 
 .header_topbar ul {
   margin-bottom: 0;
-  /*! text-align: left; */
   margin-left: 0px;
 }
 
@@ -866,7 +875,7 @@ section {
 
 
 /*----------------------------------------------------
-   3. Navigationn Section
+    3. Menu Section / .navigation
 ------------------------------------------------------*/
 
 .navigation {
@@ -1528,14 +1537,13 @@ input.header-search-input:-ms-input-placeholder {
   margin-bottom: 60px;
 }
 
-
 /*Header Transparent CSS End
 ----------------------------------------*/
 
 
-/* ----------------------------------------
-  4. Slider Section 
-----------------------------------------*/
+/*----------------------------------------------------
+  4. Slider Section
+------------------------------------------------------*/
 
 .slide_bg_1 {
   background: #f0f0f0 url("../images/slider1.jpg") no-repeat scroll right center;
@@ -2038,7 +2046,7 @@ input.header-search-input:-ms-input-placeholder {
 
 
 /*----------------------------------------------------
-  6. Promotion Product Section
+  6. Promo Product Section
 ------------------------------------------------------*/
 
 .promo-product-area {
@@ -2168,7 +2176,7 @@ input.header-search-input:-ms-input-placeholder {
 
 
 /*----------------------------------------------------
-  6. Event  Section
+  8. Event Section
 ------------------------------------------------------*/
 .event-section {
   background: url(../images/event_bg.jpg) no-repeat scroll 0 0;
@@ -2235,116 +2243,7 @@ input.header-search-input:-ms-input-placeholder {
 }
 
 /*----------------------------------------------------
-    12. Testimonial Section
-------------------------------------------------------*/
-
-.testimonials-section {
-  padding-bottom: 95px;
-  /*! background-size: cover; */
-  /*! padding-top: 95px; */
-  background: #FFF;
-}
-
-.testimonials-section .item .col-lg-6 {
-  margin-left: -30px;
-}
-
-.testimonials-section .testimonial-box img {
-  border: 5px solid #f5f5f5;
-  border-radius: 50%;
-}
-
-.testimonials-section .testimonial-box .cus-title {
-  margin-top: 46px;
-  margin-left: -8px;
-}
-
-.testimonials-section .testimonial-box .tes-nam {
-  font-size: 16px;
-  text-transform: capitalize;
-  letter-spacing: 0px;
-  font-weight: 600;
-  color: #2a2727;
-  margin-bottom: 0px;
-}
-
-.testimonials-section .tes-degree {
-  color: #4b4b4b;
-  font-size: 13px;
-}
-
-.testimonials-section .testimonial-box p {
-  color: #585757;
-  float: left;
-}
-
-.testimonial-item {
-  margin-bottom: 35px;
-}
-
-.testimonials-section .testimonial_content {
-  background: #F6F8FA;
-  padding: 20px 30px 25px 30px;
-  margin-bottom: 25px;
-  position: relative;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(113, 113, 113, 0.13);
-}
-
-.testimonial_content::after {
-  position: absolute;
-  content: "";
-  color: #333;
-  width: 30px;
-  height: 45px;
-  background: #F6F8FA;
-  left: 16px;
-  bottom: -14px;
-  transform: rotate(-45deg);
-}
-
-.testimonials-section .testimonial-box p i {
-  margin-right: 10px;
-  color: #CFD9DD;
-  font-size: 27px;
-}
-
-.testimonial_content i {
-  color: #19C133;
-  font-size: 13px;
-}
-
-.testi_images {
-  position: relative;
-  /*! margin-left: -15px; */
-  width: 80px;
-  float: left;
-  margin-right: 15px;
-}
-
-.testi_social {
-  position: absolute;
-  right: 3px;
-  z-index: 9;
-  background: #19C133;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  padding-left: 4px;
-  color: #fff;
-  border: 3px solid #fff;
-  line-height: 19px;
-  font-size: 12px;
-  top: 18px;
-}
-
-.testi_social:hover i {
-  color: #fff;
-}
-
-
-/*----------------------------------------------------
-  15. Gallery  Section
+  9. Gallery Section
 ------------------------------------------------------*/
 
 .gallery-section {
@@ -2446,7 +2345,113 @@ input.header-search-input:-ms-input-placeholder {
 }
 
 /*----------------------------------------------------
-  15. Client Section
+    10. Testimonials Section
+------------------------------------------------------*/
+
+.testimonials-section {
+  padding-bottom: 95px;
+  background: #FFF;
+}
+
+.testimonials-section .item .col-lg-6 {
+  margin-left: -30px;
+}
+
+.testimonials-section .testimonial-box img {
+  border: 5px solid #f5f5f5;
+  border-radius: 50%;
+}
+
+.testimonials-section .testimonial-box .cus-title {
+  margin-top: 46px;
+  margin-left: -8px;
+}
+
+.testimonials-section .testimonial-box .tes-nam {
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-weight: 600;
+  color: #2a2727;
+  margin-bottom: 0px;
+}
+
+.testimonials-section .tes-degree {
+  color: #4b4b4b;
+  font-size: 13px;
+}
+
+.testimonials-section .testimonial-box p {
+  color: #585757;
+  float: left;
+}
+
+.testimonial-item {
+  margin-bottom: 35px;
+}
+
+.testimonials-section .testimonial_content {
+  background: #F6F8FA;
+  padding: 20px 30px 25px 30px;
+  margin-bottom: 25px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(113, 113, 113, 0.13);
+}
+
+.testimonial_content::after {
+  position: absolute;
+  content: "";
+  color: #333;
+  width: 30px;
+  height: 45px;
+  background: #F6F8FA;
+  left: 16px;
+  bottom: -14px;
+  transform: rotate(-45deg);
+}
+
+.testimonials-section .testimonial-box p i {
+  margin-right: 10px;
+  color: #CFD9DD;
+  font-size: 27px;
+}
+
+.testimonial_content i {
+  color: #19C133;
+  font-size: 13px;
+}
+
+.testi_images {
+  position: relative;
+  width: 80px;
+  float: left;
+  margin-right: 15px;
+}
+
+.testi_social {
+  position: absolute;
+  right: 3px;
+  z-index: 9;
+  background: #19C133;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding-left: 4px;
+  color: #fff;
+  border: 3px solid #fff;
+  line-height: 19px;
+  font-size: 12px;
+  top: 18px;
+}
+
+.testi_social:hover i {
+  color: #fff;
+}
+
+
+/*----------------------------------------------------
+  11. Client Section
 ------------------------------------------------------*/
 .client-section {
   padding: 60px;
@@ -2478,7 +2483,7 @@ input.header-search-input:-ms-input-placeholder {
 }
 
 /*----------------------------------------------------
-  15. Footer Section
+  12. Footer Section
 ------------------------------------------------------*/
 
 .footer-section.footer_home {
@@ -2626,10 +2631,15 @@ footer .contact_info li a:hover {
   margin-top: -2px !important;
 }
 
+form.mailchimp {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
 .news_letter_wrp .submit-contact {
   height: 40px;
   line-height: 40px;
-  margin-top: 10px;
   border-radius: 30px;
   font-size: 15px;
   background: #19C133;
@@ -2637,9 +2647,10 @@ footer .contact_info li a:hover {
   color: #fff;
   padding: 0px 20px;
   position: absolute;
-  right: 21px;
+  right: 5px;
   margin-top: 10px;
   font-size: 24px;
+  top: 0px;
 }
 
 .footer-social-links ul {
@@ -2720,15 +2731,14 @@ footer .contact_info li a:hover {
 
 
 
-
-
-
-
 /*  =======================================================
-            Single Page
+        Single Page
 ============================================================ */
 
-/*  Single Page Banner */
+/*----------------------------------------------------
+    13. Single Page Header
+------------------------------------------------------*/
+
 .single-banner {
   position: relative;
   text-align: center;
@@ -2796,9 +2806,9 @@ header.single-banner .col-sm-12 {
   color: #19C133;
 }
 
-/* =================================
-    About page 
-================================= */
+/*----------------------------------------------------
+    14. About page 
+------------------------------------------------------*/
 .about-section.about-pg-ab {
   padding-top: 100px;
 }
@@ -2848,9 +2858,10 @@ header.single-banner .col-sm-12 {
   transform: scale(1) rotate(0deg);
 }
 
-/* =================================
-    Contact page 
-================================= */
+
+/*----------------------------------------------------
+    15. Contact page 
+------------------------------------------------------*/
 .contact-section {
   padding-top: 100px;
 }
@@ -3022,10 +3033,10 @@ header.single-banner .col-sm-12 {
   opacity: .9;
 }
 
+/*-----------------------------------------------------------
+    16. Review page 
+------------------------------------------------------------*/
 
-/*=================================
-    Review page 
-================================= */
 .testimonials-section.review-pg-testi {
   background: #F6F8FA;
 }
@@ -3058,6 +3069,12 @@ header.single-banner .col-sm-12 {
   color: #4b4b4b;
   cursor: pointer;
   background: transparent;
+  outline: none;
+}
+
+.select-group select:focus,
+.select-group select:active {
+  border-color: #19C133;
 }
 
 .review-form-section #image {
@@ -3084,10 +3101,9 @@ header.single-banner .col-sm-12 {
   line-height: 0px;
 }
 
-
-/*=================================
-    Team page 
-================================= */
+/*-----------------------------------------------------------
+    17. Team page 
+------------------------------------------------------------*/
 .team-section {
   background: #F6F8FA;
 }
@@ -3152,10 +3168,9 @@ header.single-banner .col-sm-12 {
 }
 
 
-
-/*=================================
-    Offer  page 
-================================= */
+/*-----------------------------------------------------------
+    18. Offer page 
+------------------------------------------------------------*/
 
 /* Loyalty Card Signup   */
 .loyalty-signup {
@@ -3328,7 +3343,7 @@ header.single-banner .col-sm-12 {
   color: #fff;
   padding: 15px 38px;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 6px;
   border-radius: 50px;
   font-weight: 600;
   font-size: 14px;
@@ -3380,19 +3395,6 @@ header.single-banner .col-sm-12 {
 .git-card-img img {
   border-radius: 15px;
 }
-
-/* .git-card-info::after {
-    position: absolute;
-    content: "";
-    background: #F6F8FA;
-    width: 175px;
-    height: 68px;
-    border-radius: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -30px;
-    box-shadow: 0px 7px 7px -5px rgba(0, 0, 0, 0.11);
-} */
 
 .git-card-img {
   overflow: hidden;
@@ -3472,9 +3474,10 @@ header.single-banner .col-sm-12 {
   -ms-transition: all 0.4s ease;
 }
 
-/* =========================================
-     Login Page /  My account
-============================================== */
+
+/*-----------------------------------------------------------
+    19. Login Page /  My account
+------------------------------------------------------------*/
 
 .login-form input,
 .registration-form input {
@@ -3605,9 +3608,11 @@ header.single-banner .col-sm-12 {
   color: #19C133;
 }
 
-/* ============================================ 
-    Profile Page
-=========================================== */
+
+/*-----------------------------------------------------------
+    20. Profile Page 
+------------------------------------------------------------*/
+
 .profile-details-section {
   padding-top: 100px;
 }
@@ -3670,9 +3675,6 @@ header.single-banner .col-sm-12 {
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 5px;
-  /*! background: url(../images/blog1.jpg); */
-  /*! background-size: cover; */
-  /*! background-position: center; */
   transition: 0.5s;
   color: #fff;
   z-index: 9;
@@ -3919,7 +3921,6 @@ header.single-banner .col-sm-12 {
 
 .wallet-point,
 .wallet-btn {
-  /*! margin-top: 13px; */
   grid-column: 1/-1;
 }
 
@@ -3973,14 +3974,14 @@ header.single-banner .col-sm-12 {
   padding: 0px 25px;
 }
 
-/* ============================================ 
-    Event Page
-=========================================== */
+
+/*-----------------------------------------------------------
+    21. Event Page
+------------------------------------------------------------*/
 
 .blog-section {
   background: #fff;
   padding-bottom: 100px;
-  padding-top: 120px;
 }
 
 .blog_wrp_list {
@@ -4115,10 +4116,9 @@ header.single-banner .col-sm-12 {
 }
 
 
-
-/*=================================
-  15. Single Blog Page 
-================================= */
+/*-----------------------------------------------------------
+    22. Single Event Page
+------------------------------------------------------------*/
 
 .single_blog {
   padding-bottom: 70px;
@@ -4198,7 +4198,6 @@ header.single-banner .col-sm-12 {
 }
 
 
-
 /*=================================
      Post Tag and SHare 
   ================================= */
@@ -4209,9 +4208,7 @@ header.single-banner .col-sm-12 {
 }
 
 .post_share.footer_socil {
-  /*! width: 30%; */
   text-align: right;
-  /*! margin-top: 26px; */
 }
 
 .post_share .list-icons {
@@ -4239,8 +4236,6 @@ header.single-banner .col-sm-12 {
 
 .post_tags {
   float: left;
-  /*! width: 70%; */
-  /*! margin-top: 26px; */
 }
 
 .post_tag_grid h5 {
@@ -4251,9 +4246,7 @@ header.single-banner .col-sm-12 {
 }
 
 .post_tags a {
-  /*! background: #19C133; */
   color: #1a1818;
-  /*! padding: 5px 10px; */
   margin-right: 10px;
   border-radius: 4px;
   position: relative;
@@ -4280,8 +4273,6 @@ header.single-banner .col-sm-12 {
 .blog_post_date i {
   margin-right: 5px;
 }
-
-
 
 
 /*   Comments  */
@@ -4524,14 +4515,10 @@ header.single-banner .col-sm-12 {
 }
 
 
-
-
-
 /* -- Widget Area */
 
 .widget-area {
   text-align: center;
-  /*! padding-top: 120px; */
 }
 
 /* - Widget */
@@ -4734,10 +4721,9 @@ header.single-banner .col-sm-12 {
 }
 
 
-
-/*  ===========================================
-            Catering Page
-  =============================================== */
+/*-----------------------------------------------------------
+    23. Catering Page
+------------------------------------------------------------*/
 
 /*  Cart Items Section */
 
@@ -4862,10 +4848,10 @@ header.single-banner .col-sm-12 {
 }
 
 
+/*-----------------------------------------------------------
+    24. Checkout Page
+------------------------------------------------------------*/
 
-/*  ===========================================
-       Checkout  Page
-  =============================================== */
 /*  Card Header */
 .checkout-section .card-header a {
   color: #fff;
@@ -4941,7 +4927,6 @@ header.single-banner .col-sm-12 {
   text-transform: uppercase;
   font-size: 13px;
   border: none;
-  /*! width: 100%; */
 }
 
 
@@ -4977,7 +4962,6 @@ header.single-banner .col-sm-12 {
   border: 1px dashed #d0cbcb;
   margin: 15px;
   width: 100%;
-  /*! background: #ECEFF2; */
   border-radius: 20px;
   padding: 10px 0px;
   margin-top: -5px;
@@ -4986,7 +4970,6 @@ header.single-banner .col-sm-12 {
 .user_deatils p {
   color: #262c33;
   margin-bottom: 5px;
-  /*! text-align: center; */
   font-size: 15px;
   font-weight: 600;
 }
@@ -5089,10 +5072,10 @@ header.single-banner .col-sm-12 {
 }
 
 
+/*--------------------------------------------------------
+    25. Faq Page
+----------------------------------------------------------*/
 
-/* ===========================================
-    Faq Page
-=============================================== */
 .faq-section {
   padding-top: 85px;
 }
@@ -5153,8 +5136,6 @@ header.single-banner .col-sm-12 {
 }
 
 .faq-accro-body {
-  /*! border-top: 1px solid #ddd; */
-  /*! padding-top: 15px; */
   margin-top: 15px;
 }
 
@@ -5210,12 +5191,12 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-/* ============================================
-        Branche Page
-  ================================================ */
+/*--------------------------------------------------------
+    26. Branche Page
+----------------------------------------------------------*/
+
 .branche-section {
   margin-bottom: -30px;
-
 }
 
 .branche-wrap {
@@ -5248,9 +5229,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* ============================================
-        Menu Page
-  ================================================ */
+/*--------------------------------------------------------
+    27. Menu Page
+----------------------------------------------------------*/
+
 /* ========= Find Menu Section ============= */
 .findmenu-section {
   background: #0bc050 url("../images/chef-bg.png");
@@ -5292,10 +5274,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .findmenu-section .col-md-4>div {
-  /*! background: #F6F8FA; */
   padding: 40px 20px 40px;
-  /*! background: url("../images/menu-find-bg.png"); */
-  /*! box-shadow: 0px 1px 21px #ece4e4; */
   width: 100%;
 }
 
@@ -5473,6 +5452,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
   background: transparent;
   color: #e8d9d9;
+  outline: none;
 }
 
 .menu-select-wrap .select-group select option {
@@ -5670,7 +5650,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu-accro-header {
-  /*! border: 1px solid #ddd; */
   padding: 15px 17px 18px;
   border-radius: 5px;
   background: #F6F8FA;
@@ -5795,7 +5774,6 @@ body::-webkit-scrollbar-thumb {
 .menu-item-cart {
   background: #F6F8FA;
   margin-top: 20px;
-  /*! padding: 20px; */
   border-radius: 10px;
 }
 
@@ -5900,10 +5878,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+/*--------------------------------------------------------
+    28. Shop Page
+----------------------------------------------------------*/
 
-/*  =========================================
-      Shop  Page 
-============================================== */
 .findshop-section {
   background: #fff;
   padding-top: 100px;
@@ -6272,20 +6250,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .shop-cart-qty input[type="number"] {
+  -webkit-appearance: textfield;
   -moz-appearance: textfield;
+  -o-appearance: textfield;
 }
 
 .shop-cart-qty span {
   display: block;
   position: absolute;
   z-index: 1;
-  /*! width: 23px; */
   height: 40%;
   text-align: center;
   cursor: pointer;
   color: #777;
-  /*! font-weight: bold; */
-  /*! background: #dee6e6; */
   border-radius: 5px 5px 5px 5px;
   font-size: 12px;
 }
@@ -6301,7 +6278,8 @@ body::-webkit-scrollbar-thumb {
   bottom: 11px;
   line-height: 13px;
   right: 10px;
-  /*! font-size: 15px; */
+  background: #fff;
+  padding-left: 10px;
 }
 
 .shop-cart-qty span:before {
