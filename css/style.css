@@ -2169,11 +2169,25 @@ input.header-search-input:-ms-input-placeholder {
   color: #fff;
 }
 
+
 .promo-list i {
   font-size: 50px;
   color: #19C133;
+  border: 2px dotted #19C133;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  transition: .6s;
 }
 
+.promo-list:hover i {
+  color: #fff;
+  border: 2px dotted #19C133;
+  background: #19C133;
+  transition: .6s;
+}
 
 /*----------------------------------------------------
   8. Event Section
@@ -5390,6 +5404,12 @@ body::-webkit-scrollbar-thumb {
 
 .fmenu-Delivery-form input:focus {
   border: 1px dashed #fff !important;
+}
+
+.fmenu-contact-col:hover .fmenu-icon i {
+  color: #fff !important;
+  border: 1px dashed #19C133 !important;
+  background: #19C133;
 }
 
 .fmenu-Delivery-form #fmenu-charge {
