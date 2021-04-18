@@ -192,144 +192,35 @@
         <!--/ container -->
     </div>
     <!-- End: header navigation -->
-
-
-    <!-- header -->
-    <header id="page-top" class="single-banner">
-        <!-- Start: Header Content -->
-        <div class="container">
-            <div class="row banner-text">
-                <div class="col-sm-12">
-                    <!-- Headline Goes Here -->
-                    <h3>Our Menus</h3>
-                    <p><a href="index.html"> Home </a> <i class="icofont-rounded-right"></i> Our Menus </p>
-                </div>
-            </div>
-            <!-- End: .row -->
-        </div>
-        <!-- End: Header Content -->
-    </header>
-    <!--/. header -->
     <!--/    
-==================================================-->
-
-
-
-    <!-- Start: Find Menu Section
-==================================================-->
-    <section class="findmenu-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="fmenu-text">
-                        <div class="base-header">
-                            <h2>Opening Hours </h2>
-                        </div>
-                        <ul class="fmenu-list">
-                            <li>
-                                <span class="fmenu-txt"> Day Time</span>
-                                <span class="fmenu-time">9am-2pm</span>
-                            </li>
-                            <li>
-                                <span class="fmenu-txt">Evening Time</span>
-                                <span class="fmenu-time">2pm-11pm</span>
-                            </li>
-                            <li>
-                                <span class="fmenu-txt">Collection Time </span>
-                                <span class="fmenu-time">2 Min</span>
-                            </li>
-                            <li>
-                                <span class="fmenu-txt">Delivery Time </span>
-                                <span class="fmenu-time">2 Min</span>
-                            </li>
-                            <li>
-                                <span class="fmenu-txt">Pickup Discount </span>
-                                <span class="fmenu-time"> 10</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End: col-md-4 col-sm-12 -->
-
-                <!-- Start: Contact Info -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="fmenu-contact">
-                        <div class="fmenu-contact-col">
-                            <div class="fmenu-icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="fmenu-contact-text">
-                                <h4>Phone</h4>
-                                <p>01268 785 444</p>
-                            </div>
-                        </div>
-                        <!-- end: Phone -->
-
-                        <div class="fmenu-contact-col">
-                            <div class="fmenu-icon">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="fmenu-contact-text">
-                                <h4>Email</h4>
-                                <p>info@youremail.co.uk</p>
-                            </div>
-                        </div>
-                        <!-- end: email -->
-
-                        <div class="fmenu-contact-col">
-                            <div class="fmenu-icon">
-                                <i class="fa fa-heart"></i>
-                            </div>
-                            <div class="fmenu-contact-text">
-                                <h4 id="heart-count">Loved</h4>
-                                <p>88</p>
-                            </div>
-                        </div>
-                        <!-- end: heart count -->
-                    </div>
-                    <!-- End: Contact Info -->
-                </div>
-                <!-- End: col-md-4 col-sm-12 -->
-
-                <!-- Start:  Delivery Coverage Form-->
-                <div class="col-md-4 col-sm-12">
-                    <div class="fmenu-Delivery-form">
-                        <h4> Delivery Coverage Checker </h4>
-                        <form>
-                            <div class="del-post-code">
-                                <input type="text" id="post-code-input" placeholder="Post Code Entry">
-                                <button type="button" id="post-code-btn"><i class="icofont-search-1"></i></button>
-                            </div>
-                            <div class="del-branch">
-                                <input type="text" id="fmenu-branch" placeholder="Branch (Your Nearest)">
-                                <input type="text" id="fmenu-charge" placeholder="Delivery Charge (£ 10)">
-                            </div>
-                        </form>
-                    </div>
-                    <!-- End: Delivery Coverage Form -->
-                </div>
-                <!-- End: col-md-4 col-sm-12 -->
-            </div>
-        </div>
-    </section>
-    <!-- End: Find Menu Section
 ==================================================-->
 
 
 
     <!-- Start: Menu  Section
 ==================================================-->
-    <section class="menu-section">
+    <div class="menu-select-section">
+        <!-- Start: Header Content -->
         <div class="container">
             <div class="row menu-select-wrap">
                 <div class="col-md-4 col-sm-12">
                     <div class="select-group allergie_select">
-                        <select name="total_review">
-                            <option value="0"> Select Order Type </option>
-                            <option value="1">1 Address</option>
-                            <option value="2">2 Address</option>
-                            <option value="3">3 Address</option>
-                        </select>
+                        <div class="allergie_multiselect">
+                            <div class="allergie_selectBox" onclick="showCheckboxes()">
+                                <select>
+                                    <option>Select an option</option>
+                                </select>
+                                <div class="overSelect"></div>
+                            </div>
+                            <div id="allergie_checkboxes">
+                                <label for="one">
+                                    <input type="checkbox" id="one" />First checkbox</label>
+                                <label for="two">
+                                    <input type="checkbox" id="two" />Second checkbox</label>
+                                <label for="three">
+                                    <input type="checkbox" id="three" />Third checkbox</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- /.col-md-4 col-sm-12-->
@@ -415,6 +306,19 @@
             </div>
             <!-- /. row -->
 
+        </div>
+        <!-- End: Header Content -->
+    </div>
+    <!--/. header -->
+
+    <!-- End: Menu  Section
+==================================================-->
+
+
+    <!-- Start: Menu  Section
+==================================================-->
+    <section class="menu-section">
+        <div class="container">
             <div class="menu-list-wrap">
                 <div class="row">
                     <div class="col-sm-12">
@@ -1390,8 +1294,6 @@
     <!-- End: Footer Section 
 ========================================-->
 
-
-
     <!-- Scripts
 ========================================-->
     <!-- jquery -->
@@ -1410,6 +1312,21 @@
     <!-- Custom Scripts
 ========================================-->
     <script src="js/main.js"></script>
+
+    <script>
+        var expanded = false;
+
+        function showCheckboxes() {
+            var allergie_checkboxes = document.getElementById("allergie_checkboxes");
+            if (!expanded) {
+                allergie_checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                allergie_checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+    </script>
 
 </body>
 

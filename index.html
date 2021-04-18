@@ -46,10 +46,6 @@
     <link href="css/colors/default-color.css" rel="stylesheet">
     <!--Replace Your Color-->
 
-    <!-- Switcher Styles-->
-    <link rel="stylesheet" id="switcher-css" type="text/css" href="css/switcher.css" media="all" />
-    <!-- END Switcher Styles -->
-
     <!-- Color Variation CSS-->
     <!--<link rel="alternate stylesheet" type="text/css" href="css/colors/sundance.css" title="color1" media="all" />-->
     <!--<link rel="alternate stylesheet" type="text/css" href="css/colors/pink.css" title="color2" media="all" />-->
@@ -270,108 +266,71 @@
     <!-- End:  Slider Section
 ==================================================-->
 
-
-
-    <!-- Start: About Section
-==================================================-->
-    <section class="about-section">
+    <!-- Start:  Delivery Coverage and Branches Section
+===========================================================-->
+    <section class="delivery_branc_section">
         <div class="container">
-            <!-- Start: Heading -->
-            <div class="base-header">
-                <small>Welcome To Tastery </small>
-                <h2>About Us</h2>
-            </div>
-            <!-- End: Heading -->
             <div class="row">
 
-                <div class="col-lg-5 col-sm-12">
-                    <div class="abut_title">
-                        <h3>A Focus on Good Taste </h3>
-                        <p> We invite you to celebrate our restaurant’s delicious recipes whether you are here for a
-                            business lunch or dinner. Discover new tastes and inspired recipes from all over the world.
-                            Lorem ipsum dolor sit amet consectetur adipisicing.recipes whether.
-                        </p>
-                        <p>We invite you to celebrate our restaurant’s delicious recipes whether you are here for a
-                            business lunch or dinner. Discover new tastes and inspired recipes from all over the world.
-                        </p>
-                        <a href="about.html"> Read More <i class="icofont-long-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-7 col-sm-12">
-                    <div class="team_wrap" id="team_carsel">
-
-                        <!-- Start: Team Member 1 -->
-                        <div class="team_item">
-                            <div class="team_img">
-                                <img src="images/team1.jpg" alt="">
+                <!-- Start: Contact Info -->
+                <div class="col-sm-7 col-xs-12">
+                    <div id="branche_carousel" class="owl-carousel">
+                        <div class="items">
+                            <div class="branche-wrap">
+                                <img src="https://seedemo.co.uk/public/branch//1614516403.png" alt="">
+                                <h4> USA Branche </h4>
+                                <p> 85 Bay Meadows Drive Woodstock, 30188, United States </p>
+                                <a href="#" class="more-link "> View On Map </a>
                             </div>
-                            <div class="team_info my-auto">
-                                <h4>Chef Kholilur Rahman</h4>
-                                <p>British curry life chef of the year 2012. Chef Rahman combines his own exotic
-                                    creation with classical ingredients to create some mouth watering dishes</p>
-                                <p> using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons
-                                    ectetur adipisicing elit. </p>
-                                <div class="team-social-icon">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="fab fa-facebook"></i> </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fab fa-youtube"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <!-- /.branche-wrap -->
                         </div>
-                        <!--End:  Team Member 1 -->
-                        <!-- Start: Team Member 2 -->
-                        <div class="team_item">
-                            <div class="team_img">
-                                <img src="images/team1.jpg" alt="">
-                            </div>
-                            <div class="team_info my-auto">
-                                <h4>Chef Kholilur Rahman</h4>
-                                <p>British curry life chef of the year 2012. Chef Rahman combines his own exotic
-                                    creation with classical ingredients to create some mouth watering dishes</p>
-                                <p> using the finest and authentic spices and herbs. Lorem ipsum dolor sit amet cons
-                                    ectetur adipisicing elit. </p>
-                                <div class="team-social-icon">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="fab fa-facebook"></i> </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
+                        <!-- /.col-md-4 .col-sm-12 -->
 
-                                        <li>
-                                            <a href="#"><i class="fab fa-youtube"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="items">
+                            <div class="branche-wrap">
+                                <img src="https://seedemo.co.uk/public/branch//1614516403.png" alt="">
+                                <h4> UK Branche </h4>
+                                <p> 85 Bay Meadows Drive Woodstock, 30188, United States </p>
+                                <a href="#" class="more-link"> View On Map </a>
                             </div>
+                            <!-- /.branche-wrap -->
                         </div>
-                        <!--End:  Team Member 2 -->
+                        <!-- /.col-md-4 .col-sm-12 -->
+
                     </div>
+                    <!-- End: Contact Info -->
                 </div>
+                <!-- End: col-md-4 col-sm-12 -->
+
+
+                <!-- Start:  Delivery Coverage Form-->
+                <div class="col-sm-5 col-xs-12">
+                    <div class="fmenu-Delivery-form">
+                        <h4> Delivery Coverage Checker </h4>
+                        <form>
+                            <div class="del-post-code">
+                                <input type="text" id="post-code-input" placeholder="Post Code Entry">
+                                <button type="button" id="post-code-btn"><i class="icofont-search-1"></i></button>
+                            </div>
+                            <div class="del-branch">
+                                <input type="text" id="fmenu-branch" placeholder="Branch (Your Nearest)">
+                                <input type="text" id="fmenu-charge" placeholder="Delivery Charge">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End: Delivery Coverage Form -->
+                </div>
+                <!-- End: col-md-4 col-sm-12 -->
+
+
             </div>
-            <!-- /. row -->
         </div>
-        <!-- /. container -->
     </section>
 
-    <!-- End: About Section
-==================================================-->
+    <!-- End: Delivery Coverage and Branches Section 
+========================================================-->
+
+
 
 
     <!-- Start: Promotion of Product   
@@ -653,6 +612,9 @@
                                         alt="icon"></a>
                             </div>
                         </div>
+                        <div class="portfolio-video">
+                            <a href="#" target="_blank"> view recipes video</a>
+                        </div>
                         <!-- End: Work Item 1 -->
 
                         <div class="gallery-item">
@@ -661,6 +623,9 @@
                                 <a class="project-link" href="images/pro5.jpg"><img src="images/search-icon.svg"
                                         alt="icon"></a>
                             </div>
+                        </div>
+                        <div class="portfolio-video">
+                            <a href="#" target="_blank"> view recipes video</a>
                         </div>
                         <!-- End: Work Item 2 -->
                     </div>
@@ -674,6 +639,9 @@
                                         alt="icon"></a>
                             </div>
                         </div>
+                        <div class="portfolio-video">
+                            <a href="#" target="_blank"> view recipes video</a>
+                        </div>
                         <!-- End: Work Item 3 -->
                         <div class="gallery-item">
                             <img src="images/pro6.jpg" alt="">
@@ -681,6 +649,9 @@
                                 <a class="project-link" href="images/pro6.jpg"><img src="images/search-icon.svg"
                                         alt="icon"></a>
                             </div>
+                        </div>
+                        <div class="portfolio-video">
+                            <a href="#" target="_blank"> view recipes video</a>
                         </div>
                         <!-- End: Work Item 4 -->
                     </div>
@@ -694,6 +665,9 @@
                                         alt="icon"></a>
                             </div>
                         </div>
+                        <div class="portfolio-video">
+                            <a href="#" target="_blank"> view recipes video</a>
+                        </div>
                         <!-- End: Work Item 5 -->
                         <div class="gallery-item">
                             <img src="images/pro7.jpg" alt="">
@@ -701,6 +675,9 @@
                                 <a class="project-link" href="images/pro7.jpg"><img src="images/search-icon.svg"
                                         alt="icon"></a>
                             </div>
+                        </div>
+                        <div class="portfolio-video">
+                            <a href="#" target="_blank"> view recipes video</a>
                         </div>
                         <!-- End: Work Item 5 -->
                     </div>
@@ -714,6 +691,9 @@
                                         alt="icon"></a>
                             </div>
                         </div>
+                        <div class="portfolio-video">
+                            <a href="#" target="_blank"> view recipes video</a>
+                        </div>
                         <!-- End: Work Item 5 -->
                         <div class="gallery-item">
                             <img src="images/pro8.jpg" alt="">
@@ -721,6 +701,9 @@
                                 <a class="project-link" href="images/pro8.jpg"> <img src="images/search-icon.svg"
                                         alt="icon"></a>
                             </div>
+                        </div>
+                        <div class="portfolio-video">
+                            <a href="#" target="_blank"> view recipes video</a>
                         </div>
                         <!-- End: Work Item 6 -->
                     </div>
@@ -1057,25 +1040,6 @@
     <!-- End: Footer Section 
 ========================================-->
 
-    <!-- START : Switcher 
-========================================-->
-    <div class="demo_changer">
-        <div class="demo-icon"><i class="fas fa-cog fa-spin"></i> </div>
-        <div class="form_holder">
-            <div class="layout_styles">
-                <p>Choose Your Color</p>
-                <div class="predefined_styles">
-                    <a href="" rel="color1" class="styleswitch"> <span class="color1"></span> </a>
-                    <a href="" rel="color2" class="styleswitch"> <span class="color2"></span> </a>
-                    <a href="" rel="color3" class="styleswitch"> <span class="color3"></span></a>
-                    <a href="" rel="color4" class="styleswitch"> <span class="color4"></span></a>
-                </div>
-                <span><a rel="tag" class="styleswitch" href="?default=true">RESET STYLE</a></span>
-            </div>
-        </div>
-    </div>
-    <!-- END Switcher 
-========================================-->
 
     <!-- Scripts
 ========================================-->
@@ -1091,8 +1055,6 @@
     <script src="js/owl-carousel.js"></script>
     <!-- magnific popup-->
     <script src="js/magnific-popup.js"></script>
-    <!--fswit Switcher   -->
-    <script src="js/fswit.js"></script>
 
     <!-- Custom Scripts
 ========================================-->

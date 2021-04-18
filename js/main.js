@@ -16,7 +16,6 @@
         $(".menu_sidebar_info").removeClass("info-opened");
         $(".body-overlay").removeClass("opened");
     });
-
  
     /* =======================================
         For slider
@@ -52,6 +51,41 @@
     });
 
     /* =======================================
+         Branche Section -- Home Page
+     =======================================*/
+     $("#branche_carousel").owlCarousel({
+        autoPlay: 3000, //Set AutoPlay to 5 seconds
+        autoplay: false,
+        smartSpeed: 1000, // Default is 250
+        items: 2, //Set Testimonial items
+        loop: true,
+        margin: 30,
+        touchDrag: true,
+        mouseDrag: true,
+        pagination: false,
+        nav: false,
+        dots: false,
+        navText: ["<i class='icofont-thin-left'></i>", "<i class='icofont-thin-right'></i>"],
+        responsive: {
+            1200: {
+                items: 2
+            },
+            992: {
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            480: {
+                items: 1
+            },
+            320: {
+                items: 1
+            }
+        }
+    });
+
+    /* =======================================
          Team Section 
      =======================================*/
     $("#team_carsel").owlCarousel({
@@ -65,7 +99,7 @@
         touchDrag: true,
         mouseDrag: true,
         pagination: true,
-        nav: true,
+        nav: false,
         dots: false,
         navText: ["<i class='icofont-thin-left'></i>", "<i class='icofont-thin-right'></i>"],
     });
@@ -118,6 +152,7 @@
         touchDrag: true,
         mouseDrag: true,
         pagination: true,
+        margin: 5,
         nav: true,
         dots: false,
         navText: ["<i class='icofont-thin-left'></i>", "<i class='icofont-thin-right'></i>"],
@@ -293,6 +328,29 @@
 
 
  
+
+     /*-------------------------------------
+       Menu Page Menu Sticky
+    -------------------------------------*/
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 700)
+          $('.menu-list-col').addClass('menu_sticky');
+        else
+          $('.menu-list-col').removeClass('menu_sticky');
+    });
+ 
+
+     /*-------------------------------------
+       Shop Page Menu Sticky
+    -------------------------------------*/
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 1100)
+          $('.shop-cart-wrap').addClass('shop_sticky');
+        else
+          $('.shop-cart-wrap').removeClass('shop_sticky');
+    });
 
 
 

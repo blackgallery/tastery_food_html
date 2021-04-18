@@ -1936,6 +1936,117 @@ input.header-search-input:-ms-input-placeholder {
 }
 
 
+
+/*----------------------------------------------------
+  5. Delivery Coverage and Branches
+------------------------------------------------------*/
+
+.delivery_branc_section {
+  padding: 100px 0px 70px;
+  background: url("../images/map.jpg");
+  background-repeat: no-repeat;
+}
+
+.fmenu-Delivery-form {
+  background: #19C133;
+  padding: 36px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.fmenu-Delivery-form h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: -3px;
+  color: #fff;
+}
+
+.del-post-code {
+  position: relative;
+}
+
+.fmenu-Delivery-form input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.fmenu-Delivery-form input::placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+
+.fmenu-Delivery-form input {
+  border: 1px solid #fff !important;
+  background: transparent;
+  height: 50px;
+  border-radius: 50px;
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+
+.fmenu-Delivery-form input {
+  color: #fff;
+}
+
+.del-post-code button {
+  position: absolute;
+  right: 0px;
+  background: transparent;
+  border: none;
+  top: 50%;
+  margin-top: -20px;
+  margin-right: 13px;
+  font-size: 20px;
+  color: #FFF;
+}
+
+.fmenu-Delivery-form #fmenu-charge {
+  margin-bottom: 0px;
+}
+
+.branche-wrap {
+  background: #F6F8FA;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: .5s;
+}
+
+.branche-wrap:hover {
+  background-color: #fff;
+  box-shadow: 30px 0 100px 0 rgba(0, 0, 0, .13);
+  transition: .5s;
+}
+
+.branche-wrap img {
+  width: 50px !important;
+  margin: auto;
+}
+
+.branche-wrap h4 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.branche-wrap p {
+  margin-bottom: 20px;
+}
+
+.branche-wrap a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* ====  End: Delivery Coverage and Branches  ==== */
+
+
+
+
+
+
 /*----------------------------------------------------
   5. About Section
 ------------------------------------------------------*/
@@ -2268,8 +2379,16 @@ input.header-search-input:-ms-input-placeholder {
   position: relative;
 }
 
-.gallery-col {
-  background: #3c3535;
+.portfolio-video {
+  background: #19C133;
+  text-align: center;
+  padding: 5px 0px;
+  margin-bottom: 5px;
+}
+
+.portfolio-video a {
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .gallery-hover {
@@ -2468,7 +2587,7 @@ input.header-search-input:-ms-input-placeholder {
   11. Client Section
 ------------------------------------------------------*/
 .client-section {
-  padding: 60px;
+  padding: 60px 0px 55px;
   background: #F6F8FA;
 }
 
@@ -3051,20 +3170,14 @@ header.single-banner .col-sm-12 {
     16. Review page 
 ------------------------------------------------------------*/
 
-.testimonials-section.review-pg-testi {
+
+
+.review-form-section {
   background: #F6F8FA;
-}
-
-.testimonials-section.review-pg-testi .testimonial_content {
-  background: #fff;
-}
-
-.testimonials-section.review-pg-testi .testimonial_content::after {
-  background: #fff;
 }
 
 .review-form-section .contact-form {
-  background: #F6F8FA;
+  background: #fff;
   padding: 56px 60px 60px;
   margin-top: 0px;
   border-radius: 8px;
@@ -5433,12 +5546,12 @@ body::-webkit-scrollbar-thumb {
 /* =========  Menu Section ============= */
 /*  Menu Select */
 .menu-section {
-  background: url("../images/menu-bg2.jpg");
+  /* background: url("../images/menu-bg2.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  /* background: #fff; */
+  background: #fff;
   position: relative;
   z-index: 1;
   padding-top: 100px;
@@ -5451,12 +5564,47 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   top: 0px;
-  background: #111;
+  background: #fff;
   opacity: .8;
   z-index: -1;
 }
 
 .menu-section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 30%;
+  top: 0px;
+  background: #F6F8FA;
+  opacity: 0;
+}
+
+
+.menu-select-section {
+  background: url("../images/menu-bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background: #fff; */
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.menu-select-section::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background: #111;
+  opacity: .8;
+  z-index: -1;
+}
+
+.menu-select-section::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -5477,6 +5625,7 @@ body::-webkit-scrollbar-thumb {
 
 .menu-select-wrap .select-group select option {
   color: #222;
+
 }
 
 .menu-select-wrap .select-group:before {
@@ -5620,7 +5769,8 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 25px;
     z-index: 999999;
     height: 81px;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
     display: flex;
     flex-direction: column;
     padding-left: 5px !important;
@@ -5634,6 +5784,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* end: Meni tab for Mobile  */
+.menu-list-col.menu_sticky {
+  position: fixed;
+  top: 88px;
+  z-index: 99999;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  transition: .3s;
+  width: 100%;
+  left: 0px;
+}
 
 .menu-list-nav {
   background: #F6F8FA;
@@ -5643,9 +5803,6 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
 }
 
-.menu-list-wrap {
-  margin-top: 50px;
-}
 
 .menu-list-nav .nav-link.active {
   color: #fff;
@@ -5795,6 +5952,8 @@ body::-webkit-scrollbar-thumb {
   background: #F6F8FA;
   margin-top: 20px;
   border-radius: 10px;
+  position: sticky;
+  top: 179px;
 }
 
 .menu-cart-footer {
@@ -5955,6 +6114,61 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
+/* Start: allergie_multiselect */
+
+.allergie_multiselect {
+  width: 100%;
+}
+
+.allergie_selectBox {
+  position: relative;
+}
+
+.allergie_selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.allergie_selectBox select option {
+  display: none;
+}
+
+#allergie_checkboxes input {
+  margin-right: 5px;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+
+#allergie_checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+  position: absolute;
+  z-index: 99;
+  background: #fff;
+  width: 100%;
+  padding: 6px 12px 6px;
+  border-radius: 5px;
+}
+
+* #allergie_checkboxes label {
+  display: block;
+  margin-bottom: -2px;
+}
+
+#allergie_checkboxes label:hover {
+  background-color: rgba(221, 221, 221, 0.199);
+}
+
+/* End: allergie_multiselect */
+
 
 /*  Filter Grid */
 .findshop-wrap .menu-category {
@@ -6106,6 +6320,28 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+.shop-cart-wrap.shop_sticky {
+  position: fixed;
+  top: 88px;
+  z-index: 99999;
+  padding: 20px 50px 10px;
+  transition: .3s;
+  width: 100%;
+  left: 0px;
+  background: #F6F8FA;
+}
+
+.shop-cart-wrap.shop_sticky select {
+  border-color: #222;
+  color: #222;
+  border-radius: 50px;
+  height: 57px;
+}
+
+.shop-cart-wrap.shop_sticky .select-group::before {
+  color: #000;
 }
 
 .shop-view-cart {
